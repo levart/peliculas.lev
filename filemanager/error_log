@@ -1,0 +1,20 @@
+[03-Jul-2016 13:07:01 Europe/Rome] PHP Warning:  scandir(../source/): failed to open dir: No such file or directory in /home/hippo/public_html/filemanager/dialog.php on line 478
+[03-Jul-2016 13:07:01 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/hippo/public_html/filemanager/dialog.php on line 478
+[03-Jul-2016 13:07:01 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/hippo/public_html/filemanager/dialog.php on line 487
+[03-Jul-2016 13:07:01 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/hippo/public_html/filemanager/dialog.php on line 987
+[03-Jul-2016 13:07:36 Europe/Rome] PHP Warning:  scandir(../source/): failed to open dir: No such file or directory in /home/hippo/public_html/filemanager/dialog.php on line 478
+[03-Jul-2016 13:07:36 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/hippo/public_html/filemanager/dialog.php on line 478
+[03-Jul-2016 13:07:36 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/hippo/public_html/filemanager/dialog.php on line 487
+[03-Jul-2016 13:07:36 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/hippo/public_html/filemanager/dialog.php on line 987
+[03-Jul-2016 13:09:33 Europe/Rome] PHP Warning:  scandir(../source/): failed to open dir: No such file or directory in /home/hippo/public_html/filemanager/dialog.php on line 478
+[03-Jul-2016 13:09:33 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/hippo/public_html/filemanager/dialog.php on line 478
+[03-Jul-2016 13:09:33 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/hippo/public_html/filemanager/dialog.php on line 487
+[03-Jul-2016 13:09:33 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/hippo/public_html/filemanager/dialog.php on line 987
+[03-Jul-2016 13:11:02 Europe/Rome] PHP Warning:  scandir(/home/hippo/public_html/source/): failed to open dir: No such file or directory in /home/hippo/public_html/filemanager/dialog.php on line 478
+[03-Jul-2016 13:11:02 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/hippo/public_html/filemanager/dialog.php on line 478
+[03-Jul-2016 13:11:02 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/hippo/public_html/filemanager/dialog.php on line 487
+[03-Jul-2016 13:11:02 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/hippo/public_html/filemanager/dialog.php on line 987
+[03-Jul-2016 13:11:26 Europe/Rome] PHP Warning:  scandir(/home/hippo/public_html/source/): failed to open dir: No such file or directory in /home/hippo/public_html/filemanager/dialog.php on line 478
+[03-Jul-2016 13:11:26 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/hippo/public_html/filemanager/dialog.php on line 478
+[03-Jul-2016 13:11:26 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/hippo/public_html/filemanager/dialog.php on line 487
+[03-Jul-2016 13:11:26 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/hippo/public_html/filemanager/dialog.php on line 987

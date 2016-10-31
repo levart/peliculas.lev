@@ -1,0 +1,484 @@
+[31-Jul-2016 21:08:47 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieInfo() on a non-object in /home/allanimes/public_html/application/controllers/admin/Movies.php on line 190
+[31-Jul-2016 21:09:12 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieInfo() on a non-object in /home/allanimes/public_html/application/controllers/admin/Movies.php on line 190
+[31-Jul-2016 21:10:16 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieInfo() on a non-object in /home/allanimes/public_html/application/controllers/admin/Movies.php on line 190
+[01-Aug-2016 13:30:41 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::add_movie() in /home/allanimes/public_html/application/controllers/admin/Movies.php on line 159
+[01-Aug-2016 13:42:27 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::getonlinemovie() in /home/allanimes/public_html/application/controllers/admin/Movies.php on line 155
+[01-Aug-2016 13:43:12 Asia/Tbilisi] PHP Fatal error:  Call to a member function getLanguage() on a non-object in /home/allanimes/public_html/application/views/admin/inc/onlinemovie.php on line 4
+[01-Aug-2016 13:43:13 Asia/Tbilisi] PHP Fatal error:  Call to a member function getLanguage() on a non-object in /home/allanimes/public_html/application/views/admin/inc/onlinemovie.php on line 4
+[01-Aug-2016 13:43:22 Asia/Tbilisi] PHP Fatal error:  Call to a member function getLanguage() on a non-object in /home/allanimes/public_html/application/views/admin/inc/onlinemovie.php on line 4
+[01-Aug-2016 13:44:07 Asia/Tbilisi] PHP Fatal error:  Call to a member function getLanguage() on a non-object in /home/allanimes/public_html/application/views/admin/inc/onlinemovie.php on line 7
+[01-Aug-2016 13:44:08 Asia/Tbilisi] PHP Fatal error:  Call to a member function getLanguage() on a non-object in /home/allanimes/public_html/application/views/admin/inc/onlinemovie.php on line 7
+[01-Aug-2016 13:44:08 Asia/Tbilisi] PHP Fatal error:  Call to a member function getLanguage() on a non-object in /home/allanimes/public_html/application/views/admin/inc/onlinemovie.php on line 7
+[01-Aug-2016 13:44:08 Asia/Tbilisi] PHP Fatal error:  Call to a member function getLanguage() on a non-object in /home/allanimes/public_html/application/views/admin/inc/onlinemovie.php on line 7
+[01-Aug-2016 13:44:14 Asia/Tbilisi] PHP Fatal error:  Call to a member function getLanguage() on a non-object in /home/allanimes/public_html/application/views/admin/inc/onlinemovie.php on line 7
+[01-Aug-2016 13:48:03 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::getLanguage() in /home/allanimes/public_html/application/views/admin/inc/onlinemovie.php on line 7
+[01-Aug-2016 13:53:22 Asia/Tbilisi] PHP Fatal error:  Call to undefined method languages_model::getLanguage() in /home/allanimes/public_html/application/views/admin/inc/onlinemovie.php on line 7
+[02-Aug-2016 17:26:10 Asia/Tbilisi] PHP Fatal error:  Call to a member function addDirector() on a non-object in /home/allanimes/public_html/application/controllers/admin/Movies.php on line 206
+[02-Aug-2016 18:31:05 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected end of file in /home/allanimes/public_html/application/views/admin/movies/add.php on line 541
+[02-Aug-2016 18:35:01 Asia/Tbilisi] PHP Fatal error:  Call to a member function deleteActor() on a non-object in /home/allanimes/public_html/application/controllers/admin/Movies.php on line 218
+[03-Aug-2016 12:01:04 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/allanimes/public_html/application/models/Movies_model.php on line 137
+[03-Aug-2016 12:01:14 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/allanimes/public_html/application/models/Movies_model.php on line 137
+[03-Aug-2016 12:01:46 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/allanimes/public_html/application/models/Movies_model.php on line 137
+[03-Aug-2016 12:01:51 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/allanimes/public_html/application/models/Movies_model.php on line 137
+[03-Aug-2016 14:54:15 Asia/Tbilisi] PHP Fatal error:  Call to undefined function var_damp() in /home/allanimes/public_html/application/views/admin/movies/edit.php on line 89
+[03-Aug-2016 14:55:43 Asia/Tbilisi] PHP Fatal error:  Call to undefined function var_damp() in /home/allanimes/public_html/application/views/admin/movies/edit.php on line 89
+[03-Aug-2016 14:55:44 Asia/Tbilisi] PHP Fatal error:  Call to undefined function var_damp() in /home/allanimes/public_html/application/views/admin/movies/edit.php on line 89
+[03-Aug-2016 14:56:03 Asia/Tbilisi] PHP Fatal error:  Call to undefined function var_damp() in /home/allanimes/public_html/application/views/admin/movies/edit.php on line 89
+[03-Aug-2016 17:30:03 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/models/Movies_model.php on line 133
+[03-Aug-2016 17:30:42 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/models/Movies_model.php on line 133
+[03-Aug-2016 17:30:42 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/models/Movies_model.php on line 133
+[03-Aug-2016 17:31:11 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/models/Movies_model.php on line 131
+[03-Aug-2016 17:31:19 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/models/Movies_model.php on line 131
+[03-Aug-2016 17:31:19 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/models/Movies_model.php on line 131
+[04-Aug-2016 12:35:43 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::getTrailer() in /home/allanimes/public_html/application/controllers/admin/Movies.php on line 68
+[04-Aug-2016 12:35:58 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::getTrailer() in /home/allanimes/public_html/application/controllers/admin/Movies.php on line 68
+[04-Aug-2016 12:38:23 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected end of file in /home/allanimes/public_html/application/views/admin/movies/edit.php on line 259
+[04-Aug-2016 14:16:29 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::insertedID2() in /home/allanimes/public_html/application/controllers/admin/Movies.php on line 141
+[09-Aug-2016 16:02:41 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::getMoviesGenre() in /home/allanimes/public_html/application/views/index.php on line 2475
+[09-Aug-2016 16:02:44 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::getMoviesGenre() in /home/allanimes/public_html/application/views/index.php on line 2475
+[09-Aug-2016 17:30:36 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/allanimes/public_html/application/views/index.php on line 367
+[09-Aug-2016 17:31:08 Asia/Tbilisi] PHP Fatal error:  Call to undefined function coount() in /home/allanimes/public_html/application/views/index.php on line 383
+[09-Aug-2016 17:31:15 Asia/Tbilisi] PHP Fatal error:  Call to undefined function coount() in /home/allanimes/public_html/application/views/index.php on line 383
+[09-Aug-2016 17:31:18 Asia/Tbilisi] PHP Fatal error:  Call to undefined function coount() in /home/allanimes/public_html/application/views/index.php on line 383
+[10-Aug-2016 14:27:28 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '.' in /home/allanimes/public_html/application/views/index.php on line 1358
+[10-Aug-2016 14:27:31 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '.' in /home/allanimes/public_html/application/views/index.php on line 1358
+[10-Aug-2016 14:27:32 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '.' in /home/allanimes/public_html/application/views/index.php on line 1358
+[10-Aug-2016 14:28:01 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '.' in /home/allanimes/public_html/application/views/index.php on line 1358
+[10-Aug-2016 17:37:41 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '.' in /home/allanimes/public_html/application/views/single_movie.php on line 390
+[12-Aug-2016 17:44:23 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/allanimes/public_html/application/views/index.php on line 734
+[12-Aug-2016 17:49:26 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '?>' in /home/allanimes/public_html/application/views/index.php on line 742
+[12-Aug-2016 17:52:51 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/allanimes/public_html/application/views/index.php on line 734
+[13-Aug-2016 16:48:24 Asia/Tbilisi] PHP Fatal error:  Class 'Maradit' not found in /home/allanimes/public_html/application/models/Users_model.php on line 627
+[13-Aug-2016 16:49:56 Asia/Tbilisi] PHP Fatal error:  Class 'Maradit' not found in /home/allanimes/public_html/application/models/Users_model.php on line 627
+[13-Aug-2016 16:58:13 Asia/Tbilisi] PHP Fatal error:  Class 'Maradit' not found in /home/allanimes/public_html/application/models/Users_model.php on line 627
+[13-Aug-2016 17:00:10 Asia/Tbilisi] PHP Fatal error:  Call to undefined method users_model::smssend() in /home/allanimes/public_html/application/models/Users_model.php on line 150
+[13-Aug-2016 17:00:27 Asia/Tbilisi] PHP Fatal error:  Call to undefined method users_model::smssend() in /home/allanimes/public_html/application/models/Users_model.php on line 150
+[13-Aug-2016 17:07:49 Asia/Tbilisi] PHP Fatal error:  Call to undefined method users_model::smssend() in /home/allanimes/public_html/application/models/Users_model.php on line 150
+[13-Aug-2016 17:09:02 Asia/Tbilisi] PHP Fatal error:  Call to undefined method users_model::smssend() in /home/allanimes/public_html/application/models/Users_model.php on line 150
+[15-Aug-2016 12:43:05 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::getDayTopMovies() in /home/allanimes/public_html/application/controllers/Home.php on line 41
+[15-Aug-2016 13:26:30 Asia/Tbilisi] PHP Fatal error:  Call to undefined method CI_DB_mysqli_driver::Find_in_set() in /home/allanimes/public_html/application/models/Movies_model.php on line 71
+[15-Aug-2016 13:26:46 Asia/Tbilisi] PHP Fatal error:  Call to undefined method CI_DB_mysqli_driver::find_in_set() in /home/allanimes/public_html/application/models/Movies_model.php on line 71
+[15-Aug-2016 13:28:03 Asia/Tbilisi] PHP Fatal error:  Call to undefined function find_in_set() in /home/allanimes/public_html/application/models/Movies_model.php on line 71
+[15-Aug-2016 13:28:05 Asia/Tbilisi] PHP Fatal error:  Call to undefined function find_in_set() in /home/allanimes/public_html/application/models/Movies_model.php on line 71
+[15-Aug-2016 13:28:08 Asia/Tbilisi] PHP Fatal error:  Call to undefined function find_in_set() in /home/allanimes/public_html/application/models/Movies_model.php on line 71
+[15-Aug-2016 13:28:08 Asia/Tbilisi] PHP Fatal error:  Call to undefined function find_in_set() in /home/allanimes/public_html/application/models/Movies_model.php on line 71
+[15-Aug-2016 13:28:08 Asia/Tbilisi] PHP Fatal error:  Call to undefined function find_in_set() in /home/allanimes/public_html/application/models/Movies_model.php on line 71
+[15-Aug-2016 13:28:08 Asia/Tbilisi] PHP Fatal error:  Call to undefined function find_in_set() in /home/allanimes/public_html/application/models/Movies_model.php on line 71
+[15-Aug-2016 13:28:08 Asia/Tbilisi] PHP Fatal error:  Call to undefined function find_in_set() in /home/allanimes/public_html/application/models/Movies_model.php on line 71
+[15-Aug-2016 13:28:08 Asia/Tbilisi] PHP Fatal error:  Call to undefined function find_in_set() in /home/allanimes/public_html/application/models/Movies_model.php on line 71
+[15-Aug-2016 13:28:08 Asia/Tbilisi] PHP Fatal error:  Call to undefined function find_in_set() in /home/allanimes/public_html/application/models/Movies_model.php on line 71
+[15-Aug-2016 13:28:09 Asia/Tbilisi] PHP Fatal error:  Call to undefined function find_in_set() in /home/allanimes/public_html/application/models/Movies_model.php on line 71
+[15-Aug-2016 13:28:09 Asia/Tbilisi] PHP Fatal error:  Call to undefined function find_in_set() in /home/allanimes/public_html/application/models/Movies_model.php on line 71
+[15-Aug-2016 13:28:09 Asia/Tbilisi] PHP Fatal error:  Call to undefined function find_in_set() in /home/allanimes/public_html/application/models/Movies_model.php on line 71
+[15-Aug-2016 15:27:17 Asia/Tbilisi] PHP Fatal error:  Call to a member function dayvideos() on a non-object in /home/allanimes/public_html/application/controllers/Home.php on line 44
+[15-Aug-2016 15:45:08 Asia/Tbilisi] PHP Fatal error:  Call to a member function dayvideos() on a non-object in /home/allanimes/public_html/application/controllers/Home.php on line 44
+[15-Aug-2016 15:45:18 Asia/Tbilisi] PHP Fatal error:  Call to a member function dayvideos() on a non-object in /home/allanimes/public_html/application/controllers/Home.php on line 44
+[15-Aug-2016 15:45:32 Asia/Tbilisi] PHP Fatal error:  Call to a member function dayvideos() on a non-object in /home/allanimes/public_html/application/controllers/Home.php on line 44
+[15-Aug-2016 15:45:38 Asia/Tbilisi] PHP Fatal error:  Call to a member function dayvideos() on a non-object in /home/allanimes/public_html/application/controllers/Home.php on line 44
+[15-Aug-2016 15:45:41 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::dayvideos() in /home/allanimes/public_html/application/controllers/Home.php on line 44
+[15-Aug-2016 15:45:56 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::dayvideos() in /home/allanimes/public_html/application/controllers/Home.php on line 44
+[15-Aug-2016 15:46:11 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::dayvideos() in /home/allanimes/public_html/application/controllers/Home.php on line 44
+[15-Aug-2016 15:46:16 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::weekmovies() in /home/allanimes/public_html/application/controllers/Home.php on line 47
+[15-Aug-2016 15:46:19 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::weekmovies() in /home/allanimes/public_html/application/controllers/Home.php on line 47
+[15-Aug-2016 15:46:21 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::weekmovies() in /home/allanimes/public_html/application/controllers/Home.php on line 47
+[16-Aug-2016 15:41:56 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected 'x' (T_STRING) in /home/allanimes/public_html/application/controllers/Home.php on line 51
+[16-Aug-2016 16:36:07 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/allanimes/public_html/application/models/Movies_model.php on line 379
+[16-Aug-2016 16:36:10 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/allanimes/public_html/application/models/Movies_model.php on line 379
+[16-Aug-2016 16:36:11 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/allanimes/public_html/application/models/Movies_model.php on line 379
+[16-Aug-2016 16:37:59 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '}' in /home/allanimes/public_html/application/models/Movies_model.php on line 385
+[16-Aug-2016 17:42:08 Asia/Tbilisi] PHP Fatal error:  Cannot use [] for reading in /home/allanimes/public_html/application/models/Movies_model.php on line 370
+[16-Aug-2016 17:42:20 Asia/Tbilisi] PHP Fatal error:  Cannot use [] for reading in /home/allanimes/public_html/application/models/Movies_model.php on line 370
+[16-Aug-2016 17:42:25 Asia/Tbilisi] PHP Fatal error:  Cannot use [] for reading in /home/allanimes/public_html/application/models/Movies_model.php on line 370
+[16-Aug-2016 18:35:28 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '=' in /home/allanimes/public_html/application/models/Movies_model.php on line 373
+[16-Aug-2016 18:35:29 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '=' in /home/allanimes/public_html/application/models/Movies_model.php on line 373
+[16-Aug-2016 18:35:34 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '=' in /home/allanimes/public_html/application/models/Movies_model.php on line 373
+[18-Aug-2016 18:48:15 Asia/Tbilisi] PHP Fatal error:  Call to undefined method CI_DB_mysqli_driver::limit_by() in /home/allanimes/public_html/application/models/Movies_model.php on line 84
+[18-Aug-2016 18:48:16 Asia/Tbilisi] PHP Fatal error:  Call to undefined method CI_DB_mysqli_driver::limit_by() in /home/allanimes/public_html/application/models/Movies_model.php on line 84
+[18-Aug-2016 18:48:19 Asia/Tbilisi] PHP Fatal error:  Call to undefined method CI_DB_mysqli_driver::limit_by() in /home/allanimes/public_html/application/models/Movies_model.php on line 84
+[18-Aug-2016 18:48:57 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::getSlideMovies() in /home/allanimes/public_html/application/controllers/Movies.php on line 53
+[19-Aug-2016 11:34:41 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieGenre() on a non-object in /home/allanimes/public_html/application/views/inc/ajaxslider.php on line 63
+[19-Aug-2016 11:34:42 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieGenre() on a non-object in /home/allanimes/public_html/application/views/inc/ajaxslider.php on line 63
+[19-Aug-2016 11:34:42 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieGenre() on a non-object in /home/allanimes/public_html/application/views/inc/ajaxslider.php on line 63
+[19-Aug-2016 11:35:00 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieGenre() on a non-object in /home/allanimes/public_html/application/views/inc/ajaxslider.php on line 63
+[19-Aug-2016 11:36:48 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieGenre() on a non-object in /home/allanimes/public_html/application/views/inc/ajaxslider.php on line 63
+[19-Aug-2016 11:36:54 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieGenre() on a non-object in /home/allanimes/public_html/application/views/inc/ajaxslider.php on line 63
+[19-Aug-2016 11:39:01 Asia/Tbilisi] PHP Fatal error:  Call to a member function getSliderData() on a non-object in /home/allanimes/public_html/application/controllers/Home.php on line 41
+[19-Aug-2016 11:39:41 Asia/Tbilisi] PHP Fatal error:  Call to a member function getSliderData() on a non-object in /home/allanimes/public_html/application/controllers/Home.php on line 41
+[19-Aug-2016 11:39:46 Asia/Tbilisi] PHP Fatal error:  Call to a member function getSliderData() on a non-object in /home/allanimes/public_html/application/controllers/Home.php on line 41
+[19-Aug-2016 11:40:32 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieGenre() on a non-object in /home/allanimes/public_html/application/views/inc/ajaxslider.php on line 63
+[19-Aug-2016 11:40:38 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieGenre() on a non-object in /home/allanimes/public_html/application/views/inc/ajaxslider.php on line 63
+[19-Aug-2016 11:42:08 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::getTopSerialData() in /home/allanimes/public_html/application/controllers/Home.php on line 45
+[19-Aug-2016 11:56:56 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::getTopSerialData() in /home/allanimes/public_html/application/controllers/Home.php on line 45
+[19-Aug-2016 11:57:00 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::getTopSerialData() in /home/allanimes/public_html/application/controllers/Home.php on line 45
+[19-Aug-2016 11:58:18 Asia/Tbilisi] PHP Fatal error:  Call to undefined method movies_model::getTopSerialData() in /home/allanimes/public_html/application/controllers/Home.php on line 45
+[19-Aug-2016 12:01:04 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '(' in /home/allanimes/public_html/application/controllers/Home.php on line 45
+[19-Aug-2016 12:02:50 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieGenre() on a non-object in /home/allanimes/public_html/application/views/inc/ajaxslider.php on line 63
+[19-Aug-2016 12:04:40 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieGenre() on a non-object in /home/allanimes/public_html/application/views/inc/ajaxslider.php on line 63
+[19-Aug-2016 12:07:20 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieGenre() on a non-object in /home/allanimes/public_html/application/views/inc/ajaxslider.php on line 63
+[19-Aug-2016 12:09:55 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieGenre() on a non-object in /home/allanimes/public_html/application/views/inc/ajaxslider.php on line 63
+[19-Aug-2016 12:10:01 Asia/Tbilisi] PHP Fatal error:  Call to a member function getMovieGenre() on a non-object in /home/allanimes/public_html/application/views/inc/ajaxslider.php on line 63
+[22-Aug-2016 13:06:05 Asia/Tbilisi] PHP Fatal error:  Call to a member function getparents() on a non-object in /home/allanimes/public_html/application/controllers/Users.php on line 437
+[22-Aug-2016 13:06:12 Asia/Tbilisi] PHP Fatal error:  Call to a member function getparents() on a non-object in /home/allanimes/public_html/application/controllers/Users.php on line 437
+[22-Aug-2016 13:23:28 Asia/Tbilisi] PHP Fatal error:  Call to a member function getGender() on a non-object in /home/allanimes/public_html/application/views/profile.php on line 12
+[22-Aug-2016 13:23:39 Asia/Tbilisi] PHP Fatal error:  Call to a member function getGender() on a non-object in /home/allanimes/public_html/application/views/profile.php on line 12
+[22-Aug-2016 13:23:44 Asia/Tbilisi] PHP Fatal error:  Call to a member function getGender() on a non-object in /home/allanimes/public_html/application/views/profile.php on line 12
+[22-Aug-2016 17:56:23 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE) in /home/allanimes/public_html/application/controllers/Movies.php on line 24
+[22-Aug-2016 18:01:34 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE) in /home/allanimes/public_html/application/controllers/Movies.php on line 24
+[22-Aug-2016 18:01:37 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE) in /home/allanimes/public_html/application/controllers/Movies.php on line 24
+[22-Aug-2016 18:01:42 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE) in /home/allanimes/public_html/application/controllers/Movies.php on line 24
+[22-Aug-2016 18:05:25 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE) in /home/allanimes/public_html/application/controllers/Movies.php on line 24
+[22-Aug-2016 18:12:51 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE) in /home/allanimes/public_html/application/controllers/Movies.php on line 24
+[22-Aug-2016 18:37:29 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ';' in /home/allanimes/public_html/application/models/Users_model.php on line 1126
+[23-Aug-2016 13:30:42 Asia/Tbilisi] PHP Fatal error:  Cannot redeclare movies::insertInUsersList() in /home/allanimes/public_html/application/controllers/Movies.php on line 75
+[23-Aug-2016 13:30:48 Asia/Tbilisi] PHP Fatal error:  Cannot redeclare movies::insertInUsersList() in /home/allanimes/public_html/application/controllers/Movies.php on line 75
+[23-Aug-2016 14:09:08 Asia/Tbilisi] PHP Fatal error:  Call to undefined method CI_DB_mysqli_driver::lastid() in /home/allanimes/public_html/application/models/Users_model.php on line 1159
+[23-Aug-2016 14:23:58 Asia/Tbilisi] PHP Fatal error:  Call to undefined method stdClass::row() in /home/allanimes/public_html/application/models/Users_model.php on line 1159
+[23-Aug-2016 15:29:52 Asia/Tbilisi] PHP Fatal error:  Call to undefined method stdClass::row() in /home/allanimes/public_html/application/models/Users_model.php on line 1159
+[23-Aug-2016 15:38:09 Asia/Tbilisi] PHP Fatal error:  Call to undefined method stdClass::row() in /home/allanimes/public_html/application/models/Users_model.php on line 1159
+[23-Aug-2016 18:42:45 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/allanimes/public_html/application/controllers/Movies.php on line 45
+[24-Aug-2016 13:42:40 Asia/Tbilisi] PHP Fatal error:  Cannot redeclare users_model::getplaylists() in /home/allanimes/public_html/application/models/Users_model.php on line 1236
+[24-Aug-2016 13:42:48 Asia/Tbilisi] PHP Fatal error:  Cannot redeclare users_model::getplaylists() in /home/allanimes/public_html/application/models/Users_model.php on line 1236
+[24-Aug-2016 13:43:17 Asia/Tbilisi] PHP Fatal error:  Cannot redeclare users_model::getplaylists() in /home/allanimes/public_html/application/models/Users_model.php on line 1236
+[24-Aug-2016 13:43:24 Asia/Tbilisi] PHP Fatal error:  Cannot redeclare users_model::getplaylists() in /home/allanimes/public_html/application/models/Users_model.php on line 1236
+[24-Aug-2016 18:05:53 Asia/Tbilisi] PHP Fatal error:  Call to undefined method users_model::getwishlistPage() in /home/allanimes/public_html/application/controllers/Users.php on line 1049
+[26-Aug-2016 10:51:53 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '=' in /home/allanimes/public_html/application/views/inc/header.php on line 113
+[26-Aug-2016 10:51:54 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '=' in /home/allanimes/public_html/application/views/inc/header.php on line 113
+[26-Aug-2016 11:13:00 Asia/Tbilisi] PHP Fatal error:  Call to a member function months() on a non-object in /home/allanimes/public_html/application/controllers/Users.php on line 1055
+[26-Aug-2016 11:15:04 Asia/Tbilisi] PHP Fatal error:  Call to a member function months() on a non-object in /home/allanimes/public_html/application/controllers/Users.php on line 1055
+[26-Aug-2016 11:15:13 Asia/Tbilisi] PHP Fatal error:  Call to a member function months() on a non-object in /home/allanimes/public_html/application/controllers/Users.php on line 1055
+[26-Aug-2016 11:15:33 Asia/Tbilisi] PHP Fatal error:  Call to a member function months() on a non-object in /home/allanimes/public_html/application/controllers/Users.php on line 1055
+[26-Aug-2016 11:20:48 Asia/Tbilisi] PHP Fatal error:  Call to a member function months() on a non-object in /home/allanimes/public_html/application/controllers/Users.php on line 1055
+[26-Aug-2016 12:32:55 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/models/Users_model.php on line 266
+[26-Aug-2016 12:34:01 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/models/Users_model.php on line 266
+[26-Aug-2016 12:38:35 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected end of file in /home/allanimes/public_html/application/controllers/Users.php on line 553
+[26-Aug-2016 12:38:35 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected end of file in /home/allanimes/public_html/application/controllers/Users.php on line 553
+[26-Aug-2016 12:45:37 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/allanimes/public_html/application/controllers/Users.php on line 480
+[26-Aug-2016 13:16:42 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '?>' in /home/allanimes/public_html/application/views/mypage.php on line 168
+[26-Aug-2016 13:16:47 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected '?>' in /home/allanimes/public_html/application/views/mypage.php on line 168
+[26-Aug-2016 14:37:10 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/models/Users_model.php on line 1292
+[26-Aug-2016 15:15:12 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Users.php on line 1038
+[26-Aug-2016 15:15:15 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Users.php on line 1038
+[26-Aug-2016 15:15:19 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Users.php on line 1038
+[26-Aug-2016 16:56:50 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[26-Aug-2016 16:56:51 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[27-Aug-2016 12:43:20 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:21:27 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:22:05 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:23:05 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:23:55 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:24:06 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:24:24 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:24:57 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:25:05 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:26:05 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:26:34 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:28:02 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:28:06 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:29:01 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:32:25 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:43:56 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 00:49:41 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 01:24:11 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:839
+Stack trace:
+#0 /home/allanimes/vendor/google/apiclient/src/Google/Client.php(824): Google_Client->setAuthConfig('/home/allanimes...')
+#1 /home/allanimes/public_html/simple-file-upload.php(39): Google_Client->setAuthConfigFile('/home/allanimes...')
+#2 /home/allanimes/public_html/simple-file-upload.php(87): getClient()
+#3 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 839
+[28-Aug-2016 01:25:17 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/simple-file-upload.php on line 51
+[28-Aug-2016 01:25:17 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/vendor/google/apiclient/src/Google/Client.php(163): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/simple-file-upload.php(54): Google_Client->authenticate('')
+#2 /home/allanimes/public_html/simple-file-upload.php(87): getClient()
+#3 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 01:26:21 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/simple-file-upload.php on line 51
+[28-Aug-2016 01:26:21 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/vendor/google/apiclient/src/Google/Client.php(163): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/simple-file-upload.php(54): Google_Client->authenticate('')
+#2 /home/allanimes/public_html/simple-file-upload.php(87): getClient()
+#3 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 01:29:16 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/simple-file-upload.php on line 51
+[28-Aug-2016 01:29:16 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/vendor/google/apiclient/src/Google/Client.php(163): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/simple-file-upload.php(54): Google_Client->authenticate('')
+#2 /home/allanimes/public_html/simple-file-upload.php(87): getClient()
+#3 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 01:29:19 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/simple-file-upload.php on line 51
+[28-Aug-2016 01:29:19 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/vendor/google/apiclient/src/Google/Client.php(163): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/simple-file-upload.php(54): Google_Client->authenticate('')
+#2 /home/allanimes/public_html/simple-file-upload.php(87): getClient()
+#3 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 01:29:25 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/simple-file-upload.php on line 51
+[28-Aug-2016 01:29:25 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/vendor/google/apiclient/src/Google/Client.php(163): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/simple-file-upload.php(54): Google_Client->authenticate('')
+#2 /home/allanimes/public_html/simple-file-upload.php(87): getClient()
+#3 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 01:31:06 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/simple-file-upload.php on line 51
+[28-Aug-2016 01:31:06 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/vendor/google/apiclient/src/Google/Client.php(163): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/simple-file-upload.php(54): Google_Client->authenticate('')
+#2 /home/allanimes/public_html/simple-file-upload.php(87): getClient()
+#3 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 01:33:05 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/simple-file-upload.php on line 51
+[28-Aug-2016 01:33:05 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/vendor/google/apiclient/src/Google/Client.php(163): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/simple-file-upload.php(54): Google_Client->authenticate('')
+#2 /home/allanimes/public_html/simple-file-upload.php(87): getClient()
+#3 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 01:39:37 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'Exception' with message 'This application must be run on the command line.' in /home/allanimes/public_html/quickstart.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/allanimes/public_html/quickstart.php on line 30
+[28-Aug-2016 01:39:58 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/quickstart.php on line 53
+[28-Aug-2016 01:39:58 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/public_html/quickstart.php(56): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/quickstart.php(89): getClient()
+#2 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 01:40:21 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/quickstart.php on line 51
+[28-Aug-2016 01:40:21 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/public_html/quickstart.php(54): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/quickstart.php(87): getClient()
+#2 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 01:40:49 Asia/Tbilisi] PHP Fatal error:  Call to undefined function getClient() in /home/allanimes/public_html/quickstart.php on line 27
+[28-Aug-2016 01:41:47 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/quickstart.php on line 51
+[28-Aug-2016 01:41:47 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/public_html/quickstart.php(54): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/quickstart.php(87): getClient()
+#2 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 01:42:36 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/quickstart.php on line 51
+[28-Aug-2016 01:42:36 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/public_html/quickstart.php(54): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/quickstart.php(87): getClient()
+#2 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 01:42:39 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/quickstart.php on line 51
+[28-Aug-2016 01:42:39 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/public_html/quickstart.php(54): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/quickstart.php(87): getClient()
+#2 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 01:42:41 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/quickstart.php on line 51
+[28-Aug-2016 01:42:41 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/public_html/quickstart.php(54): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/quickstart.php(87): getClient()
+#2 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 01:46:07 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/public_html/quickstart.php(55): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/quickstart.php(88): getClient()
+#2 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 02:02:41 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 02:02:41 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 14:41:44 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/public_html/quickstart.php(55): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/quickstart.php(88): getClient()
+#2 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 17:03:09 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 17:03:10 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 17:40:55 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message '{
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "notFound",
+    "message": "File not found: 0BwwA4oUTeiV1UVNwOHItT0xfa2M.",
+    "locationType": "parameter",
+    "location": "fileId"
+   }
+  ],
+  "code": 404,
+  "message": "File not found: 0BwwA4oUTeiV1UVNwOHItT0xfa2M."
+ }
+}
+' in /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), NULL)
+#1 [internal function]: Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), NULL)
+#2 /home/allanimes/vendor/google/apiclient/src/Google/Task/Runner.php(181): call_user_func_array(Array, Array)
+#3 /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#4 /home/allanimes/vendor/google/apiclient/src/Google/Client.php(779): in /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php on line 118
+[28-Aug-2016 17:41:59 Asia/Tbilisi] PHP Warning:  require_once(/home/allanimes/public_html/vendor/autoload.php): failed to open stream: No such file or directory in /home/allanimes/public_html/quickstart.php on line 2
+[28-Aug-2016 17:41:59 Asia/Tbilisi] PHP Fatal error:  require_once(): Failed opening required '/home/allanimes/public_html/vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/allanimes/public_html/quickstart.php on line 2
+[28-Aug-2016 17:42:27 Asia/Tbilisi] PHP Warning:  require_once(/home/allanimes/public_html../vendor/autoload.php): failed to open stream: No such file or directory in /home/allanimes/public_html/quickstart.php on line 2
+[28-Aug-2016 17:42:27 Asia/Tbilisi] PHP Fatal error:  require_once(): Failed opening required '/home/allanimes/public_html../vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/allanimes/public_html/quickstart.php on line 2
+[28-Aug-2016 17:50:11 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message '{
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "authError",
+    "message": "Invalid Credentials",
+    "locationType": "header",
+    "location": "Authorization"
+   }
+  ],
+  "code": 401,
+  "message": "Invalid Credentials"
+ }
+}
+' in /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 [internal function]: Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/allanimes/vendor/google/apiclient/src/Google/Task/Runner.php(181): call_user_func_array(Array, Array)
+#3 /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#4 /home/allanimes/vendor/google/apiclient/src/Google/Client.php(779): Google_Http_RE in /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php on line 118
+[28-Aug-2016 17:50:20 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message '{
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "authError",
+    "message": "Invalid Credentials",
+    "locationType": "header",
+    "location": "Authorization"
+   }
+  ],
+  "code": 401,
+  "message": "Invalid Credentials"
+ }
+}
+' in /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 [internal function]: Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/allanimes/vendor/google/apiclient/src/Google/Task/Runner.php(181): call_user_func_array(Array, Array)
+#3 /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#4 /home/allanimes/vendor/google/apiclient/src/Google/Client.php(779): Google_Http_RE in /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php on line 118
+[28-Aug-2016 17:55:47 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message '{
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "authError",
+    "message": "Invalid Credentials",
+    "locationType": "header",
+    "location": "Authorization"
+   }
+  ],
+  "code": 401,
+  "message": "Invalid Credentials"
+ }
+}
+' in /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 [internal function]: Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/allanimes/vendor/google/apiclient/src/Google/Task/Runner.php(181): call_user_func_array(Array, Array)
+#3 /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#4 /home/allanimes/vendor/google/apiclient/src/Google/Client.php(779): Google_Http_RE in /home/allanimes/vendor/google/apiclient/src/Google/Http/REST.php on line 118
+[28-Aug-2016 18:05:16 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/public_html/quickstart.php(55): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/quickstart.php(88): getClient()
+#2 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 18:07:53 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/quickstart.php on line 52
+[28-Aug-2016 18:07:53 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/public_html/quickstart.php(55): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/quickstart.php(88): getClient()
+#2 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 18:29:36 Asia/Tbilisi] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/allanimes/public_html/quickstart.php on line 52
+[28-Aug-2016 18:29:36 Asia/Tbilisi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/allanimes/vendor/google/apiclient/src/Google/Client.php:176
+Stack trace:
+#0 /home/allanimes/public_html/quickstart.php(55): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/allanimes/public_html/quickstart.php(88): getClient()
+#2 {main}
+  thrown in /home/allanimes/vendor/google/apiclient/src/Google/Client.php on line 176
+[28-Aug-2016 20:43:00 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 22:31:54 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 22:31:54 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 23:12:53 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 23:12:55 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 23:12:56 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 23:12:56 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[28-Aug-2016 23:12:58 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[29-Aug-2016 19:20:39 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[29-Aug-2016 19:20:39 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[30-Aug-2016 02:12:28 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[30-Aug-2016 02:12:29 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[30-Aug-2016 02:12:30 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[30-Aug-2016 02:12:36 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[30-Aug-2016 02:12:37 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[30-Aug-2016 02:12:38 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:50:36 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:50:41 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:50:47 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:50:52 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:50:57 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:51:02 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:51:07 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:51:12 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:51:22 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:51:27 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:51:32 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:51:38 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:51:44 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:51:49 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:51:54 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 00:51:59 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 04:45:35 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 04:45:37 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 04:45:43 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 04:45:44 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 04:46:01 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 04:46:04 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 04:46:42 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 04:46:42 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 04:46:49 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 05:50:00 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[31-Aug-2016 05:50:01 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[01-Sep-2016 12:42:43 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[01-Sep-2016 12:42:43 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[01-Sep-2016 12:42:44 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[01-Sep-2016 16:57:49 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[01-Sep-2016 16:57:49 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[01-Sep-2016 17:45:22 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[01-Sep-2016 22:04:17 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 11:25:17 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 12:22:22 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 12:22:22 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 12:46:13 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 12:46:15 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 12:46:16 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 12:46:16 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 12:46:17 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 12:46:18 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 12:46:22 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 12:46:23 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 12:46:24 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 12:46:27 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 22:40:07 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 22:40:10 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46
+[02-Sep-2016 22:40:18 Asia/Tbilisi] PHP Parse error:  syntax error, unexpected ')' in /home/allanimes/public_html/application/controllers/Movies.php on line 46

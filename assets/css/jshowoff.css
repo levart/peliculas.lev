@@ -1,0 +1,103 @@
+#features, #slidingFeatures, #labelFeatures, #basicFeatures, #thumbFeatures {
+    position: relative;
+    overflow: hidden;
+    width:1349px !important;
+    height: 375px;
+}
+.jshowoff {
+    width: 1370px;
+    margin: 10px 0;
+}
+
+
+.jshowoff div {	
+    width: 100%;
+    height: 375px;
+}
+
+
+.jshowoff p.jshowoff-slidelinks {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 0;
+    margin-right:300px;
+    z-index: 50;
+}
+
+.jshowoff-slidelinks a, .jshowoff-controls a {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    float: left;
+    text-decoration: none;
+    outline: none;
+    line-height: 14px;
+    border-radius:10px/10px;
+}
+.jshowoff-slidelinks a:hover, .jshowoff-controls a:hover {color: #FFF;}
+.jshowoff-slidelinks a.jshowoff-active, .jshowoff-slidelinks a.jshowoff-active:hover {background-color: #FFF;}
+
+
+
+
+.thumbFeatures .jshowoff-slidelinks a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: none;
+    background-repeat: no-repeat;
+    padding: 0;
+    border: 1px solid #4f4f4f;
+    z-index: 150000;
+    margin:3px;
+}
+.thumbFeatures .jshowoff-slidelinks a.jshowoff-active {border: 1px solid #fff;}
+
+.thumbFeatures p.jshowoff-controls {
+    background: none;
+    overflow: visible;
+    padding: 0;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    z-index: 1500;
+}
+.thumbFeatures .jshowoff-controls a {
+    display: block;
+    width: 22px;
+    background: none;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    text-indent: -10000em;
+    position: absolute;
+}
+
+.thumbFeatures .jshowoff-controls a.jshowoff-prev {
+    left: 150px;
+    background-image: url(../images/x-slider-prev.png);
+    height:175px;
+    width:38px;
+}
+.thumbFeatures .jshowoff-controls a.jshowoff-next {
+    right: 140px;
+    background-image: url(../images/x-slider-next.png);
+    height:175px;
+    width:38px;
+}
+.thumbFeatures .jshowoff-controls a.jshowoff-play {display: none;}
+.jshowoff.thumbFeatures {height: 325px;}
+
+.trailer{ 
+	border:#FFFFFF solid 2px; 
+	width:80px !important; 
+	height:30px !important; 
+	padding:5px; 
+	margin-top:10px; 
+	text-align:center;
+	border-radius:2px/2px;
+        color: white;
+        text-transform: uppercase;
+        font-family: sanSBold;
+}

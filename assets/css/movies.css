@@ -1,0 +1,779 @@
+.mv_fluid_white_wrapper {
+	background:#fff;
+	width:100%;	
+}
+.mv_videos_container_fluid {
+	width:20000px;
+}
+.mv_videos_container_fluid .mv_movies_listing_item_top_badge {
+	position: absolute;
+	bottom:0;
+}
+.vd_main_cont_fluid_wrap.big.left_shadow {
+	
+}
+.mv_videos_container_outter {
+	width:1432px;
+}
+.mv_videos_container.fluid {
+	padding:0px 20px 18px;
+}
+.mv_movie_item_static .movie-lang-bubbles {
+	overflow: hidden;
+	position: absolute;
+	bottom: 10px;
+	right: 12px;
+}
+.mv_movie_item_static .movie-lang-bubbles li {
+	float: left;
+	background: rgba(255,255,255,.8);
+	padding: 7px 5px;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 8px;
+	border-radius: 100px;
+	font-family: tahoma;
+}
+.mv_movie_item_static .movie-lang-bubbles li.geo {
+	background:#A91E25;
+	color:#fff;
+}
+.mv_movie_item_static {
+	position:relative;
+}
+.bigger .mv_movie_item_static .mv_movie_modal_info {
+	width:595px;
+}
+.mv_movie_modal_info.modal-fluid-carousel.left_align .mv_movie_modal_info_cover.right_cover,
+.mv_movie_modal_info.modal-fluid-carousel.right_align .mv_movie_modal_info_cover.left_cover {
+	display:none;
+}
+.bigger .mv_movie_item_static, 
+.bigger .mv_movie_item_static .mv_movie_item_cover,
+.bigger .mv_video_item_fluid_more.movie_holder.last,
+.bigger .mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+	width:230px;
+}
+.bigger .mv_movie_item_static .mv_movie_item_cover, 
+.bigger .mv_fluid_vid_slider_arrow.static_big,
+.bigger .mv_fluid_vid_slider_arrow.static_big,
+.bigger .mv_video_item_fluid_more.movie_holder.last,
+.bigger .mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+	height:341px;	
+}
+.mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_data .mv_imdb_rating {
+	top:10px;
+}
+.personAvatarItem {
+	width: 196px;
+        height: 250px;
+	float:left;
+	margin-right:10px;
+}
+.personAvatarItem .avatar-circle {
+	display:block;
+	width: 145px;
+	height: 145px;
+	overflow: hidden;
+	border-radius: 100px;
+	margin: 20px auto 15px auto;
+	background-size: cover;
+	background-position: top center;
+	background-color:#E5E5E5;
+}
+.personAvatarItem .person-name {
+	text-align: center;
+	margin-bottom:10px;
+	color:#468ACA;
+}
+.personAvatarItem .person-name.lighter a {
+	color:#999999;
+}
+.mv_videos_container_outter.persons-shelf .mv_fluid_vid_slider_arrow {
+	height: 145px;
+  	margin-top: 20px;
+}
+.search-form-fluid {
+	max-width:1060px;
+}
+.search-form-fluid .form-row {
+	position:relative;
+}
+.search-form-fluid .form-row.row-offset-top {
+	margin-top:20px;
+}
+.search-form-fluid input[type="text"],
+.search-form-fluid select {
+	padding:13px 10px;
+	border:1px solid #e0e0e0;
+	outline:none;
+	font-size:14px;
+	box-shadow:inset 1px 1px 0px #F2F2F2;
+	margin-right:20px;
+	margin-bottom:20px;
+	transition: width .2s;
+	line-height: 21px;
+}
+.search-form-fluid select {
+	-webkit-appearance:none;
+	appearance:none;
+	background:url("/v4_imgs/mv_selectbox_arrow_down_tiny.png") no-repeat center right 10px;
+	border-radius: 0;
+}
+.search-form-fluid select::-ms-expand {
+	display:none !important;
+}
+@-moz-document url-prefix() {
+	.search-form-fluid select {
+		background:inherit !important;
+	}
+}
+.search-form-fluid input[type="submit"] {
+	cursor: pointer;
+	background: #B80D09 url("/v4_imgs/mv_search_icon_sep.png") no-repeat scroll 0 0;
+	color: #fff;
+	font-size: 15px;
+	box-shadow: none;
+	text-align: right;
+	padding: 14px 36px 10px 0px;
+	height: 44px;
+	display: inline-block;
+}
+.search-form-fluid .kbd_switch_wrap {
+	position: absolute;
+	width: 23px;
+	height: 20px;
+	top: 15px;
+	left: 10px;
+	overflow: hidden;	
+}
+.search-form-fluid .kbd_flags  {
+	background: url('/v4_imgs/kbd_flags.png') no-repeat 0 0;
+	display: block;
+	height: 17px;
+	width: 50px;
+	position: absolute;
+	top: -1px;
+  	left: -29px;
+}
+.search-form-fluid input[type="text"]:last-child,
+.search-form-fluid select:last-child {
+	margin-right:0;
+}
+.search-form-fluid select.medium,
+.search-form-fluid select.small {
+	padding:12px 10px;
+}
+.search-form-fluid input[type="text"].large {
+	padding:11px 10px 11px 40px;
+}
+.search-form-fluid input[type="text"].small,
+.search-form-fluid select.small {
+	width:97px;
+}
+.search-form-fluid select.small.last {
+	margin-right:0;
+}
+.search-form-fluid .fluid-search-advanced {
+	/*display:none;*/
+	cursor:pointer;
+	position: absolute;
+	top: 51px;
+	left: 2px;
+}
+.search-form-fluid input[type="text"].medium {
+	width:486px;
+}
+.search-form-fluid select.medium {
+	width:388px;
+}
+.search-form-fluid input[type="text"].large,
+.search-form-fluid select.large {
+	width:750px;
+}
+.search-form-fluid input[type="submit"] {
+	width: 216px;
+	border: 0;
+}
+.fluid-listing-wrap .mv_movie_item_static {
+	margin-bottom:20px;
+}
+.mv_movie_item_static .mv_movie_item_video_title {
+	display: block;
+	background: #DADDE3;
+	margin-top: -6px;
+	margin-bottom: 6px;
+	color: #545456;
+	font-size: 13px;
+	padding: 7px 10px;
+	line-height: 18px;
+}
+.fluid-listing-wrap .mv_movie_item_static .mv_movie_item_title {
+	height: 34px;
+}
+
+
+.fluid-listing-wrap .mv_movie_item_static .mv_movie_item_title_eng{
+	height: 17px;
+}
+.mv_movies_listing_item .mv_movie_modal_info, 
+.mv_movie_item_static .mv_movie_modal_info {
+	width:559px;
+}
+.mv_movies_listing_item .mv_movie_modal_info_cover, 
+.mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+	width: 196px;
+	height: 282px;
+	background-position:center;
+	background-size:115% 115%!important;
+}
+.search-form-fluid .movie-voice-set,
+	.search-form-fluid .movie-genre,
+	.search-form-fluid .movie-cast,
+	.search-form-fluid .movie-year,
+	.search-form-fluid .movie-director,
+	.search-form-fluid .movie-imdb {
+		display: none;	
+}
+#MovieSearch.visible .movie-voice-set,
+	#MovieSearch.visible .movie-genre,
+	#MovieSearch.visible .movie-cast,
+	#MovieSearch.visible .movie-director,
+	#MovieSearch.visible .movie-year,
+	#MovieSearch.visible .movie-imdb {
+		display:inline;
+}
+@media screen and (max-width: 1900px) {
+	.mv_videos_container_outter {
+		width:100%;
+	}
+	.mv_movie_item_static .mv_movie_item_cover, 
+	.mv_fluid_vid_slider_arrow.static_big,
+	.mv_video_item_fluid_more.movie_holder.last {
+	  height: 282px;
+	}
+	
+	.mv_movie_item_static, 
+	.mv_movie_item_static .mv_movie_item_cover,
+	.mv_video_item_fluid_more.movie_holder.last {
+  		width: 196px;
+	}
+	.fluid-listing-wrap .mv_movie_item_static, 
+	.fluid-listing-wrap .mv_movie_item_static .mv_movie_item_cover,
+	.fluid-listing-wrap .mv_video_item_fluid_more.movie_holder.last {
+		width: 194px;
+	}
+	.bigger .mv_movie_item_static, 
+	.bigger .mv_movie_item_static .mv_movie_item_cover,
+	.bigger .mv_video_item_fluid_more.movie_holder.last,
+	.bigger .mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+		width:237px;
+	}
+	.bigger .mv_movie_item_static .mv_movie_item_cover, 
+	.bigger .mv_fluid_vid_slider_arrow.static_big,
+	.bigger .mv_video_item_fluid_more.movie_holder.last,
+	.bigger .mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+		height:347px;
+	}
+	.bigger .mv_movie_item_static .mv_movie_modal_info {
+  		width: 600px;
+	}
+}
+@media screen and (max-width: 1580px) {
+	.mv_movie_item_static .mv_movie_item_cover, 
+	.mv_fluid_vid_slider_arrow.static_big,
+	.mv_video_item_fluid_more.movie_holder.last,
+	.mv_movies_listing_item .mv_movie_modal_info_cover, 
+	.mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover  {
+	  height: 294px;
+	}
+	.mv_movie_item_static, 
+	.mv_movie_item_static .mv_movie_item_cover,
+	.mv_video_item_fluid_more.movie_holder.last,
+	.mv_movies_listing_item .mv_movie_modal_info_cover, 
+	.mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover  {
+  		width: 205px;
+	}
+	
+	
+	.fluid-listing-wrap .mv_movie_item_static, 
+	.fluid-listing-wrap .mv_movie_item_static .mv_movie_item_cover,
+	.fluid-listing-wrap .mv_video_item_fluid_more.movie_holder.last {
+		width: 202px;
+	}
+	
+			
+	.bigger .mv_movie_item_static, 
+	.bigger .mv_movie_item_static .mv_movie_item_cover,
+	.bigger .mv_video_item_fluid_more.movie_holder.last,
+	.bigger .mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+		width:258px;
+	}
+	.bigger .mv_movie_item_static .mv_movie_item_cover, 
+	.bigger .mv_fluid_vid_slider_arrow.static_big,
+	.bigger .mv_video_item_fluid_more.movie_holder.last,
+	.bigger .mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+		height:371px;
+	}
+	
+	.personAvatarItem {
+		width: 205px;
+	}
+	.bigger .mv_movie_item_static .mv_movie_modal_info {
+  		width: 621px;
+	}
+	.mv_movies_listing_item .mv_movie_modal_info, 
+	.mv_movie_item_static .mv_movie_modal_info {
+		width:568px;
+	}	
+}
+@media screen and (max-width: 1430px) {
+	.mv_movie_item_static .mv_movie_item_cover, 
+	.mv_fluid_vid_slider_arrow.static_big,
+	.mv_video_item_fluid_more.movie_holder.last,
+	.mv_movies_listing_item .mv_movie_modal_info_cover, 
+	.mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+	  height: 274px;
+	}
+	.mv_movie_item_static, 
+	.mv_movie_item_static .mv_movie_item_cover,
+	.mv_video_item_fluid_more.movie_holder.last,
+	.mv_movies_listing_item .mv_movie_modal_info_cover, 
+	.mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+  		width: 130px;
+	}
+	
+	.fluid-listing-wrap .mv_movie_item_static, 
+	.fluid-listing-wrap .mv_movie_item_static .mv_movie_item_cover,
+	.fluid-listing-wrap .mv_video_item_fluid_more.movie_holder.last {
+		width: 187px;
+	}
+	
+	.bigger .mv_movie_item_static, 
+	.bigger .mv_movie_item_static .mv_movie_item_cover,
+	.bigger .mv_video_item_fluid_more.movie_holder.last,
+	.bigger .mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+		width:240px;
+	}
+	.bigger .mv_movie_item_static .mv_movie_item_cover, 
+	.bigger .mv_fluid_vid_slider_arrow.static_big,
+	.bigger .mv_video_item_fluid_more.movie_holder.last,
+	.bigger .mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+		height:346px;
+	}
+	.mv_movies_listing_item .mv_movie_modal_info, 
+	.mv_movie_item_static .mv_movie_modal_info {
+		width:553px;
+	}	
+	.personAvatarItem {
+		width: 190px;
+	}
+	.search-form-fluid input[type="text"].large,
+	.search-form-fluid select.large {
+		width:696px;
+	}
+	.search-form-fluid select.medium {
+		width:360px;
+	}
+	.search-form-fluid input[type="text"].medium {
+		width:460px;
+	}
+	.search-form-fluid input[type="text"].medium.last {
+		margin-right:0;	
+	}
+}
+@media screen and (max-width: 1350px) {
+	.mv_movie_item_static .mv_movie_item_cover, 
+	.mv_fluid_vid_slider_arrow.static_big,
+	.mv_video_item_fluid_more.movie_holder.last,
+	.mv_movies_listing_item .mv_movie_modal_info_cover, 
+	.mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+	  height: 252px;
+	}
+	.mv_movie_item_static, 
+	.mv_movie_item_static .mv_movie_item_cover,
+	.mv_video_item_fluid_more.movie_holder.last,
+	.mv_movies_listing_item .mv_movie_modal_info_cover, 
+	.mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+  		width: 175px;
+	}
+	
+	
+	.fluid-listing-wrap .mv_movie_item_static, 
+	.fluid-listing-wrap .mv_movie_item_static .mv_movie_item_cover,
+	.fluid-listing-wrap .mv_video_item_fluid_more.movie_holder.last {
+		width: 172px;
+	}
+	
+	
+	.bigger .mv_movie_item_static, 
+	.bigger .mv_movie_item_static .mv_movie_item_cover,
+	.bigger .mv_video_item_fluid_more.movie_holder.last,
+	.bigger .mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+		width:220px;
+	}
+	.bigger .mv_movie_item_static .mv_movie_item_cover, 
+	.bigger .mv_fluid_vid_slider_arrow.static_big,
+	.bigger .mv_video_item_fluid_more.movie_holder.last,
+	.bigger .mv_movie_item_static .mv_movie_modal_info .mv_movie_modal_info_cover {
+		height:317px;
+	}
+	.mv_movies_listing_item .mv_movie_modal_info, 
+	.mv_movie_item_static .mv_movie_modal_info {
+		width:538px;
+	}	
+	.personAvatarItem {
+		width: 174px;
+	}
+	.search-form-fluid input[type="text"].large {
+		width:590px;
+	}
+	.search-form-fluid input[type="text"].medium {
+  		width: 408px;
+	}
+	.search-form-fluid select.medium {
+  		width: 309px;
+	}
+	.search-form-fluid select.medium.last {
+		/*margin-right:0;*/
+	}
+	.search-form-fluid input[type="submit"] {
+		width: 218px;
+  		margin-right: 0;
+	}
+	
+}
+@media screen and (max-width: 1260px) {
+	.mv_movie_item_static .mv_movie_item_cover, 
+	.mv_fluid_vid_slider_arrow.static_big,
+	.mv_video_item_fluid_more.movie_holder.last {
+	  height: 232px;
+	}
+	.mv_movie_item_static, 
+	.mv_movie_item_static .mv_movie_item_cover,
+	.mv_video_item_fluid_more.movie_holder.last {
+  		width: 161px;
+	}
+	
+	.fluid-listing-wrap .mv_movie_item_static, 
+	.fluid-listing-wrap .mv_movie_item_static .mv_movie_item_cover,
+	.fluid-listing-wrap .mv_video_item_fluid_more.movie_holder.last {
+		width: 160px;
+	}	
+	
+	.bigger .mv_movie_item_static, 
+	.bigger .mv_movie_item_static .mv_movie_item_cover,
+	.bigger .mv_video_item_fluid_more.movie_holder.last {
+		width:220px;
+	}
+	.bigger .mv_movie_item_static .mv_movie_item_cover, 
+	.bigger .mv_fluid_vid_slider_arrow.static_big,
+	.biggger .mv_video_item_fluid_more.movie_holder.last {
+		height:317px;
+	}
+	.personAvatarItem {
+		width: 154px;
+	}
+	.search-form-fluid input[type="text"] {
+		width:286px !important;
+	}
+	.search-form-fluid select {
+		width:308px !important;
+	}
+	.search-form-fluid select.medium.last {
+		margin-right: 20px;
+	}
+	.search-form-fluid input[type="submit"] {
+		/*width: 308px;
+		margin-right:4px;
+		padding-right: 90px;
+		float:right;*/
+	}
+	.search-form-fluid .visible input[type="submit"] {
+		/*float: none;
+		padding-right: 0;
+		text-align: center;
+		width: 640px;*/
+	}
+	.search-form-fluid input[type="text"].large {
+		width:346px !important;
+	}
+	.search-form-fluid .visible input[type="text"].large {
+		/*width:588px!important;*/
+	}
+	.search-form-fluid .fluid-search-advanced {
+		display: block;
+  		color: #8C8C8C;
+  		font-size: 13px;
+	}
+	.search-form-fluid .visible .fluid-search-advanced {
+		bottom: -19px;
+  		top: auto;
+	}
+	/*.search-form-fluid .movie-voice-set,
+	.search-form-fluid .movie-genre,
+	.search-form-fluid .movie-cast,
+	.search-form-fluid .movie-year,
+	.search-form-fluid .movie-director,
+	.search-form-fluid .movie-imdb {
+		display: none;	
+	}
+	#MovieSearch.visible {
+		margin-bottom:10px;
+	}
+	#MovieSearch.visible .movie-voice-set,
+	#MovieSearch.visible .movie-genre,
+	#MovieSearch.visible .movie-cast,
+	#MovieSearch.visible .movie-director,
+	#MovieSearch.visible .movie-year,
+	#MovieSearch.visible .movie-imdb {
+		display:inline;
+	}*/
+	.mv_movie_modal_info.modal-fluid-carousel {
+		display:none !important;
+	}
+}
+#big-slider .movies-slideshow {
+	background-color:#000;
+}
+#big-slider {
+	position: relative;
+}
+#big-slider .movies-slideshow .slider-item {
+	height:260px;
+	display:block;
+	width:100%;
+	background-repeat: no-repeat; 
+	background-size:cover;
+	position: absolute;
+}
+#big-slider .movies-slideshow .slider-item .playicon {
+	display: block;
+	padding-top: 21px;
+	padding-left: 18px;
+}
+#big-slider .movie-slider-nav {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 100;
+}
+#big-slider .movie-slider-nav .inner {
+	overflow:hidden;
+}
+#big-slider .movie-slider-nav .inner  a {
+	padding: 3px;
+	float: left;
+	display: block;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+
+}
+#big-slider .movie-slider-nav .inner  a span {
+	width:10px;
+	height:10px;
+	display:block;
+	border-radius:3px;
+	overflow:hidden;
+	text-indent:-9999px;
+	background-color:#CDCDCD;
+}
+.movies_shelf_wrap .mv_videos_container_wrap {
+	/*padding-top:0px;*/
+}
+.movies_shelf_wrap .mv_videos_container_title {
+	/*margin-bottom:15px;*/
+}
+.bundles-wrapper {
+	
+}
+.movies_shelf_wrap .mv_fluid_vid_slider_arrow {
+	
+}
+.bundles-wrapper div.bundle-title {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.49);
+	text-align: center;
+	color: #fff;
+	display: table;
+}
+.bundles-wrapper div.bundle-title div {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	font-size:20px;
+}
+#big-slider .movie-slider-nav .inner  a.activeSlide,
+#big-slider .movie-slider-nav .inner  a.activeSlide span {
+	background-color:#fff;
+} 
+#big-slider .mv_cat_count {
+	overflow:hidden;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	z-index: 100;
+	color: #fff;
+	font-size: 22px;
+	font-weight: bold;
+}
+#big-slider .mv_cat_count span {
+	display:block;
+	margin-right:10px;
+}
+#big-slider .mv_cat_count span.cnt {
+	background-color: #fff;
+	color: #878889;
+	font-size: 12px;
+	font-family: Arial;
+	padding: 6px 9px;
+	border-radius: 3px;
+	position: relative;
+}
+#big-slider .mv_cat_count span.cnt img {
+	position: absolute;
+	left: -3px;
+	top: 8px;
+}
+#big-slider .movie-title {
+	padding-top:30px;
+}
+#big-slider .movie-title h2,
+#big-slider .movie-title h3 {
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	margin-left: 16px;
+}
+#big-slider .movie-title h2 {
+	font-size:35px;
+} 
+#big-slider .movie-title h3 {
+	text-transform: uppercase;
+	font-size: 30px;
+	margin-top: 2px;
+	color: #D7D7D7;
+	line-height: 33px;
+}
+
+
+
+/* Movie Trailer Button */
+a.trailer-btn {
+    background: url('../images/sprite6654.png?v1') no-repeat -439px -599px;
+    width: 132px;
+    height: 39px;
+    display: block;
+    text-indent: -9999px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+a.trailer-btn:hover {
+    background-position: -583px -599px;
+}
+
+a.z-trailer-btn {
+    background: url('../images/z-sprite.png') no-repeat -285px -570px;
+    width: 214px;
+    height: 40px;
+    display: block;
+    text-indent: -9999px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+a.z-trailer-btn:hover {
+    background-position: -285px -520px;
+}
+
+
+
+/* IMDB Rating */
+div.movie-imdb-rating {
+    background: url('../images/z-sprite.png') no-repeat -444px -256px;
+    width: 61px;
+    height: 29px;
+    line-height: 29px;
+    float: right;
+    margin-right: 6px;
+}
+
+div.movie-imdb-rating a {
+    width: 61px;
+    height: 32px;
+    text-align: right;
+    display: block;
+}
+
+div.movie-imdb-rating span {
+    font-size: 12px;
+    color: #291818;
+    text-shadow: 0 1px 0 #fff;
+    display: block;
+    width: 30px;
+    text-align: center;
+    float: right;
+    font-weight: bold;
+    font-family: 'BPGMrgvlovani', sans-serif;
+    line-height: 32px;
+}
+
+.imdb-votes {
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    background: #f7f7f7;
+    text-align: center;
+    color: #000;
+    float: right;
+    height: 27px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.duration{
+    float: right;
+    background-image: url('../images/time.png');
+    width: 57px;
+    height: 30px;
+    background-position: 0% 20%;
+    background-repeat: no-repeat;
+    padding-left: 19px;
+    position: absolute;
+    top: 0px;
+    right: 19px;
+    font-size: 11px;
+    padding-top: 3px;
+    font-family: sanSBold;
+    color: #6F6F6F;
+    white-space: nowrap;
+}
+
+.imdb-votes:before {
+    background: url('../images/z-sprite.png') no-repeat -411px -476px;
+    width: 4px;
+    height: 6px;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    left: -4px;
+}
+
+.imdb-votes em {
+    display: block;
+    font-style: normal;
+    font-family: 'BPGMrgvlovani', sans-serif;
+    font-size: 10px;
+}
+
+.imdb-votes em.caption {
+    color: #666;
+    padding-top: 1px;
+}
+
+.imdb-votes em.votes {
+    margin-top: -3px;
+}

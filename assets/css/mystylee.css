@@ -1,0 +1,76 @@
+.pagination a{ margin:5px;}
+.auth-logoutlink{cursor:pointer;}
+
+.error_form{
+	/*background-color:#f2dede; */
+	padding:10px; 
+	margin:0px 10px 10px 10px;
+	height:260px;
+	border-radius:3px/3px;
+}
+.error_form ul{
+	list-style:none;
+}
+.error_form ul li{
+	margin:5px;
+	border:#FFFFFF solid 1px;
+	border-radius:3px/3px;
+	background-color:#ebd0d0;
+	color:#FF0000;
+	padding:5px;
+}
+.back_registr{
+	background-color:#0083cb;
+	border-radius:3px/3px;
+	padding:8px;
+	vertical-align:bottom;
+	color:#FFFFFF;
+	cursor:pointer;
+	width:130px;
+	margin-left:10px;
+	
+}
+.ok_form{
+	background-color:#f4f6f6; 
+	padding:25px; 
+	margin:0px 10px 10px 10px;
+	height:260px;
+	border-radius:3px/3px;
+	font-size:20px;
+	color:#333333;
+	text-align:center;
+	margin-top:auto;
+}
+.success_recovery{
+	margin-top:20px;
+	margin-left:20px;
+	color:#FF0000;
+	font-size:14px;
+}
+.success_recovery_ok{
+	margin-top:20px;
+	margin-left:20px;
+	color:#3366CC;
+	font-size:14px;
+	
+}
+.unread {
+    background-color: #0083ca;
+    width: 12px!important;
+    padding: 0;
+    color: #fff;
+    height: 12px!important;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 2px;
+    float: right;
+    position: relative;
+    top: 8px;
+}
+
+
+.switchers{
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;}
