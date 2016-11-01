@@ -243,7 +243,13 @@ class movies extends CI_Controller {
             //echo '<p><a href="' . $oIMDB->getUrl() . '">' . $oIMDB->getTitle() . '</a> got rated ' . $oIMDB->getRating() . '.</p><br/>';
             $data['director'] = $oIMDB->getDirector();
             $cast = explode(" / ",$oIMDB->getCast($iLimit = 0, $bMore = true));
-            //var_dump($cast);
+            foreach ($cast as $value) {
+                if($this->actors_model->checkName($value) == 0){
+                    $this->actors_model->insertActor($value);
+                }
+            }
+            
+            //var_dump($castins);
             $data['cast'] = $cast;
             $data['rating'] = $oIMDB->getRating();
             $data['release'] = $oIMDB->getReleaseDate();
@@ -252,6 +258,7 @@ class movies extends CI_Controller {
             $data['creator'] = $oIMDB->getCompany();
             $data['tagline'] = $oIMDB->getTagline();
             $data['ganre'] = $oIMDB->getGenre();
+            $data['trailer'] = $oIMDB->getTrailerAsUrl($bEmbed = false);
             //print_r($bMore);
             }else {
                 $data['director'] = '';

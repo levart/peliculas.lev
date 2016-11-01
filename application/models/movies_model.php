@@ -104,7 +104,9 @@ class movies_model extends CI_Model {
         return $this->db->get('directors')->row();
     }
 
-     public function getMovieActor($id) {
+    
+    
+    public function addMovieActors($id) {
 
         $this->id = $id;
         

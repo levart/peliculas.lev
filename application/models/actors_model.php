@@ -114,5 +114,18 @@ class actors_model extends CI_Model {
         $data = $this->db->get('actors')->row();
         return $data;
     }
+    
+    public function checkName($name) {
+        $this->db->where('name', $name);
+        $data = $this->db->get('actors')->num_rows();
+        return $data;
+    }
+    
+    public function insertActor($name) {
+        $insert = array(
+            'name'=> $name
+        ); 
+        return $this->db->insert('actors',$insert);
+    }
 
 }

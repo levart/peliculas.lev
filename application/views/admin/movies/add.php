@@ -303,7 +303,7 @@
                                               <div class="row">
                                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                                                         <div class="input-group input-icon">
-                                                            <input type="text" class="form-control" name="trailer">
+                                                            <input id="trailer" type="text" class="form-control" name="trailer">
                                                         </div>
                                                     </div>
                                               </div>
@@ -1073,6 +1073,8 @@
                            $('#creator').val(arr.creator);
                            $('#tagline').val(arr.tagline);
                            $('#ganre').val(arr.ganre);
+                           $('#trailer').val(arr.trailer);
+                           
                            //console.log(jsonString);
                            
                         },
