@@ -150,6 +150,29 @@ class movies_model extends CI_Model {
     }
     
     
+    public function checkGenreName($id) {
+
+        $this->id = $id;
+        
+        $this->db->like('name',  $this->id);
+
+        return $this->db->get('genre')->num_rows();
+    }
+    
+    public function getGenreByName($name) {
+        $this->db->like('name', $name);
+        $data = $this->db->get('genre')->row();
+        return $data;
+    }
+    
+    public function insertGenre($name) {
+        $insert = array(
+            'name'=> $name
+        ); 
+        $this->db->insert('genre',$insert);
+        return $this->db->insert_id();
+    }
+    
     public function getMovie($id) {
         
         $this->db->where('id',  $id);
@@ -408,7 +431,7 @@ public function dayvideoid($limit = '8',$n) {
             return false;
         }
     }
-
+    
 
 
 
