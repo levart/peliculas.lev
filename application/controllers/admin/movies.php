@@ -259,7 +259,8 @@ class movies extends CI_Controller {
             $data['tagline'] = $oIMDB->getTagline();
             $data['ganre'] = $oIMDB->getGenre();
             $data['trailer'] = $oIMDB->getTrailerAsUrl($bEmbed = false);
-            //print_r($bMore);
+            $data['poster'] = $oIMDB->getPoster($sSize = 'big', $bDownload = false);
+            print_r($data['poster']);
             }else {
                 $data['director'] = '';
                 $data['cast'] = '';
