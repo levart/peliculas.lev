@@ -245,20 +245,43 @@ class movies extends CI_Controller {
             $cast = explode(" / ",$oIMDB->getCast($iLimit = 0, $bMore = true));
             foreach ($cast as $value) {
                 if($this->actors_model->checkName($value) == 0){
-                    $this->actors_model->insertActor($value);
+                    $castid  = $this->actors_model->insertActor($value);
+                    $castinsert[] = array("id"=>$castid,"name"=>$value);
+                    $casts[] = $castid;
+                }else{
+                    $castid  = $this->actors_model->getByName($value)->ID;
+                    $castinsert[] = array("id"=>$castid,"name"=>$value);
+                    $casts[] = $castid;
                 }
             }
             
-            //var_dump($castins);
-            $data['cast'] = $cast;
+            //var_dump($castinsert);
+            $data['cast'] = $casts;
+            $data['castinsert'] = $castinsert;
             $data['rating'] = $oIMDB->getRating();
             $data['release'] = $oIMDB->getReleaseDate();
             $data['runtime'] = $oIMDB->getRuntime();
             $data['imdbLink'] = $oIMDB->getUrl();
             $data['creator'] = $oIMDB->getCompany();
             $data['tagline'] = $oIMDB->getTagline();
-            $data['ganre'] = $oIMDB->getGenre();
+            $data['keywords'] = str_replace(" / ", ",", $oIMDB->getPlotKeywords());
+            
+            $ganre = explode(" / ",$oIMDB->getGenre());
+            foreach ($ganre as $v) {
+                if($this->movies_model->checkGenreName($v) == 0){
+                    $ganreid  = $this->movies_model->insertGenre($v);
+                    $ganreinsert[] = array("id"=>$ganreid,"name"=>$v);
+                    $ganres[] = $ganreid;
+                }else{
+                    $ganreid  = $this->movies_model->getGenreByName($v)->ID;
+                    $ganreinsert[] = array("id"=>$ganreid,"name"=>$v);
+                    $ganres[] = $ganreid;
+                }
+            }
+            $data['ganre'] = $ganres;
+            $data['ganreinsert'] = $ganreinsert;
             $data['trailer'] = $oIMDB->getTrailerAsUrl($bEmbed = false);
+            
             //print_r($bMore);
             }else {
                 $data['director'] = '';

@@ -194,7 +194,7 @@
                                             <label class="col-lg-2 col-md-3 control-label" for="">ჟანრი</label>
                                             <div class="row">
                                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                                                <select  class="form-control select2" multiple name="genre[]" id="genre">
+                                                <select  class="form-control select2" multiple name="genre[]" id="ganre">
                                                     <?php 
                                                         foreach ($genres as $genre) {  ?>
                                                          
@@ -232,7 +232,7 @@
                                             <label class="col-lg-2 col-md-3 control-label" for=""> მსახიობები</label>
                                             <div class="row">
                                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                                                <select class="form-control select2" multiple name="actors[]" id="cast">
+                                                <select class="cast form-control select2" multiple name="actors[]" id="cast">
                                                     <?php 
                                                         foreach ($actors as $actor) {  ?>
                                                          
@@ -332,6 +332,19 @@
                                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                                                         <div class="input-group input-icon">
                                                             <input type="text" class="form-control" name="rates">
+                                                        </div>
+                                                    </div>
+                                              </div>
+                                            
+                                        </div>
+                                        
+                                        <div class="form-group">
+
+                                              <label for="" class="col-lg-2 col-md-3  control-label">keywords</label>
+                                              <div class="row">
+                                                   <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                                        <div class="input-group input-icon">
+                                                            <input type="text" class="form-control" id="keywords" name="keywords">
                                                         </div>
                                                     </div>
                                               </div>
@@ -1062,20 +1075,31 @@
                         cache: false,
                         success: function (json) {
                             var arr = JSON.parse(json);
-//                            var str = arr.cast;
+//                            var str = arr.castinsert;
 //                            var jsonString = JSON.stringify(str);
+                            
                             //function success
                            $('#director').append($("<option selected></option>").attr("value", arr.director).text(arr.director));
+                           $.each(arr.castinsert, function(k, v) {
+                                $('<option>').val(v.id).text(v.name).appendTo('#cast');
+                            });
+                           $("#cast").select2().val(arr.cast).trigger("change");
                            $('#imdb').val(arr.rating);
                            $('#release').val(arr.release);
                            $('#runtime').val(arr.runtime);
                            $('#imdbLink').val(arr.imdbLink);
                            $('#creator').val(arr.creator);
                            $('#tagline').val(arr.tagline);
-                           $('#ganre').val(arr.ganre);
+                           $('#keywords').val(arr.keywords);
+                           
+                           $.each(arr.ganreinsert, function(k, v) {
+                                $('<option>').val(v.id).text(v.name).appendTo('#ganre');
+                            });
+                            $("#ganre").select2().val(arr.ganre).trigger("change");
+    
                            $('#trailer').val(arr.trailer);
                            
-                           //console.log(jsonString);
+                           //console.log(arr.ganre);
                            
                         },
                     });
