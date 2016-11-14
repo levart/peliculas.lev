@@ -21,7 +21,7 @@ textarea:focus, input:focus {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 500;/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	z-index: 8;/* IE9 SVG, needs conditional override of 'filter' to 'none' */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIxJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjQ5Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 	background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.49) 21%, rgba(0,0,0,0) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(21%, rgba(0,0,0,0.49)), color-stop(100%, rgba(0,0,0,0))); /* Chrome,Safari4+ */
@@ -38,7 +38,7 @@ textarea:focus, input:focus {
 #Headmenu > .hr {
 	width:100%;
 	height:3px;
-	background-color:#01a33c;
+	background-color:#0083c9;
 }
 #Headmenu > #headCont {
 	width:980px;
@@ -90,7 +90,7 @@ textarea:focus, input:focus {
 	text-decoration:none;
 }
 #Headmenu > #headCont > #manueBg > ul > li a:hover {
-	color:#01a33c;
+	color:#0083ca;
 }
 #Headmenu > #headCont > #manueBg > ul > li a#ico-Sport:hover {
 	color:#ff0000;
@@ -391,7 +391,7 @@ textarea:focus, input:focus {
 	display: block;
 	background-repeat:no-repeat;
 	background-position:bottom center;
-	color:#01a33c
+	color:#0083CA
 }
 #Headmenu.active > #headCont > #manueBg > ul > li > .navNews, #Headmenu.reactive > #headCont > #manueBg > ul > li > .navNews {
 	background-image: url(../images/news2.png);
@@ -425,7 +425,7 @@ textarea:focus, input:focus {
 	display: block;
 	background-repeat:no-repeat;
 	background-position:bottom center;
-	color:#01a33c;
+	color:#0083CA;
 }
 #Headmenu.active > #headCont > #manueBg > ul > li.active > .navNews, #Headmenu.reactive > #headCont > #manueBg > ul > li.active > .navNews {
 	background-image: url(../images/news1.png);
@@ -538,7 +538,7 @@ textarea:focus, input:focus {
 	display: block;
 	background-repeat:no-repeat;
 	background-position:bottom center;
-	color:#01a33c;
+	color:#0083CA;
 }
 #Headmenu > #headCont > #manueBg > ul > li > ul {
 	background-color:#FFF;
@@ -564,7 +564,7 @@ textarea:focus, input:focus {
 	border-bottom:1px solid #FFF;
 }
 #Headmenu > #headCont > #manueBg > ul > li > ul > li:hover {
-	border-bottom:1px solid #01a33c;
+	border-bottom:1px solid #0083ca;
 }
 #Headmenu > #headCont > #manueBg > ul > li > ul > li > a {
 	text-decoration:none;
@@ -577,7 +577,7 @@ textarea:focus, input:focus {
 	padding:5px;
 }
 #Headmenu > #headCont > #manueBg > ul > li > ul > li > a:hover {
-	color:#01a33c;
+	color:#0083ca;
 }
 #Headmenu > #headCont > #manueBg > ul > li > ul > .arrowUp {
 	width:0;
@@ -606,7 +606,7 @@ textarea:focus, input:focus {
 #Headmenu > #headCont > #login {
 	width:112px;
 	height:34px;
-	background-color:#01a33c;
+	background-color:#0083ca;
 	border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
@@ -808,14 +808,14 @@ div#slider-wrapper>div#slider-con>#rightSlide {
 	display:block;
 }
 #slider-con > #gradient {
-        background: url('data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodâ€¦BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==');
+        background: url(data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodâ€¦BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
 	background: -moz-linear-gradient(left, rgba(0,0,0,1) 0, rgba(0,0,0,.7) 16%, rgba(0,0,0,.25) 40%, rgba(0,0,0,0) 50%, rgba(0,0,0,.25) 60%, rgba(0,0,0,.7) 84%, rgba(0,0,0,1) 100%);
 	background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0,0,0,1)), color-stop(16%, rgba(0,0,0,.7)), color-stop(40%, rgba(0,0,0,.25)), color-stop(50%, rgba(0,0,0,0)), color-stop(60%, rgba(0,0,0,.25)), color-stop(84%, rgba(0,0,0,.7)), color-stop(100%, rgba(0,0,0,1)));
 	background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0, rgba(0,0,0,.7) 16%, rgba(0,0,0,.25) 40%, rgba(0,0,0,0) 50%, rgba(0,0,0,.25) 60%, rgba(0,0,0,.7) 84%, rgba(0,0,0,1) 100%);
 	background: -o-linear-gradient(left, rgba(0,0,0,1) 0, rgba(0,0,0,.7) 16%, rgba(0,0,0,.25) 40%, rgba(0,0,0,0) 50%, rgba(0,0,0,.25) 60%, rgba(0,0,0,.7) 84%, rgba(0,0,0,1) 100%);
 	background: -ms-linear-gradient(left, rgba(0,0,0,1) 0, rgba(0,0,0,.7) 16%, rgba(0,0,0,.25) 40%, rgba(0,0,0,0) 50%, rgba(0,0,0,.25) 60%, rgba(0,0,0,.7) 84%, rgba(0,0,0,1) 100%);
 	background: linear-gradient(to right, rgba(0,0,0,1) 0, rgba(0,0,0,.7) 16%, rgba(0,0,0,.25) 40%, rgba(0,0,0,0) 50%, rgba(0,0,0,.25) 60%, rgba(0,0,0,.7) 84%, rgba(0,0,0,1) 100%);
- filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=1);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=1);
 	width: 1424px;
 	height: 100%;
 	position: absolute;
@@ -874,10 +874,10 @@ div#slider-wrapper>div#slider-con>#rightSlide {
 	z-index:1;
 	width:100%;
 }
-/*.home-page-sliders {
+.home-page-sliders {
 	overflow: hidden;
 	width: 100%;
-}*/
+}
 .home-page-sliders-header ul li, div.movie-tabs ul li {
 	float: left;
 	list-style: none;
@@ -904,7 +904,7 @@ div#slider-wrapper>div#slider-con>#rightSlide {
 .home-page-sliders-header ul li.first, div.movie-tabs ul li.first {
 	padding-right: 10px;
 }
-div.home-page-slides-wrapper { /*padding:0 10px; *//*  30px 0 20px */
+div.home-page-slides-wrapper {/* padding: 10px 0; *//*  30px 0 20px */
 }
 #movies-slides .anythingWindow-hovered, #tvshow-slides .anythingWindow-hovered, #series-slides .anythingWindow-hovered {
 	overflow: visible;
@@ -1155,7 +1155,7 @@ ul.livestream-playlist li span.date {
 	margin-right:20px;
 }
 #footerContainer > #footerCont a:hover {
-	color:#01a33c;
+	color:#0083ca;
 }
 #footerContainer > #footerCont a.copyright {
 	color:#595959;
@@ -1321,14 +1321,22 @@ ul.livestream-playlist li span.date {
 }
 #movie-wrapper > #movie-info > #right-info > .trailer {
 	height: 30px;
-	float: right;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	behavior: url("svg/border-radius.htc");
+	text-align: center;
+	margin-top: 8px;
+	line-height: 18px;
 	border: 2px solid #FFF;
-	padding: 0 5px 5px;
-	margin: 0 10px;
-	cursor: pointer;
-	width: auto!important;
+	float:right;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 10px;
+	margin-left:10px;
 }
-
 #movie-wrapper > #movie-info > #right-info > .gamePlay {
 	height: 30px;
 	border-radius: 3px;
@@ -1400,14 +1408,14 @@ ul.livestream-playlist li span.date {
 }
 #movie-wrapper > #movie-info > #right-info > .imdb {
 	background: url(../images/imdb2.png) left center no-repeat;
-	height: 30px;
+	height: 26px;
 	text-align: left;
 	color: #FFF;
 	font-size: 15.24px;
 	font-family: sanSBold !important;
 	line-height: 26px;
 	float: right;
-	margin: 0 10px;
+	margin: 13px 10px 0;
 	text-decoration: none;
 	padding-left: 45px;
 }
@@ -1429,7 +1437,6 @@ ul.livestream-playlist li span.date {
 	margin:0 auto;
 }
 #movie-full-information > #left-movie-block {
-	padding-top: 16px;
 	width:184px;
 	float:left;
 	margin-right:8px;
@@ -1550,7 +1557,7 @@ ul.livestream-playlist li span.date {
 }
 #movie-full-information > #right-movie-block > .movie-info-tabs > .movie-full-list > ul > li > a {
 	font-size:12px;
-	color:#01a33c;
+	color:#0083ca;
 	font-family: sanSbold;
 	text-transform: uppercase;
 	text-decoration:none;
@@ -1573,7 +1580,7 @@ ul.livestream-playlist li span.date {
 	float:right;
 	height:20px;
 }
-.innerButtons .add-watchlist {
+.innerButtons .add-to-watchlist {
 	border:2px solid rgb( 0, 131, 202 );
 	background-color: rgb( 0, 131, 202);
 	border-radius: 3px;
@@ -1605,7 +1612,7 @@ ul.livestream-playlist li span.date {
 	line-height:30px;
 	cursor:pointer;
 }
-.innerButtons .add-watchlist img {
+.innerButtons .add-to-watchlist img {
 	vertical-align: sub;
 	margin-left: 6px;
 	vertical-align: sub;
@@ -1675,11 +1682,11 @@ ul.livestream-playlist li span.date {
 	padding: 0 41.6px;
 }
 #movie-full-information > #movie-tab-slider > ul > li > a.active {
-	background-color:#01a33c;
+	background-color:#0083ca;
 	color:#FFF;
 }
 #movie-full-information > #movie-tab-slider > ul > li > a:hover {
-	border-bottom:3px solid #01a33c;
+	border-bottom:3px solid #0083ca;
 }
 #movie-full-information > #movie-tab-slider > div > #celebrity-slider {
 	padding:18px;
@@ -1890,7 +1897,7 @@ ul.livestream-playlist li span.date {
 	border-radius:3px;
 	overflow:hidden;
 	background-color:#FFF;
-	z-index: 1651;
+	z-index: 2;
 }
 #authorizationContent > .close-login {
 	width:40px;
@@ -2268,7 +2275,7 @@ ul.livestream-playlist li span.date {
 	height: 0px;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-bottom: 10px solid #01a33c;
+	border-bottom: 10px solid #0083ca;
 	position: relative;
 	top: -14px;
 	left: 50%;
@@ -2464,7 +2471,7 @@ ul.livestream-playlist li span.date {
 }
 #editAvatar {
 	float:left;
-	width:265px;
+	width:295px;
 }
 #editAvatar > img {
 	width:88px;
@@ -2744,11 +2751,11 @@ div.news-item {
 	padding: 0 6.6px;
 }
 .episodesPopUp #tab-slider > ul > li > a.active {
-	background-color:#01a33c;
+	background-color:#0083ca;
 	color:#FFF;
 }
 .episodesPopUp #tab-slider > ul > li > a:hover {
-	border-bottom:3px solid #01a33c;
+	border-bottom:3px solid #0083ca;
 }
 .episodesPopUp #episodeslist {
 	width:100%;
@@ -2757,7 +2764,7 @@ div.news-item {
 .episodesPopUp #episodeslist .item {
 	width:100%;
 	line-height:39px;
-	border-bottom:1px solid #01a33c
+	border-bottom:1px solid #0083ca
 }
 .episodesPopUp #episodeslist .item:hover {
 	background-color:#F2F2F2;
@@ -2769,7 +2776,7 @@ div.news-item {
 	font-family:Arial, bpg_mrgvlovani_caps_2010_small;
 }
 .episodesPopUp #episodeslist .item .number span {
-	color:#01a33c;
+	color:#0083ca;
 	font-weight:bold;
 	margin-right:2px;
 }
@@ -2787,7 +2794,7 @@ div.news-item {
 	text-align:right;
 }
 .episodesPopUp #episodeslist .item .langs a {
-	color:#01a33c;
+	color:#0083ca;
 	font-size:12px;
 	font-family:Arial, bpg_mrgvlovani_caps_2010_small;
 	margin-left:5px;
@@ -2948,7 +2955,7 @@ color:#6f6f6f;
 	padding:0 18px;
 }
 .formPopup > .fildsSurname input {
-	/*width:219px;*/
+	width:219px;
 	border:1px solid #dcdcdc;
 	height:30px;
 	border-radius:3px;
@@ -3074,7 +3081,7 @@ color:#6f6f6f;
 	margin-bottom: 6px;
 	padding-left: 5px;
 }
-.yourListBloack .listItems > .imtListAdd .addToList {
+.yourListBloack .listItems > .imtListAdd .addList {
 	position:relative;
 	float:right;
 	font-family:Arial, bpg_mrgvlovani_caps_2010_small;
@@ -3084,24 +3091,13 @@ color:#6f6f6f;
 	cursor:pointer;
 	margin-top: 6px;
 }
-
-.yourListBloack .listItems #chooseList li{
-	list-style-type: none;
-	text-indent: 10px;
-	padding:10px;
-	cursor: pointer;
-}
-.yourListBloack .listItems #chooseList li:hover{
-	background:rgb( 0, 131, 202 );
-	color: white;
-}
-.yourListBloack .listItems #chooseList span {
+.yourListBloack .listItems > .imtList span {
 	font-family:Arial, bpg_mrgvlovani_caps_2010_small;
 	font-size:15.24px;
 	color: #c4c4c4;
 	margin-right: 6px;
 }
-.yourListBloack .listItems #chooseList span.selected {
+.yourListBloack .listItems > .imtList span.selected {
 	width:13px;
 	height:13px;
 	background-image:url("../images/checked.png");
@@ -3152,7 +3148,7 @@ color:#6f6f6f;
 .QuotesContainer > .QuotesTop > .title {
 	width:124px;
 	line-height:28px;
-	background-color:#01a33c;
+	background-color:#0083ca;
 	border-radius:3px;
 	text-align:center;
 	font-family:Arial, bpg_mrgvlovani_caps_2010;
@@ -3261,9 +3257,9 @@ color:#6f6f6f;
 	background-position: center center;
 }
 .buttonTranslate, .buttonTranslateLogin {
-	border: 2px solid #01a33c;
+	border: 2px solid #0083ca;
 	border-radius: 3px;
-	background-color: #01a33c;
+	background-color: #0083ca;
 	width: 180px;
 	height: 34px;
 	font-size: 10.16px;
@@ -3312,7 +3308,7 @@ button.search_panel_buttons {
 	float: left;
 }
 button.selected {
-	background: #01a33c;
+	background: #0083ca;
 	border-radius: 3px;
 	color: #FFF;
 }
@@ -3337,7 +3333,7 @@ button.selected {
 }
 .arrow_box {
 	position: relative;
-	background: #01a33c;
+	background: #0083ca;
 	color:#fff;
 	font-size:11px;
 	border:1px hidden;
@@ -3366,7 +3362,7 @@ button.selected {
 }
 .arrow_box:after {
 	border-color: rgba(136, 183, 213, 0);
-	border-left-color: #01a33c;
+	border-left-color: #0083ca;
 	border-width: 12px;
 	margin-top: -12px;
 }
@@ -3378,7 +3374,7 @@ button.selected {
 }
 .arrow_box:before {
 	border-color: rgba(194, 225, 245, 0);
-	border-left-color: #01a33c;
+	border-left-color: #0083ca;
 	border-width: 0px;
 	margin-top: -36px;
 }
@@ -3400,62 +3396,8 @@ button.selected {
 	background-color:#77E0FA;
 	width:1%;
 }
+
+
 #output{
 	float:left;
-	margin-top:10px;
-}
-.profileEdit{
-	height: auto!important;
-}
-.editProfile{
-	padding: 20px;
-	overflow: hidden;	
-	margin-bottom: 20px;
-}
-.editProfile span{
-	font-family: sanSBold;
-	font-size: 11.16px;
-	color: #a4a4a4;
-	margin-top: 20px;
-	padding-left: 28px;
-	text-transform: uppercase;
-}
-.editProfile span{
-	font-family: sanSBold;
-	font-size: 11.16px;
-	color: #a4a4a4;
-	margin-top: 20px;
-	padding-left: 28px;
-	text-transform: uppercase;
-}
-.editProfile .gen{
-	padding: 10px;
-	overflow: hidden;
-}
-.editProfile .gen div{
-	width: 80px;
-	float: left;
-}
-.editProfile #email{
-	width: 100%;
-	padding: 10px;
-	overflow: hidden;
-}
-
-.editProfile #birthday{
-	width: 100%;
-	padding: 10px;
-	overflow: hidden;
-	margin-bottom: 20px;
-}
-
-.editProfile #birthday div{
-	width: 80px;
-	float: left;
-}
-.editButt{
-	width: 200px;
-	float: left;
-	margin: 20px;
-	border-left: 1px solid #c4c4c4;
-}
+margin-top:10px}

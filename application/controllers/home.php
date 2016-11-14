@@ -57,20 +57,9 @@ class Home extends CI_Controller {
 	
 		$data['daymoviesSlider'] = $this->movies_model->dayvideos(35,1);
 
-		$this->load->view('inc/head');
-		$this->load->view('inc/header', $data);
-		$this->load->view('inc/slider', $data);
-		$this->load->view('index', $data);
-		$this->load->view('inc/footer');
-		$this->load->view('inc/foot');
 
+		$this->load->view('main', $data);
 
-		// $data['blogs'] = $data['blogs'] = $this->blog_model->getBlogData();  
-		// //
-		// //$this->load->view('inc/header');
-		// $this->load->view('index', $data);
-		// //$this->load->view('inc/footer');
-		// //
 	}   
 
 
