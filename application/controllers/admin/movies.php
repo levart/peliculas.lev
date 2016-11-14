@@ -281,8 +281,8 @@ class movies extends CI_Controller {
             $data['ganre'] = $ganres;
             $data['ganreinsert'] = $ganreinsert;
             $data['trailer'] = $oIMDB->getTrailerAsUrl($bEmbed = false);
-            
-            //print_r($bMore);
+
+            $data['poster'] = $oIMDB->getPoster($sSize = 'big', $bDownload = false);
             }else {
                 $data['director'] = '';
                 $data['cast'] = '';
