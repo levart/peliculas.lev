@@ -33,7 +33,20 @@
         
         <script>
             $(document).ready(function(){
-                
+                $.getJSON("/home/getcats", function (data) {
+                    var items = [];
+                    $.each(data, function (key, val) {
+                        if(val.children){
+                            console.log(val.children);
+                        }
+                        items.push('<div class="left"><a class="a" href="#">' + val.title + '</a></div>');
+                    });
+
+                    $("<div/>", {
+                        "class": "menu pin",
+                        html: items.join("")
+                    }).appendTo("#menu");
+                });
                 
                 
                 $("#date").slider();

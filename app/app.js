@@ -1,7 +1,11 @@
 var app = angular.module('plunker', []);
 
-app.controller('MainCtrl', function($scope) {
-  $scope.items = [1,2,3,4,5,6,7,8,9,10];
+app.controller('MainCtrl', function($scope,$http) {
+    $http.get('/movies/topslider').success(function(data) { 
+        $scope.items = data.items;
+    });
+  
+  
   $scope.count = 0;
 }).directive("owlCarousel", function() {
     return {
@@ -26,6 +30,8 @@ app.controller('MainCtrl', function($scope) {
 .directive('owlCarouselItem', [function() {
     return {
         restrict: 'A',
+        replace: true,
+        templateUrl: "/templates/topslider.html",
         transclude: false,
         link: function(scope, element) {
           // wait for the last item in the ng-repeat then call init

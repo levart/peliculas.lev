@@ -122,7 +122,7 @@
                                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                         <div class="input-group input-icon">
                                                          <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
-                                                           <input id="default-timepicker" type="text" class="form-control" name="durat"  value="<?=$movies->durat?>">
+                                                           <input  type="text" class="form-control" name="durat"  value="<?=$movies->durat?>">
                                                             <!-- <input type="time" name="durat" class="form-control"> -->
                                                             <span class="help-block text-center">ხანგრძლივობა</span>
                                                         </div>

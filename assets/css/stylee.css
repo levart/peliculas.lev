@@ -10591,8 +10591,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', end
 }
 
 .owl-topslider .item-box .movie-element-main-image {
-    position: absolute;
-    z-index: 1;
     height: 195px;
     overflow: hidden;
     width: 130px;

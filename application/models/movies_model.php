@@ -401,7 +401,7 @@ public function dayvideoid($limit = '8',$n) {
         foreach ($data as $value) {
             
             // $a[] = $value['sum'];
-            $this->db->select('t1.ID, t1.name, t1.img, t1.year ,t1.imdb, t1.durat, t1.genre_id, t1.director_id , t1.descrip, t1.genre_id, t1.actor_id , count(t2.id) AS msum');
+            $this->db->select('t1.ID, t1.name, t1.slogan, t1.img, t1.year ,t1.imdb, t1.durat, t1.genre_id, t1.director_id , t1.descrip, t1.genre_id, t1.actor_id , count(t2.id) AS msum');
             $this->db->from('movies as t1');
             $this->db->from('views as t2');
             $this->db->where('t2.movie_id = t1.ID');

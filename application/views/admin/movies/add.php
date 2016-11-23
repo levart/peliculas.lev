@@ -353,9 +353,17 @@
                                         
                                         <div class="form-group">
 
-                                              <label for="" class="col-lg-2 col-md-3  control-label">ყდის სურათი</label>
-                                              <div class="row">
+                                              <label for="" class="col-lg-12 col-md-12  control-label">ყდის სურათი</label>
+                                              <div class="row profile">
+                                                  
+                                                  <div class="col-md-2">
+                                            <div class="profile-avatar">
+                                                <img id="poster" alt="" src="img/avatars/128.jpg" width="120" style="border-radius:0;">
+                                                
+                                            </div>
+                                        </div>
                                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                                       
                                                         <div class="input-group input-icon">
                                                             <input name="img" id="img"  type="text" class="form-control">
                                                             <span class="input-group-btn">
@@ -1091,6 +1099,8 @@
                            $('#creator').val(arr.creator);
                            $('#tagline').val(arr.tagline);
                            $('#keywords').val(arr.keywords);
+                           $('#img').val(arr.poster);
+                           $('#poster').attr("src",arr.poster);
                            
                            $.each(arr.ganreinsert, function(k, v) {
                                 $('<option>').val(v.id).text(v.name).appendTo('#ganre');

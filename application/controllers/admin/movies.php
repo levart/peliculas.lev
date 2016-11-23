@@ -255,13 +255,13 @@ class movies extends CI_Controller {
                 }
             }
             
-            //var_dump($castinsert);
             $data['cast'] = $casts;
             $data['castinsert'] = $castinsert;
             $data['rating'] = $oIMDB->getRating();
             $data['release'] = $oIMDB->getReleaseDate();
             $data['runtime'] = $oIMDB->getRuntime();
             $data['imdbLink'] = $oIMDB->getUrl();
+            $imdbId = explode("/",$oIMDB->getUrl());
             $data['creator'] = $oIMDB->getCompany();
             $data['tagline'] = $oIMDB->getTagline();
             $data['keywords'] = str_replace(" / ", ",", $oIMDB->getPlotKeywords());
@@ -281,8 +281,24 @@ class movies extends CI_Controller {
             $data['ganre'] = $ganres;
             $data['ganreinsert'] = $ganreinsert;
             $data['trailer'] = $oIMDB->getTrailerAsUrl($bEmbed = false);
+            
+            $poster = $oIMDB->getPoster($sSize = 'big', $bDownload = false);
+            $arrContextOptions=array(
+                "ssl"=>array(
+                    "verify_peer"=>false,
+                    "verify_peer_name"=>false,
+                ),
+            );  
 
-            $data['poster'] = $oIMDB->getPoster($sSize = 'big', $bDownload = false);
+            $response = file_get_contents($poster, false, stream_context_create($arrContextOptions));
+            
+            if (!is_dir("source/movies/poster/".$imdbId[4])) {
+                mkdir("./source/movies/poster/".$imdbId[4], 0777, TRUE);
+            }
+            $fp = fopen(FCPATH . "source/movies/poster/".$imdbId[4]."/poster.jpg", "w");
+            fwrite($fp, $response);
+            fclose($fp);
+            $data['poster'] = "/source/movies/poster/".$imdbId[4]."/poster.jpg";
             }else {
                 $data['director'] = '';
                 $data['cast'] = '';
