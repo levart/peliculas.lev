@@ -89,7 +89,32 @@
                                    
                                     <form id="add" class="form-horizontal group-border hover-stripped" role="form" action="<?= base_url() ?>admin/movies/adddata/" enctype="multipart/form-data">
                                         <input type="hidden" name="id" id="id" value="<?=$lastid;?>" />
+                                        
+                                        <div class="form-group">
 
+                                          <label for="" class="col-lg-2 col-md-3  control-label">ლინკის სახელი</label>
+                                          <div class="row">
+                                              <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                                  <div class="input-group input-icon">
+                                                      <input type="text" name="url_title" id="url_title" class="form-control">
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                        
+                                        <div class="form-group">
+
+                                              <label for="" class="col-lg-2 col-md-3  control-label">საიტის მოკლე აღწერა</label>
+                                              <div class="row">
+                                                   <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                                        <div class="input-group input-icon">
+                                                            <textarea name="meta_description" id="descrip" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                              </div>
+                                            
+                                        </div>
+                                        
                                       <div class="form-group">
 
                                           <label for="" class="col-lg-2 col-md-3  control-label">დასახელება</label>
@@ -1063,7 +1088,8 @@
     <script src="<?=base_url()?>adm/plugins/chosen/chosen.jquery.min.js"></script>  
     <script src="<?= base_url() ?>adm/plugins/tinymce/jquery.tinymce.min.js"></script>
         <script>
-            
+            $("#url_title").inputMeter( {maxLength: 100, warnLength: 80} );
+            $("#descrip").inputMeter( {maxLength: 255, warnLength: 255} );
             $(document).ready(function () {
 
 
