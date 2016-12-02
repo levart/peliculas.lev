@@ -92,15 +92,27 @@
                                         
                                         <div class="form-group">
 
-                                          <label for="" class="col-lg-2 col-md-3  control-label">ლინკის სახელი</label>
-                                          <div class="row">
-                                              <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                                                  <div class="input-group input-icon">
-                                                      <input type="text" name="url_title" id="url_title" class="form-control">
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
+                                            <label for="" class="col-lg-2 col-md-3  control-label">SEO სათაური</label>
+                                            <div class="row">
+                                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                                    <div class="input-group input-icon">
+                                                        <input type="text" name="seo_title" id="seo_title" class="seo_title form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+
+                                            <label for="" class="col-lg-2 col-md-3  control-label">ლინკის სახელი</label>
+                                            <div class="row">
+                                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                                    <div class="input-group input-icon">
+                                                        <input type="text" name="url_title" id="url_title" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         
                                         <div class="form-group">
 
@@ -114,7 +126,23 @@
                                               </div>
                                             
                                         </div>
-                                        
+                                        <div class="form-group">
+
+                                            <label for="" class="col-lg-2 col-md-3  control-label">GOOGLE</label>
+                                            <div class="row">
+                                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                                    <div style="width: 100%; margin: 24px 0 12px 0; padding: 12px; border: solid 2px #75d8ff; background-color: #ffffff">
+                                                        <div class="gtitle" id="gtitle1pete" style="width: 538px; max-width: 100%">Google</div>
+                                                        <div class="gurl">
+                                                            <?=base_url()?><span id="gurl-link" ></span>
+                                                        </div>
+                                                        <div class="gdesc" style="width: 100%">
+                                                            Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking <strong>...</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                       <div class="form-group">
 
                                           <label for="" class="col-lg-2 col-md-3  control-label">დასახელება</label>
@@ -1088,10 +1116,25 @@
     <script src="<?=base_url()?>adm/plugins/chosen/chosen.jquery.min.js"></script>  
     <script src="<?= base_url() ?>adm/plugins/tinymce/jquery.tinymce.min.js"></script>
         <script>
+            $("#seo_title").inputMeter( {maxLength: 60, warnLength: 50} );
             $("#url_title").inputMeter( {maxLength: 100, warnLength: 80} );
             $("#descrip").inputMeter( {maxLength: 255, warnLength: 255} );
+            
+            
+            
             $(document).ready(function () {
-
+                $("#seo_title").keyup(function (){
+                    var title = $(this).val();
+                    $('#gtitle1pete').html(title);
+                });
+                $("#url_title").keyup(function (){
+                    var title = $(this).val();
+                    $('#gurl-link').html(title);
+                });
+                $("textarea#descrip").keyup(function (){
+                    var title = $(this).val();
+                    $('.gdesc').html(title);
+                });
 
                 $('.select2').select2({placeholder: 'Select state'});
                 $("#basic-datepicker").datepicker();
