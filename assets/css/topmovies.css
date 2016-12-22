@@ -1,4 +1,4 @@
-preview-block .moview-new-type .preview-block * {
+.moview-new-type .preview-block * {
 	margin: 0;
 	padding: 0;
 	outline: 0;
@@ -233,11 +233,11 @@ div.home-page-slide-item {
 	vertical-align: top;
 	padding-top: 10px;
 	margin-right: 6px;
-
+	width: 130px;
 }
 
 .movie-element-size-1 {
-	width: 188px;
+	width: 130px;
 	height: 275px;
 }
 
@@ -250,7 +250,7 @@ div.home-page-slide-item {
 	display: block;
 	margin-bottom: 10px;
 	border-radius: 4px;
-	width: 157px;
+	width: 130px;
 }
 
 .movie-element-size-1 img.info-mini-arrow, .moview-new-type img.info-mini-arrow {
@@ -259,7 +259,7 @@ div.home-page-slide-item {
 }
 
 .numbering {
-	background: url(../../images/sprite.png) -703px -558px no-repeat;
+	background: url(images/sprite.png) -703px -558px no-repeat;
 	width: 31px;
 	height: 31px;
 	position: absolute;
@@ -270,7 +270,7 @@ div.home-page-slide-item {
 }
 
 .movie-element .numbering {
-	background: url(../images/sprite.png) -703px -558px no-repeat;
+	background: url(images/sprite.png) -703px -558px no-repeat;
 	width: 31px;
 	height: 31px;
 	position: absolute;
@@ -334,7 +334,7 @@ div.home-page-slide-item {
 }
 
 .movie-element .movie-titles .title-ge {
-	color: #01a33c;
+	color: #00649B;
 	text-transform: uppercase;
 	font-family: Arial, sans-serif;
 	font-size: 11px;
@@ -354,8 +354,39 @@ div.home-page-slide-item {
 	font-style: normal;
 }
 
+.info-icon{
+	display: none;
+}
+
+.info-icon > span {
+background: url("images/sprite.png") no-repeat scroll -639px -551px rgba(0, 0, 0, 0);
+    cursor: pointer;
+    
+    height: 38px;
+    left: 5px;
+    position: absolute;
+    text-indent: -9999px;
+    text-transform: uppercase;
+    top: 5px;
+    width: 38px;
+    z-index: 2;
+}
 
 
+.movie-block:hover .info-icon {
+	display: block;
+}
+
+.moview-new-type:hover .info-icon {
+	display: block;
+}
+
+div.collection-item:hover .info-icon, div.actor-movie-item:hover .info-icon, div.search-item:hover .info-icon, div.home-page-slide-item-single:hover .info-icon {
+	display: block;
+}
+
+.info-icon:hover {
+}
 
 
 
@@ -374,21 +405,101 @@ div.home-page-slide-item {
 	overflow: visible;
 }
 
-.item-box .info-icon > span {
+.movie-element .info-icon > span {
+	background: url("images/sprite.png") no-repeat scroll -639px -551px rgba(0, 0, 0, 0);
     cursor: pointer;
     height: 38px;
     left: 5px;
     position: absolute;
     text-indent: -9999px;
     text-transform: uppercase;
-    top: 25px;
+    top: 15px;
     width: 38px;
     z-index: 2;
 }
 
+.movie-block .info-icon > span {
+    background: url("images/sprite.png") no-repeat scroll -639px -551px rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 38px;
+    left: 5px;
+    position: absolute;
+    text-indent: -9999px;
+    text-transform: uppercase;
+    top: 5px;
+    width: 38px;
+    z-index: 5;
+}
 
-.item-box .info-icon > span {
 
+
+.movie-element .movie-overlay, .moview-new-type .movie-overlay {
+	background: url('http://static.adjaranet.com/images/movie-item-overlay-bg.png');
+	border-radius: 3px;
+	height: 23px;
+	line-height: 23px;
+	padding: 0 8px;
+	position: absolute;
+	left: 4px;
+	right: 4px;
+	top: 216px;
+	color: #FFF;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	display: none;
+}
+
+.movie-element-size-1 .movie-overlay, .moview-new-type .movie-overlay {
+	top: 178px;
+	left: 2px;
+	right: 2px;
+	padding: 0 4px;
+}
+
+.moview-new-type .movie-overlay {
+	top: 170px;
+}
+
+.movie-element .movie-overlay em, .moview-new-type .movie-overlay em {
+	line-height: 23px;
+	color: #FFF;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.movie-element .movie-overlay .info-left, .moview-new-type .movie-overlay .info-left {
+	float: left;
+}
+
+.movie-element .movie-overlay .info-right, .moview-new-type .movie-overlay .info-right {
+	float: right;
+}
+
+.movie-element .movie-overlay span, .moview-new-type .movie-overlay span {
+	color: #B1B1B1;
+	font-weight: normal;
+	font-family: 'BPGMrgvlovani', sans-serif;
+	font-size: 11px;
+}
+
+.info-icon > span{
+	background: transparent url('images/sprite.png') no-repeat -639px -551px;
+	height: 38px;
+	width: 38px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	cursor: pointer;
+	text-indent: -9999px;
+	text-transform: uppercase;
+	z-index: 4;
+}
+
+.movie-element .info-icon > span {
+	background: transparent url('images/sprite.png') no-repeat -639px -551px;
 	height: 38px;
 	width: 38px;
 	position: absolute;
@@ -400,17 +511,17 @@ div.home-page-slide-item {
 	z-index: 4;
 }
 
-.item-box .preview-block, .moview-new-type .preview-block {
-	background: #FFF url('../images/item-preview-bg.png') top left repeat-x;
+.movie-element .preview-block, .moview-new-type .preview-block {
+	background: #FFF url('http://static.adjaranet.com/images/item-preview-bg.png') top left repeat-x;
 	border-radius: 4px;
 	border: 1px solid #D8D8D8;
 	display: none;
 	position: absolute;
-	top: -10px;
+	top: 0;
 	left: -10px;
 	width: 520px;
 	min-height: 290px;
-	z-index: 500;
+	z-index: 5;
 }
 
 .moview-new-type .preview-block {
@@ -418,27 +529,30 @@ div.home-page-slide-item {
 	left: -11px;
 }
 
+.movie-element-size-1 .preview-block, .moview-new-type .preview-block {
+	min-height: 245px;
+}
 
-.item-box .preview-block .thumb, .moview-new-type .preview-block .thumb {
-	margin: 19px 0 9px 9px;
-	position: absolute;
-	width: 130px;
-	height: 195px;
+.movie-element .preview-block .thumb, .moview-new-type .preview-block .thumb {
+	margin: 9px 0 9px 9px;
+	position: relative;
+	width: 157px;
+	height: 236px;
 	float: left;
 }
 
-.item-box .preview-block .thumb, .moview-new-type .preview-block .thumb {
+.movie-element-size-1 .preview-block .thumb, .moview-new-type .preview-block .thumb {
 	width: 130px;
 }
 
-.item-box img, .movie-block-image-div img, .moview-new-type .preview-block img {
+.movie-element img, .movie-block-image-div img, .moview-new-type .preview-block img {
 	display: block;
-	
+	margin-bottom: 10px;
 	border-radius: 4px;
-	width: 130px;
+	width: 157px;
 }
 
-.item-box .preview-block .thumb .player{
+.movie-element .preview-block .thumb .player, .moview-new-type .preview-block .thumb .player {
 	background: url('http://static.adjaranet.com/images/info-block-player.png') top left no-repeat;
 	position: absolute;
 	top: 0;
@@ -451,7 +565,7 @@ div.home-page-slide-item {
 	border-radius: 4px;
 }
 
-.item-box .preview-block .thumb .player:hover {
+.movie-element .preview-block .thumb .player:hover, .moview-new-type .preview-block .thumb .player:hover {
 	background-position: -168px -15px;
 }
 
@@ -460,9 +574,13 @@ div.home-page-slide-item {
 	display: block;
 }
 
+.movie-element-size-1 .preview-block .thumb .player, .moview-new-type .preview-block .thumb .player {
+	background-position: -11px -15px;
+	width: 130px;
+	height: 195px;
+}
 
-
-.item-box .preview-block .title, .moview-new-type .preview-block .title {
+.movie-element .preview-block .title, .moview-new-type .preview-block .title {
 	border-bottom: 1px dashed #EAEAEA;
 	float: left;
 	margin: 10px;
@@ -470,31 +588,12 @@ div.home-page-slide-item {
 	padding-bottom: 5px;
 }
 
-.item-box .preview-block .details, .moview-new-type .preview-block .details {
-	float: left;
-	padding: 0 10px;
-	font-family: Sylfaen, serif;
-	font-size: 13px;
-	width: 330px;
-}
-
-.item-box .preview-block .title, .movie-element-size-1 .preview-block .details, .movie-element-size-1 .preview-block .description {
+.moview-new-type .preview-block .title, .moview-new-type .preview-block .details, .moview-new-type .preview-block .description {
 	width: 358px;
 }
 
-.item-box .preview-block .details p, .moview-new-type .preview-block .details p {
-	color: #5F84A2;
-	margin-bottom: 5px;
-}
-
-.item-box .preview-block .details p span, .moview-new-type .preview-block .details span {
-	color: #3E3E3E;
-}
-
-.item-box .preview-block .details p a, .moview-new-type .preview-block .details p a {
-	color: #5F84A2;
-	text-decoration: none;
-	display: inline;
+.movie-element-size-1 .preview-block .title, .movie-element-size-1 .preview-block .details, .movie-element-size-1 .preview-block .description {
+	width: 358px;
 }
 
 .imdb-votes {
@@ -525,8 +624,8 @@ div.home-page-slide-item {
 	margin-top: -3px;
 }
 
-.item-box .preview-block .imdb, .moview-new-type .preview-block .imdb {
-	background: url('../images/sprite.png') no-repeat 0 -243px;
+.movie-element .preview-block .imdb, .moview-new-type .preview-block .imdb {
+	background: url('images/sprite.png') no-repeat 0 -243px;
 	width: 61px;
 	height: 32px;
 	line-height: 32px;
@@ -535,7 +634,7 @@ div.home-page-slide-item {
 	margin-right: 6px;
 }
 
-.item-box .preview-block .imdb span, .moview-new-type .preview-block .imdb span {
+.movie-element .preview-block .imdb span, .moview-new-type .preview-block .imdb span {
 	font-family: Arial, sans-serif;
 	font-weight: bold;
 	font-size: 15px;
@@ -547,14 +646,14 @@ div.home-page-slide-item {
 	float: right;
 }
 
-.item-box .preview-block .title h2, .moview-new-type .preview-block .title h2 {
+.movie-element .preview-block .title h2, .moview-new-type .preview-block .title h2 {
 	font-family: 'Segoe UI', sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	color: #2D2525;
 }
 
-.item-box .preview-block .title h3, .moview-new-type .preview-block .title h3 {
+.movie-element .preview-block .title h3, .moview-new-type .preview-block .title h3 {
 	color: #797979;
 	font-family: Sylfaen, serif;
 	font-size: 13px;
@@ -598,7 +697,7 @@ div.home-page-slide-item {
 	width: 100px;
 	/* margin-top: -72px; */
 }
-/**/
+
 .cast-link {
 	position: relative;
 	display: inline-block;
@@ -609,7 +708,7 @@ div.home-page-slide-item {
 }
 
 .cast-thumb.loading {
-	background: #fff url(http://static.adjaranet.com/../images/loading.gif) center center no-repeat;
+	background: #fff url(http://static.adjaranet.com/images/loading.gif) center center no-repeat;
 	height: 144px !important;
 	padding: 0 !important;
 }
@@ -640,7 +739,7 @@ div.home-page-slide-item {
 }
 
 .movie-element .preview-block .description, .moview-new-type .preview-block .description {
-	background: url('http://static.adjaranet.com/../images/collection-item-preview-description-bg.png') repeat-x;
+	background: url('http://static.adjaranet.com/images/collection-item-preview-description-bg.png') repeat-x;
 	float: left;
 	width: 332px;
 	padding: 10px 10px 10px 12px;
@@ -658,7 +757,7 @@ div.home-page-slide-item {
 }
 
 .movie-element .preview-block .views, .moview-new-type .preview-block .views {
-	background: #F4F4F4 url('http://static.adjaranet.com/../images/collection-item-preview-views-bg.png') repeat-x;
+	background: #F4F4F4 url('http://static.adjaranet.com/images/collection-item-preview-views-bg.png') repeat-x;
 	border-radius: 4px 0 0 0;
 	height: 35px;
 	line-height: 35px;
@@ -757,7 +856,7 @@ img.z-loading {
 }
 
 .anythingSlider-movie .arrow a, .anythingSlider-home .arrow a, .anythingSlider-tv-show .arrow a {
-	background: url('../images/sprite.png') no-repeat;
+	background: url('images/sprite.png') no-repeat;
 	display: block;
 	width: 12px;
 	height: 19px;
@@ -892,7 +991,7 @@ div#featured-slider img {
 }
 
 .sprite {
-	background: transparent url('../images/sprite.png') no-repeat;
+	background: transparent url('images/sprite.png') no-repeat;
 	display: block;
 	font-size: 0;
 	line-height: 0;
@@ -980,10 +1079,11 @@ a.watch-trailer-btn:hover {
 	color: white;
 	width: 125px;
 	height: 27px;
+	background: url('http://static.adjaranet.com/images/trailer-btn.png?v1') top left no-repeat;
 	display: block;
 	z-index: 999;
-	bottom: 0;
-	left: 0;
+	bottom: 5px;
+	left: 5px;
 	cursor: pointer;
 }
 
@@ -992,7 +1092,7 @@ a.watch-trailer-btn:hover {
 }
 
 .search-item .trailerClick {
-	background: url('../images/sprite.png') -7px -556px;
+	background: url('images/sprite.png') -7px -556px;
 	width: 147px;
 	height: 27px;
 	left: 4px;
@@ -1006,7 +1106,7 @@ a.watch-trailer-btn:hover {
 	z-index: 999;
 	/* top: 204px; */
 	cursor: pointer;
-	background: url('../images/sprite.png') -1795px -253px;
+	background: url('images/sprite.png') -1795px -253px;
 	width: 107px;
 	height: 29px;
 	left: 11px;
@@ -1017,6 +1117,11 @@ a.watch-trailer-btn:hover {
 	background-position: -1795px -217px;
 }
 
+.movie-element-main-image{
+	width: 130px;
+	height: 195px;
+	overflow: hidden;
+}
 
 .movie-element-size-1 img, .movie-block-image-div img, .moview-new-type .preview-block img{
 	width: 130px;
@@ -1025,7 +1130,7 @@ a.watch-trailer-btn:hover {
 }
 
 .movie-element-size-1 im, .movie-block-image-div im, .moview-new-type .preview-block im {
-	background: url('http://static.adjaranet.com/../images/default/134x201default.jpg') no-repeat;
+	background: url('http://static.adjaranet.com/images/default/134x201default.jpg') no-repeat;
 	width: 130px;
 	height: 195px;
 	display: block;
@@ -1085,3 +1190,10 @@ a.watch-trailer-btn:hover {
 }
 
 
+.movie-element:hover .info-icon, .movie-element:hover .movie-overlay, .moview-new-type:hover .movie-overlay {
+	display: block;
+}
+
+.info-icon:hover .preview-block, .preview-block:hover {
+	display: block;
+}

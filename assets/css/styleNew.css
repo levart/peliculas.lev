@@ -3468,3 +3468,11 @@ button.selected {
     overflow: hidden;
     padding: 20px 0 10px;
 }
+
+.home_left_contect{
+    padding-left: 0;
+}
+
+.home_right_contect{
+    padding: 0;
+}
