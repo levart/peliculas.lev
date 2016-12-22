@@ -861,12 +861,14 @@ div#slider-wrapper>div#slider-con>#rightSlide {
 	margin-top: -2px;
 }
 #MainContent {
-	outline:0px solid #033;
-	position:relative;
-	margin:0 auto;
-	clear:both;
-	padding:22px;
-	min-height:800px;
+    clear: both;
+    margin: 0 auto;
+    min-height: 800px;
+    outline: 0 solid #033;
+    padding: 22px;
+    position: relative;
+    width: 1000px;
+    background-color: #FFF;
 }
 /* Home Page Sliders */
 .home-page-sliders-header {
@@ -3458,4 +3460,11 @@ button.selected {
 	float: left;
 	margin: 20px;
 	border-left: 1px solid #c4c4c4;
+}
+
+.rec-block {
+    border: 1px solid #d3d3d3;
+    margin-top: -2px;
+    overflow: hidden;
+    padding: 20px 0 10px;
 }

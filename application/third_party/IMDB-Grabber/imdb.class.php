@@ -71,7 +71,7 @@ class IMDB
     /**
      * @var string Char that separates multiple entries.
      */
-    public $sSeparator = ' / ';
+    public $sSeparator = '|';
 
     /**
      * @var null|string The URL to the movie.
@@ -377,6 +377,41 @@ class IMDB
         return self::$sNotFound;
     }
 
+    /**
+     * Returns all local names
+     *
+     * @return string The aka name.
+     */
+    public function getPhotos() {
+        if (true === $this->isReady) {
+            $fullAkas  = sprintf('http://www.imdb.com/title/tt%s/mediaindex?ref_=tt_mv_sm', $this->iId);
+                $aCurlInfo = IMDBHelper::runCurl($fullAkas);
+                $sSource   = $aCurlInfo['contents'];
+                if (false === $sSource) {
+                    if (true === self::IMDB_DEBUG) {
+                        echo '<pre><b>cURL error:</b> ' . var_dump($aCurlInfo) . '</pre>';
+                    }
+
+                    return false;
+                }
+                
+                $aReturned = IMDBHelper::matchRegex($sSource, '/<img[^>]*src="https:\/\/images-na.ssl-images-amazon.com\/images\/M\/([^"]+)@._V1_UX100_CR0,0,100,100_AL_.jpg"[^>]*itemprop="image"/U');
+
+                if ($aReturned) {
+                    $aReturn = array();
+                    foreach ($aReturned[1] as $i => $strName) {
+                        
+                            $aReturn[] = IMDBHelper::cleanString($strName);
+                        
+                    }
+
+                    return IMDBHelper::arrayOutput($this->bArrayOutput, $this->sSeparator, self::$sNotFound, $aReturn);
+                }
+        }
+
+        return IMDBHelper::arrayOutput($this->bArrayOutput, $this->sSeparator, self::$sNotFound);
+    }
+    
     /**
      * @param int  $iLimit How many cast members should be returned?
      * @param bool $bMore  Add … if there are more cast members than printed.
@@ -993,7 +1028,10 @@ class IMDB
 
         return self::$sNotFound;
     }
-
+    
+    
+    
+    
     /**
      * @return string The IMDb URL.
      */
@@ -1087,6 +1125,10 @@ class IMDB
      */
     public function getAll() {
         $aData                           = array();
+        
+        $aData['photos']                    = array('name'  => 'Photos',
+                                                 'value' => $this->getPhotos());
+        
         $aData['Aka']                    = array('name'  => 'Also Known As',
                                                  'value' => $this->getAka());
         $aData['Akas']                   = array('name'  => '(all) Also Known As',
