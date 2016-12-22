@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 25, 2016 at 10:05 AM
+-- Generation Time: Dec 22, 2016 at 11:00 AM
 -- Server version: 5.6.25-log
 -- PHP Version: 5.6.11
 
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `actors` (
   `img` varchar(255) NOT NULL,
   `biography` text NOT NULL,
   `raiting` double NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=1162 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1459 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `actors`
@@ -1202,7 +1202,304 @@ INSERT INTO `actors` (`ID`, `name`, `real_name`, `birthdate`, `birth_loc`, `prof
 (1158, 'Don Whatley', '', '', '', '', 0, '', '', 0),
 (1159, 'LaFonda Whitehead', '', '', '', '', 0, '', '', 0),
 (1160, 'Andie Ximenes', '', '', '', '', 0, '', '', 0),
-(1161, 'Alexander Yassin', '', '', '', '', 0, '', '', 0);
+(1161, 'Alexander Yassin', '', '', '', '', 0, '', '', 0),
+(1162, 'Tom Cruise', '', '', '', '', 0, '', '', 0),
+(1163, 'Olga Kurylenko', '', '', '', '', 0, '', '', 0),
+(1164, 'Andrea Riseborough', '', '', '', '', 0, '', '', 0),
+(1165, 'Nikolaj Coster-Waldau', '', '', '', '', 0, '', '', 0),
+(1166, 'Melissa Leo', '', '', '', '', 0, '', '', 0),
+(1167, 'Zoë Bell', '', '', '', '', 0, '', '', 0),
+(1168, 'Abigail Lowe', '', '', '', '', 0, '', '', 0),
+(1169, 'Isabelle Lowe', '', '', '', '', 0, '', '', 0),
+(1170, 'David Madison', '', '', '', '', 0, '', '', 0),
+(1171, 'John L. Armijo', '', '', '', '', 0, '', '', 0),
+(1172, 'Fileena Bahris', '', '', '', '', 0, '', '', 0),
+(1173, 'Joanne Bahris', '', '', '', '', 0, '', '', 0),
+(1174, 'Andrew Breland', '', '', '', '', 0, '', '', 0),
+(1175, 'Z. Dieterich', '', '', '', '', 0, '', '', 0),
+(1176, 'Paul Gunawan', '', '', '', '', 0, '', '', 0),
+(1177, 'Julie Hardin', '', '', '', '', 0, '', '', 0),
+(1178, 'Ryan Chase Lee', '', '', '', '', 0, '', '', 0),
+(1179, 'Jaylen Moore', '', '', '', '', 0, '', '', 0),
+(1180, 'Booch O''Connell', '', '', '', '', 0, '', '', 0),
+(1181, 'Philip Odango', '', '', '', '', 0, '', '', 0),
+(1182, 'Jay Oliver', '', '', '', '', 0, '', '', 0),
+(1183, 'Daylon Micah Othello', '', '', '', '', 0, '', '', 0),
+(1184, 'Catherine Kim Poon', '', '', '', '', 0, '', '', 0),
+(1185, 'James Rawlings', '', '', '', '', 0, '', '', 0),
+(1186, 'Lisa Raziano', '', '', '', '', 0, '', '', 0),
+(1187, 'James Ricker II', '', '', '', '', 0, '', '', 0),
+(1188, 'Jeremy Sande', '', '', '', '', 0, '', '', 0),
+(1189, 'Giovanni Silva', '', '', '', '', 0, '', '', 0),
+(1190, 'Jason Stanly', '', '', '', '', 0, '', '', 0),
+(1191, 'Jordan Sudduth', '', '', '', '', 0, '', '', 0),
+(1192, 'Joshua Tran', '', '', '', '', 0, '', '', 0),
+(1193, 'Richard Joseph Paul', '', '', '', '', 0, '', '', 0),
+(1194, 'Jackie Swanson', '', '', '', '', 0, '', '', 0),
+(1195, 'Andrew Divoff', '', '', '', '', 0, '', '', 0),
+(1196, 'Meg Foster', '', '', '', '', 0, '', '', 0),
+(1197, 'Isaac Hayes', '', '', '', '', 0, '', '', 0),
+(1198, 'Julie Newmar', '', '', '', '', 0, '', '', 0),
+(1199, 'Carel Struycken', '', '', '', '', 0, '', '', 0),
+(1200, 'George Takei', '', '', '', '', 0, '', '', 0),
+(1201, 'Musetta Vander', '', '', '', '', 0, '', '', 0),
+(1202, 'Jimmie F. Skaggs', '', '', '', '', 0, '', '', 0),
+(1203, 'Irwin Keyes', '', '', '', '', 0, '', '', 0),
+(1204, 'Maxwell Caulfield', '', '', '', '', 0, '', '', 0),
+(1205, 'Mike Genovese', '', '', '', '', 0, '', '', 0),
+(1206, 'Jeff Celentano', '', '', '', '', 0, '', '', 0),
+(1207, 'Frank Roman', '', '', '', '', 0, '', '', 0),
+(1208, 'Brent Huff', '', '', '', '', 0, '', '', 0),
+(1209, 'Jeff Moldovan', '', '', '', '', 0, '', '', 0),
+(1210, 'Michael C. Mahon', '', '', '', '', 0, '', '', 0),
+(1211, 'Craig Anthony Muzio', '', '', '', '', 0, '', '', 0),
+(1212, 'Joe Muzio', '', '', '', '', 0, '', '', 0),
+(1213, 'Tim Miller', '', '', '', '', 0, '', '', 0),
+(1214, 'Peter David', '', '', '', '', 0, '', '', 0),
+(1215, 'Nadine Emilie Voindrouh', '', '', '', '', 0, '', '', 0),
+(1216, 'Sam Irvin', '', '', '', '', 0, '', '', 0),
+(1217, 'Andy Samberg', '', '', '', '', 0, '', '', 0),
+(1218, 'Katie Crown', '', '', '', '', 0, '', '', 0),
+(1219, 'Kelsey Grammer', '', '', '', '', 0, '', '', 0),
+(1220, 'Jennifer Aniston', '', '', '', '', 0, '', '', 0),
+(1221, 'Anton Starkman', '', '', '', '', 0, '', '', 0),
+(1222, 'Keegan-Michael Key', '', '', '', '', 0, '', '', 0),
+(1223, 'Jordan Peele', '', '', '', '', 0, '', '', 0),
+(1224, 'Danny Trejo', '', '', '', '', 0, '', '', 0),
+(1225, 'Stephen Kramer Glickman', '', '', '', '', 0, '', '', 0),
+(1226, 'Christopher Nicholas Smith', '', '', '', '', 0, '', '', 0),
+(1227, 'Awkwafina', '', '', '', '', 0, '', '', 0),
+(1228, 'Jorma Taccone', '', '', '', '', 0, '', '', 0),
+(1229, 'Amanda Lund', '', '', '', '', 0, '', '', 0),
+(1230, 'Denzel Washington', '', '', '', '', 0, '', '', 0),
+(1231, 'Chris Pratt', '', '', '', '', 0, '', '', 0),
+(1232, 'Ethan Hawke', '', '', '', '', 0, '', '', 0),
+(1233, 'Vincent D''Onofrio', '', '', '', '', 0, '', '', 0),
+(1234, 'Byung-hun Lee', '', '', '', '', 0, '', '', 0),
+(1235, 'Martin Sensmeier', '', '', '', '', 0, '', '', 0),
+(1236, 'Haley Bennett', '', '', '', '', 0, '', '', 0),
+(1237, 'Peter Sarsgaard', '', '', '', '', 0, '', '', 0),
+(1238, 'Luke Grimes', '', '', '', '', 0, '', '', 0),
+(1239, 'Matt Bomer', '', '', '', '', 0, '', '', 0),
+(1240, 'Jonathan Joss', '', '', '', '', 0, '', '', 0),
+(1241, 'Cam Gigandet', '', '', '', '', 0, '', '', 0),
+(1242, 'Emil Beheshti', '', '', '', '', 0, '', '', 0),
+(1243, 'Mark Ashworth', '', '', '', '', 0, '', '', 0),
+(1244, 'Billy Slaughter', '', '', '', '', 0, '', '', 0),
+(1245, 'Dodge Prince', '', '', '', '', 0, '', '', 0),
+(1246, 'Matthew Posey', '', '', '', '', 0, '', '', 0),
+(1247, 'Carrie Lazar', '', '', '', '', 0, '', '', 0),
+(1248, 'Jody Mullins', '', '', '', '', 0, '', '', 0),
+(1249, 'Clint James', '', '', '', '', 0, '', '', 0),
+(1250, 'Dane Rhodes', '', '', '', '', 0, '', '', 0),
+(1251, 'Ritchie Montgomery', '', '', '', '', 0, '', '', 0),
+(1252, 'Sean Bridgers', '', '', '', '', 0, '', '', 0),
+(1253, 'William Lee Scott', '', '', '', '', 0, '', '', 0),
+(1254, 'David Kallaway', '', '', '', '', 0, '', '', 0),
+(1255, 'Griff Furst', '', '', '', '', 0, '', '', 0),
+(1256, 'Alix Angelis', '', '', '', '', 0, '', '', 0),
+(1257, 'Sean Boyd', '', '', '', '', 0, '', '', 0),
+(1258, 'Rob Mello', '', '', '', '', 0, '', '', 0),
+(1259, 'Walker Babington', '', '', '', '', 0, '', '', 0),
+(1260, 'Thomas Blake Jr.', '', '', '', '', 0, '', '', 0),
+(1261, 'Ryan Brown', '', '', '', '', 0, '', '', 0),
+(1262, 'Derek Lacasa', '', '', '', '', 0, '', '', 0),
+(1263, 'John Wylie', '', '', '', '', 0, '', '', 0),
+(1264, 'Chad Randall', '', '', '', '', 0, '', '', 0),
+(1265, 'Kevin Wayne', '', '', '', '', 0, '', '', 0),
+(1266, 'Wally Welch', '', '', '', '', 0, '', '', 0),
+(1267, 'Ed Lowry', '', '', '', '', 0, '', '', 0),
+(1268, 'David Manzanares', '', '', '', '', 0, '', '', 0),
+(1269, 'Dylan Kenin', '', '', '', '', 0, '', '', 0),
+(1270, 'Kevin Wiggins', '', '', '', '', 0, '', '', 0),
+(1271, 'Jackson Beals', '', '', '', '', 0, '', '', 0),
+(1272, 'Miles Doleac', '', '', '', '', 0, '', '', 0),
+(1273, 'Heath Lemme', '', '', '', '', 0, '', '', 0),
+(1274, 'Charles Bickham', '', '', '', '', 0, '', '', 0),
+(1275, 'Chase Williams', '', '', '', '', 0, '', '', 0),
+(1276, 'Fionn Camp', '', '', '', '', 0, '', '', 0),
+(1277, 'Eric C. Schmitz', '', '', '', '', 0, '', '', 0),
+(1278, 'Vic Browder', '', '', '', '', 0, '', '', 0),
+(1279, 'Johnny Santiago', '', '', '', '', 0, '', '', 0),
+(1280, 'Jordan Smith', '', '', '', '', 0, '', '', 0),
+(1281, 'Todd Bethke', '', '', '', '', 0, '', '', 0),
+(1282, 'Brady Calhoun', '', '', '', '', 0, '', '', 0),
+(1283, 'Ron Centanni', '', '', '', '', 0, '', '', 0),
+(1284, 'Davis Coen', '', '', '', '', 0, '', '', 0),
+(1285, 'John C. Coffman', '', '', '', '', 0, '', '', 0),
+(1286, 'Lyle DeRose', '', '', '', '', 0, '', '', 0),
+(1287, 'Francis Dobrisky', '', '', '', '', 0, '', '', 0),
+(1288, 'Miles Donald', '', '', '', '', 0, '', '', 0),
+(1289, 'John Doucet', '', '', '', '', 0, '', '', 0),
+(1290, 'Terence Easterling', '', '', '', '', 0, '', '', 0),
+(1291, 'Juan Gaspard', '', '', '', '', 0, '', '', 0),
+(1292, 'Mike Gassaway', '', '', '', '', 0, '', '', 0),
+(1293, 'Shona Gastian', '', '', '', '', 0, '', '', 0),
+(1294, 'Jamie Gliddon', '', '', '', '', 0, '', '', 0),
+(1295, 'Stradford Goins Sr.', '', '', '', '', 0, '', '', 0),
+(1296, 'William Greely', '', '', '', '', 0, '', '', 0),
+(1297, 'Steven Grossman', '', '', '', '', 0, '', '', 0),
+(1298, 'James E. Guidry', '', '', '', '', 0, '', '', 0),
+(1299, 'Samantha Hopkins', '', '', '', '', 0, '', '', 0),
+(1300, 'Ray Hounsell', '', '', '', '', 0, '', '', 0),
+(1301, 'Robert D Johnson', '', '', '', '', 0, '', '', 0),
+(1302, 'Matthew Jolly', '', '', '', '', 0, '', '', 0),
+(1303, 'Vinnie Jones', '', '', '', '', 0, '', '', 0),
+(1304, 'Emily LaGroue', '', '', '', '', 0, '', '', 0),
+(1305, 'Dylan Langlois', '', '', '', '', 0, '', '', 0),
+(1306, 'Rodger Larance', '', '', '', '', 0, '', '', 0),
+(1307, 'Derrick Lee', '', '', '', '', 0, '', '', 0),
+(1308, 'Ricky Lee', '', '', '', '', 0, '', '', 0),
+(1309, 'Gary Wayne Loper', '', '', '', '', 0, '', '', 0),
+(1310, 'Robert Louder', '', '', '', '', 0, '', '', 0),
+(1311, 'Jameson Macmillan', '', '', '', '', 0, '', '', 0),
+(1312, 'Stormy Macon', '', '', '', '', 0, '', '', 0),
+(1313, 'Jose B. Martinez', '', '', '', '', 0, '', '', 0),
+(1314, 'David Miller', '', '', '', '', 0, '', '', 0),
+(1315, 'Gustavo Montes', '', '', '', '', 0, '', '', 0),
+(1316, 'Zach Mooney', '', '', '', '', 0, '', '', 0),
+(1317, 'James Ourso', '', '', '', '', 0, '', '', 0),
+(1318, 'Martin Palmer', '', '', '', '', 0, '', '', 0),
+(1319, 'Philip David Pickard', '', '', '', '', 0, '', '', 0),
+(1320, 'Frank Powers', '', '', '', '', 0, '', '', 0),
+(1321, 'Gus Rhodes', '', '', '', '', 0, '', '', 0),
+(1322, 'Michael Patrick Rogers', '', '', '', '', 0, '', '', 0),
+(1323, 'Mary Peyton Stewart', '', '', '', '', 0, '', '', 0),
+(1324, 'David Stickler', '', '', '', '', 0, '', '', 0),
+(1325, 'Jack Teague', '', '', '', '', 0, '', '', 0),
+(1326, 'John Teal Jr.', '', '', '', '', 0, '', '', 0),
+(1327, 'Danny Vince', '', '', '', '', 0, '', '', 0),
+(1328, 'Jacob Walker', '', '', '', '', 0, '', '', 0),
+(1329, 'Glen Warner', '', '', '', '', 0, '', '', 0),
+(1330, 'Abigail Williams', '', '', '', '', 0, '', '', 0),
+(1331, 'Danny Winn', '', '', '', '', 0, '', '', 0),
+(1332, 'Andy Samberg|Katie Crown|Kelsey Grammer|Jennifer Aniston|Ty Burrell|Anton Starkman|Keegan-Michael Key|Jordan Peele|Danny Trejo|Stephen Kramer Glickman|Christopher Nicholas Smith|Awkwafina|Ike Barinholtz|Jorma Taccone|Amanda Lund', '', '', '', '', 0, '', '', 0),
+(1333, 'Will Smith|Jaime FitzSimons|Ike Barinholtz|Margot Robbie|Christopher Dyson|Bambadjan Bamba|Viola Davis|Ted Whittall|David Harbour|Robin Atkin Downes|Robert B. Kennedy|Billy Otis|Shailyn Pierre-Dixon|Jared Leto|James McGowan|Jim Parrack|Derek Perks|Common|', '', '', '', '', 0, '', '', 0),
+(1334, 'Will Smith|Jaime FitzSimons|Ike Barinholtz|Margot Robbie|Christopher Dyson|Bambadjan Bamba|Viola Davis|Ted Whittall|David Harbour|Robin Atkin Downes|Robert B. Kennedy|Billy Otis|Shailyn Pierre-Dixon|Jared Leto|James McGowan|Jim Parrack|Derek Perks|Common|', '', '', '', '', 0, '', '', 0),
+(1335, 'Will Smith|Jaime FitzSimons|Ike Barinholtz|Margot Robbie|Christopher Dyson|Bambadjan Bamba|Viola Davis|Ted Whittall|David Harbour|Robin Atkin Downes|Robert B. Kennedy|Billy Otis|Shailyn Pierre-Dixon|Jared Leto|James McGowan|Jim Parrack|Derek Perks|Common|', '', '', '', '', 0, '', '', 0),
+(1336, 'Will Smith|Jaime FitzSimons|Ike Barinholtz|Margot Robbie|Christopher Dyson|Bambadjan Bamba|Viola Davis|Ted Whittall|David Harbour|Robin Atkin Downes|Robert B. Kennedy|Billy Otis|Shailyn Pierre-Dixon|Jared Leto|James McGowan|Jim Parrack|Derek Perks|Common|', '', '', '', '', 0, '', '', 0),
+(1337, 'Will Smith|Jaime FitzSimons|Ike Barinholtz|Margot Robbie|Christopher Dyson|Bambadjan Bamba|Viola Davis|Ted Whittall|David Harbour|Robin Atkin Downes|Robert B. Kennedy|Billy Otis|Shailyn Pierre-Dixon|Jared Leto|James McGowan|Jim Parrack|Derek Perks|Common|', '', '', '', '', 0, '', '', 0),
+(1338, 'Will Smith|Jaime FitzSimons|Ike Barinholtz|Margot Robbie|Christopher Dyson|Bambadjan Bamba|Viola Davis|Ted Whittall|David Harbour|Robin Atkin Downes|Robert B. Kennedy|Billy Otis|Shailyn Pierre-Dixon|Jared Leto|James McGowan|Jim Parrack|Derek Perks|Common|', '', '', '', '', 0, '', '', 0),
+(1339, 'Will Smith|Jaime FitzSimons|Ike Barinholtz|Margot Robbie|Christopher Dyson|Bambadjan Bamba|Viola Davis|Ted Whittall|David Harbour|Robin Atkin Downes|Robert B. Kennedy|Billy Otis|Shailyn Pierre-Dixon|Jared Leto|James McGowan|Jim Parrack|Derek Perks|Common|', '', '', '', '', 0, '', '', 0),
+(1340, 'Will Smith|Jaime FitzSimons|Ike Barinholtz|Margot Robbie|Christopher Dyson|Bambadjan Bamba|Viola Davis|Ted Whittall|David Harbour|Robin Atkin Downes|Robert B. Kennedy|Billy Otis|Shailyn Pierre-Dixon|Jared Leto|James McGowan|Jim Parrack|Derek Perks|Common|', '', '', '', '', 0, '', '', 0),
+(1341, 'Will Smith|Jaime FitzSimons|Ike Barinholtz|Margot Robbie|Christopher Dyson|Bambadjan Bamba|Viola Davis|Ted Whittall|David Harbour|Robin Atkin Downes|Robert B. Kennedy|Billy Otis|Shailyn Pierre-Dixon|Jared Leto|James McGowan|Jim Parrack|Derek Perks|Common|', '', '', '', '', 0, '', '', 0),
+(1342, 'Will Smith|Jaime FitzSimons|Ike Barinholtz|Margot Robbie|Christopher Dyson|Bambadjan Bamba|Viola Davis|Ted Whittall|David Harbour|Robin Atkin Downes|Robert B. Kennedy|Billy Otis|Shailyn Pierre-Dixon|Jared Leto|James McGowan|Jim Parrack|Derek Perks|Common|', '', '', '', '', 0, '', '', 0),
+(1343, 'Mamrie Hart|Adam Lustick|Joselyn Hughes|Grace Helbig|Hannah Hart|Anna Akana|Annie Sertich|Timothy Ryan Cole|Betsy Randle|Andrew Ridings|John Hayden|Matt Dellapina|Mikey Murphy|Drew Monson|Epic Lloyd|Flula Borg|Caitlin Emma O''Connor|Kelen Coleman|Dan Chamb', '', '', '', '', 0, '', '', 0),
+(1344, 'Mamrie Hart|Adam Lustick|Joselyn Hughes|Grace Helbig|Hannah Hart|Anna Akana|Annie Sertich|Timothy Ryan Cole|Betsy Randle|Andrew Ridings|John Hayden|Matt Dellapina|Mikey Murphy|Drew Monson|Epic Lloyd|Flula Borg|Caitlin Emma O''Connor|Kelen Coleman|Dan Chamb', '', '', '', '', 0, '', '', 0),
+(1345, 'Mamrie Hart|Adam Lustick|Joselyn Hughes|Grace Helbig|Hannah Hart|Anna Akana|Annie Sertich|Timothy Ryan Cole|Betsy Randle|Andrew Ridings|John Hayden|Matt Dellapina|Mikey Murphy|Drew Monson|Epic Lloyd|Flula Borg|Caitlin Emma O''Connor|Kelen Coleman|Dan Chamb', '', '', '', '', 0, '', '', 0),
+(1346, 'Denzel Washington|Chris Pratt|Ethan Hawke|Vincent D''Onofrio|Byung-hun Lee|Manuel Garcia-Rulfo|Martin Sensmeier|Haley Bennett|Peter Sarsgaard|Luke Grimes|Matt Bomer|Jonathan Joss|Cam Gigandet|Emil Beheshti|Mark Ashworth|Billy Slaughter|Dodge Prince|Matthew', '', '', '', '', 0, '', '', 0),
+(1347, 'Denzel Washington|Chris Pratt|Ethan Hawke|Vincent D''Onofrio|Byung-hun Lee|Manuel Garcia-Rulfo|Martin Sensmeier|Haley Bennett|Peter Sarsgaard|Luke Grimes|Matt Bomer|Jonathan Joss|Cam Gigandet|Emil Beheshti|Mark Ashworth|Billy Slaughter|Dodge Prince|Matthew', '', '', '', '', 0, '', '', 0),
+(1348, 'Mamrie Hart', '', '', '', '', 0, '', '', 0),
+(1349, 'Adam Lustick', '', '', '', '', 0, '', '', 0),
+(1350, 'Joselyn Hughes', '', '', '', '', 0, '', '', 0),
+(1351, 'Grace Helbig', '', '', '', '', 0, '', '', 0),
+(1352, 'Hannah Hart', '', '', '', '', 0, '', '', 0),
+(1353, 'Anna Akana', '', '', '', '', 0, '', '', 0),
+(1354, 'Annie Sertich', '', '', '', '', 0, '', '', 0),
+(1355, 'Timothy Ryan Cole', '', '', '', '', 0, '', '', 0),
+(1356, 'Betsy Randle', '', '', '', '', 0, '', '', 0),
+(1357, 'Andrew Ridings', '', '', '', '', 0, '', '', 0),
+(1358, 'John Hayden', '', '', '', '', 0, '', '', 0),
+(1359, 'Matt Dellapina', '', '', '', '', 0, '', '', 0),
+(1360, 'Mikey Murphy', '', '', '', '', 0, '', '', 0),
+(1361, 'Drew Monson', '', '', '', '', 0, '', '', 0),
+(1362, 'Epic Lloyd', '', '', '', '', 0, '', '', 0),
+(1363, 'Flula Borg', '', '', '', '', 0, '', '', 0),
+(1364, 'Caitlin Emma O''Connor', '', '', '', '', 0, '', '', 0),
+(1365, 'Kelen Coleman', '', '', '', '', 0, '', '', 0),
+(1366, 'Dan Chamberlain', '', '', '', '', 0, '', '', 0),
+(1367, 'Ashley Newton', '', '', '', '', 0, '', '', 0),
+(1368, 'Rhett McLaughlin', '', '', '', '', 0, '', '', 0),
+(1369, 'Link Neal', '', '', '', '', 0, '', '', 0),
+(1370, 'Katherine Hughes', '', '', '', '', 0, '', '', 0),
+(1371, 'Josh Leyva', '', '', '', '', 0, '', '', 0),
+(1372, 'Bobby Bitton', '', '', '', '', 0, '', '', 0),
+(1373, 'Chester See', '', '', '', '', 0, '', '', 0),
+(1374, 'Nathan Barnatt', '', '', '', '', 0, '', '', 0),
+(1375, 'Timothy DeLaGhetto', '', '', '', '', 0, '', '', 0),
+(1376, 'Yuval Bibi', '', '', '', '', 0, '', '', 0),
+(1377, 'Liana Legaspi', '', '', '', '', 0, '', '', 0),
+(1378, 'Irineo Alvarez', '', '', '', '', 0, '', '', 0),
+(1379, 'Armando Hernandez', '', '', '', '', 0, '', '', 0),
+(1380, 'Pascacio López', '', '', '', '', 0, '', '', 0),
+(1381, 'Elena Puig', '', '', '', '', 0, '', '', 0),
+(1382, 'Kristoff Raczynski', '', '', '', '', 0, '', '', 0),
+(1383, 'Fernando Sarfatti', '', '', '', '', 0, '', '', 0),
+(1384, 'José Sefami', '', '', '', '', 0, '', '', 0),
+(1385, 'Kate Mara', '', '', '', '', 0, '', '', 0),
+(1386, 'Anya Taylor-Joy', '', '', '', '', 0, '', '', 0),
+(1387, 'Rose Leslie', '', '', '', '', 0, '', '', 0),
+(1388, 'Michael Yare', '', '', '', '', 0, '', '', 0),
+(1389, 'Toby Jones', '', '', '', '', 0, '', '', 0),
+(1390, 'Chris Sullivan', '', '', '', '', 0, '', '', 0),
+(1391, 'Boyd Holbrook', '', '', '', '', 0, '', '', 0),
+(1392, 'Vinette Robinson', '', '', '', '', 0, '', '', 0),
+(1393, 'Michelle Yeoh', '', '', '', '', 0, '', '', 0),
+(1394, 'Brian Cox', '', '', '', '', 0, '', '', 0),
+(1395, 'Jennifer Jason Leigh', '', '', '', '', 0, '', '', 0),
+(1396, 'Paul Giamatti', '', '', '', '', 0, '', '', 0),
+(1397, 'Crispian Belfrage', '', '', '', '', 0, '', '', 0),
+(1398, 'Amybeth McNulty', '', '', '', '', 0, '', '', 0),
+(1399, 'Jonathan Aris', '', '', '', '', 0, '', '', 0),
+(1400, 'Charlotte Asprey', '', '', '', '', 0, '', '', 0),
+(1401, 'Frank Cannon', '', '', '', '', 0, '', '', 0),
+(1402, 'Chrissie Harris', '', '', '', '', 0, '', '', 0),
+(1403, 'Bobby Marno', '', '', '', '', 0, '', '', 0),
+(1404, 'Martin O''Sullivan', '', '', '', '', 0, '', '', 0),
+(1405, 'Kevin Spacey', '', '', '', '', 0, '', '', 0),
+(1406, 'Jennifer Garner', '', '', '', '', 0, '', '', 0),
+(1407, 'Robbie Amell', '', '', '', '', 0, '', '', 0),
+(1408, 'Cheryl Hines', '', '', '', '', 0, '', '', 0),
+(1409, 'Mark Consuelos', '', '', '', '', 0, '', '', 0),
+(1410, 'Malina Weissman', '', '', '', '', 0, '', '', 0),
+(1411, 'Christopher Walken', '', '', '', '', 0, '', '', 0),
+(1412, 'Talitha Bateman', '', '', '', '', 0, '', '', 0),
+(1413, 'Teddy Sears', '', '', '', '', 0, '', '', 0),
+(1414, 'Jay Patterson', '', '', '', '', 0, '', '', 0),
+(1415, 'Jewelle Blackman', '', '', '', '', 0, '', '', 0),
+(1416, 'Serge Houde', '', '', '', '', 0, '', '', 0),
+(1417, 'Mark Camacho', '', '', '', '', 0, '', '', 0),
+(1418, 'Chris Wilding', '', '', '', '', 0, '', '', 0),
+(1419, 'Kyle Gatehouse', '', '', '', '', 0, '', '', 0),
+(1420, 'Ellen David', '', '', '', '', 0, '', '', 0),
+(1421, 'Camille Ross', '', '', '', '', 0, '', '', 0),
+(1422, 'Jack Hallett', '', '', '', '', 0, '', '', 0),
+(1423, 'Tristan D. Lalla', '', '', '', '', 0, '', '', 0),
+(1424, 'Brad Aldous', '', '', '', '', 0, '', '', 0),
+(1425, 'Julianne Jain', '', '', '', '', 0, '', '', 0),
+(1426, 'Jason Cavalier', '', '', '', '', 0, '', '', 0),
+(1427, 'Jason Blicker', '', '', '', '', 0, '', '', 0),
+(1428, 'Kwasi Songui', '', '', '', '', 0, '', '', 0),
+(1429, 'Robert Harrison', '', '', '', '', 0, '', '', 0),
+(1430, 'Lori Graham', '', '', '', '', 0, '', '', 0),
+(1431, 'Sook Hexamer', '', '', '', '', 0, '', '', 0),
+(1432, 'Emilee Veluz', '', '', '', '', 0, '', '', 0),
+(1433, 'Melissa Duncan-Seon', '', '', '', '', 0, '', '', 0),
+(1434, 'David-Alexandre Coiteux', '', '', '', '', 0, '', '', 0),
+(1435, 'Meghan Gabruch', '', '', '', '', 0, '', '', 0),
+(1436, 'Jon Olson', '', '', '', '', 0, '', '', 0),
+(1437, 'Chloe Sonnenfeld', '', '', '', '', 0, '', '', 0),
+(1438, 'Barry Sonnenfeld', '', '', '', '', 0, '', '', 0),
+(1439, 'Jean', '', '', '', '', 0, '', '', 0),
+(1440, 'Philmon', '', '', '', '', 0, '', '', 0),
+(1441, 'Connery', '', '', '', '', 0, '', '', 0),
+(1442, 'Roxie', '', '', '', '', 0, '', '', 0),
+(1443, 'Yuri', '', '', '', '', 0, '', '', 0),
+(1444, 'Lil Bub', '', '', '', '', 0, '', '', 0),
+(1445, 'Talking Tom', '', '', '', '', 0, '', '', 0),
+(1446, 'Nala the Cat', '', '', '', '', 0, '', '', 0),
+(1447, 'Waffles the Cat', '', '', '', '', 0, '', '', 0),
+(1448, 'Pudge the Cat', '', '', '', '', 0, '', '', 0),
+(1449, 'Hamilton the Hipster Cat', '', '', '', '', 0, '', '', 0),
+(1450, 'Henri le Chat Noir', '', '', '', '', 0, '', '', 0),
+(1451, 'Peter Andrianopoulos', '', '', '', '', 0, '', '', 0),
+(1452, 'Steve Barry', '', '', '', '', 0, '', '', 0),
+(1453, 'Sam Chamas', '', '', '', '', 0, '', '', 0),
+(1454, 'Brian Degrace', '', '', '', '', 0, '', '', 0),
+(1455, 'Serge Martineau', '', '', '', '', 0, '', '', 0),
+(1456, 'Satine Scarlett Montaz', '', '', '', '', 0, '', '', 0),
+(1457, 'Galia Oliel-Sabbag', '', '', '', '', 0, '', '', 0),
+(1458, 'Nathaly Thibault', '', '', '', '', 0, '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -1645,7 +1942,7 @@ CREATE TABLE IF NOT EXISTS `fotos` (
 CREATE TABLE IF NOT EXISTS `genre` (
   `ID` int(11) NOT NULL,
   `name` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `genre`
@@ -1656,6 +1953,7 @@ INSERT INTO `genre` (`ID`, `name`) VALUES
 (13, 'Adventure'),
 (12, 'Animation'),
 (14, 'Comedy'),
+(24, 'Crime'),
 (15, 'Family'),
 (18, 'Fantasy'),
 (9, 'genre'),
@@ -1664,10 +1962,13 @@ INSERT INTO `genre` (`ID`, `name`) VALUES
 (3, 'genre 3'),
 (4, 'genre 4'),
 (6, 'genre 6'),
+(25, 'Horror'),
+(22, 'Mystery'),
 (20, 'n/A'),
 (19, 'Sci-Fi'),
 (5, 'serials'),
-(21, 'Thriller');
+(21, 'Thriller'),
+(23, 'Western');
 
 -- --------------------------------------------------------
 
@@ -2017,7 +2318,7 @@ CREATE TABLE IF NOT EXISTS `movies` (
   `recom` set('0','1') NOT NULL DEFAULT '0',
   `view` int(11) NOT NULL,
   `cover` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=295 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=383 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `movies`
@@ -2123,7 +2424,124 @@ INSERT INTO `movies` (`ID`, `name`, `meta_k`, `meta_d`, `slug`, `slogan`, `year`
 (291, '', '', '', '', '', 0000, '00:00:00', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
 (292, '', '', '', '', '', 0000, '00:00:00', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
 (293, 'Jason Bourne', '', '', '', 'Justice has a bad side.', 2005, '00:01:23', 0, '275,274,273,272,271,270,269,268,267,266,265,264,263,262,261,260,259,258,257,256,255,254,253,252,251,250,249,248,247,246,245,244,243,242,241,240,239,238,237,236,235,234,233,232,231,230,229,228,227,226,225,224,223,222,221,220,219,218,217,216,215,214,213,212', 0, 0, '', 7, 0, '19,18,17,13,17,13,18,19', 'http://www.imdb.com/title/tt1386697/', '0000-00-00 00:00:00', 'Atlas Entertainment', 'http://peliculas.lev/source/movies/poster/tt1386697/poster.jpg', 0, 1, '0', 0, ''),
-(294, 'Jason Bourne', '', '', '', 'You know his name', 2029, '00:01:23', 0, '917,916,725,954,955,956,957,958,959,960,961,962,963,964,965,966,967,968,969,970,971,972,973,974,975,976,977,978,979,980,981,982,983,984,985,986,987,988,989,990,991,992,993,994,995,996,997,998,999,1000,1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011', 0, 0, '', 7, 0, '17,17,21', 'http://www.imdb.com/title/tt4196776/', '0000-00-00 00:00:00', 'Captivate Entertainment', 'http://peliculas.lev/source/movies/poster/tt4196776/poster.jpg', 0, 1, '0', 0, '');
+(294, 'Jason Bourne', '', '', '', 'You know his name', 2029, '00:01:23', 0, '917,916,725,954,955,956,957,958,959,960,961,962,963,964,965,966,967,968,969,970,971,972,973,974,975,976,977,978,979,980,981,982,983,984,985,986,987,988,989,990,991,992,993,994,995,996,997,998,999,1000,1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011', 0, 0, '', 7, 0, '17,17,21', 'http://www.imdb.com/title/tt4196776/', '0000-00-00 00:00:00', 'Captivate Entertainment', 'http://peliculas.lev/source/movies/poster/tt4196776/poster.jpg', 0, 1, '0', 0, ''),
+(295, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(296, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(297, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(298, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(299, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(300, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(301, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(302, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(303, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(304, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(305, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(306, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(307, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(308, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(309, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(310, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(311, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(312, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(313, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(314, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(315, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(316, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(317, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(318, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(319, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(320, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(321, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(322, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(323, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(324, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(325, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(326, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(327, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(328, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(329, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(330, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(331, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(332, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(333, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(334, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(335, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(336, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(337, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(338, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(339, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(340, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(341, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(342, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(343, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(344, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(345, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(346, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(347, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(348, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(349, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(350, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(351, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(352, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(353, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(354, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(355, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(356, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(357, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(358, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(359, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(360, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(361, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(362, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(363, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(364, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(365, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(366, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(367, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(368, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(369, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(370, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(371, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(372, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(373, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(374, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(375, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(376, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(377, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(378, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(379, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(380, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(381, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, ''),
+(382, '', '', '', '', '', 0000, '', 0, '', 0, 0, '', 0, 0, '', '', '0000-00-00 00:00:00', '', '', 0, 1, '0', 0, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `movies_images`
+--
+
+CREATE TABLE IF NOT EXISTS `movies_images` (
+  `id` int(11) NOT NULL,
+  `movie_id` int(10) unsigned NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `imdb` varchar(255) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `movies_images`
+--
+
+INSERT INTO `movies_images` (`id`, `movie_id`, `image`, `imdb`) VALUES
+(1, 382, 'MV5BMjA4ODgwNTg0MF5BMl5BanBnXkFtZTgwMTgzMDMzODE.jpg', 'tt4383594'),
+(2, 382, 'MV5BMjQ1ODg5NTk1Nl5BMl5BanBnXkFtZTgwMTMzMzM2OTE.jpg', 'tt4383594'),
+(3, 382, 'MV5BMjMyMDM5MTc1Nl5BMl5BanBnXkFtZTgwNjk1ODkzOTE.jpg', 'tt4383594'),
+(4, 382, 'MV5BMzEzMjkwMjc3NV5BMl5BanBnXkFtZTgwMzc0NjY5ODE.jpg', 'tt4383594'),
+(5, 382, 'MV5BMTc3NDA5MjMyMF5BMl5BanBnXkFtZTgwODUwMTU4NzE.jpg', 'tt4383594'),
+(6, 382, 'MV5BMjA4ODgwNTg0MF5BMl5BanBnXkFtZTgwMTgzMDMzODE.jpg', 'tt4383594'),
+(7, 382, 'MV5BMjQ1ODg5NTk1Nl5BMl5BanBnXkFtZTgwMTMzMzM2OTE.jpg', 'tt4383594'),
+(8, 382, 'MV5BMjMyMDM5MTc1Nl5BMl5BanBnXkFtZTgwNjk1ODkzOTE.jpg', 'tt4383594'),
+(9, 382, 'MV5BMzEzMjkwMjc3NV5BMl5BanBnXkFtZTgwMzc0NjY5ODE.jpg', 'tt4383594'),
+(10, 382, 'MV5BMTc3NDA5MjMyMF5BMl5BanBnXkFtZTgwODUwMTU4NzE.jpg', 'tt4383594');
 
 -- --------------------------------------------------------
 
@@ -2618,7 +3036,28 @@ CREATE TABLE IF NOT EXISTS `wallpapers` (
   `ID` int(11) NOT NULL,
   `link` varchar(255) NOT NULL,
   `movie_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `wallpapers`
+--
+
+INSERT INTO `wallpapers` (`ID`, `link`, `movie_id`) VALUES
+(1, '202343_dellmousems11102.jpg', 354),
+(2, '1430740248__-306086216.jpg', 354),
+(3, '1460312844_free-ship-1-2l-fashion-font-b-warmers-b-font-304-stainless-steel-vacuum-font-b.jpg', 354),
+(4, '90062915314325807801455691940_1458476557.jpg', 354),
+(5, 'a0dde27f89e4.jpg', 354),
+(6, 'a4tech-5930-7889445-1-catalog_grid_3.jpg', 354),
+(7, 'brtkeltucha-10lari.jpg', 354),
+(8, '1_0x0.jpg', 381),
+(9, '1e6c4b36-369a-46ba-9888-e02b0ef5b477.jpg', 381),
+(10, '211f384f-2a99-4589-a2ed-3d7a21c9d431.jpg', 381),
+(11, '2631_foto_large.jpg', 381),
+(12, '9435_SPK_480_main_1920x1014-Copy.jpg', 381),
+(13, '16152_SPK22_GREY_main_1920x1014-1.jpg', 381),
+(14, '73008smakfest_710011_2_du_enl.jpg', 381),
+(15, '202343_dellmousems11102.jpg', 381);
 
 -- --------------------------------------------------------
 
@@ -2752,6 +3191,12 @@ ALTER TABLE `movies`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Indexes for table `movies_images`
+--
+ALTER TABLE `movies_images`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `movies_quality`
 --
 ALTER TABLE `movies_quality`
@@ -2873,7 +3318,7 @@ ALTER TABLE `washlist`
 -- AUTO_INCREMENT for table `actors`
 --
 ALTER TABLE `actors`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1162;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1459;
 --
 -- AUTO_INCREMENT for table `admin_users`
 --
@@ -2923,7 +3368,7 @@ ALTER TABLE `fotos`
 -- AUTO_INCREMENT for table `genre`
 --
 ALTER TABLE `genre`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=22;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26;
 --
 -- AUTO_INCREMENT for table `language`
 --
@@ -2948,7 +3393,12 @@ ALTER TABLE `main`
 -- AUTO_INCREMENT for table `movies`
 --
 ALTER TABLE `movies`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=295;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=383;
+--
+-- AUTO_INCREMENT for table `movies_images`
+--
+ALTER TABLE `movies_images`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `movies_quality`
 --
@@ -3038,7 +3488,7 @@ ALTER TABLE `views`
 -- AUTO_INCREMENT for table `wallpapers`
 --
 ALTER TABLE `wallpapers`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `washlist`
 --
