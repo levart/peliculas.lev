@@ -235,14 +235,16 @@ class movies extends CI_Controller {
     public function imdb() {
        
         $title = $this->input->post('title');
-        
-
+        $movie_id = $this->input->post('movie_id');
+        if($title != '' || !empty($title)){
+            $this->output->set_status_header(200);
         $oIMDB = new IMDB($title);
         if($oIMDB->isReady) {
+            $data['status'] = true;
             $getall = $oIMDB->getAll();
             //echo '<p><a href="' . $oIMDB->getUrl() . '">' . $oIMDB->getTitle() . '</a> got rated ' . $oIMDB->getRating() . '.</p><br/>';
             $data['director'] = $oIMDB->getDirector();
-            $cast = explode(" / ",$oIMDB->getCast($iLimit = 0, $bMore = true));
+            $cast = explode("|",$oIMDB->getCast($iLimit = 0, $bMore = true));
             foreach ($cast as $value) {
                 if($this->actors_model->checkName($value) == 0){
                     $castid  = $this->actors_model->insertActor($value);
@@ -254,7 +256,6 @@ class movies extends CI_Controller {
                     $casts[] = $castid;
                 }
             }
-            
             $data['cast'] = $casts;
             $data['castinsert'] = $castinsert;
             $data['rating'] = $oIMDB->getRating();
@@ -262,11 +263,12 @@ class movies extends CI_Controller {
             $data['runtime'] = $oIMDB->getRuntime();
             $data['imdbLink'] = $oIMDB->getUrl();
             $imdbId = explode("/",$oIMDB->getUrl());
+            $data['imdbid'] = $imdbId[4];
             $data['creator'] = $oIMDB->getCompany();
             $data['tagline'] = $oIMDB->getTagline();
-            $data['keywords'] = str_replace(" / ", ",", $oIMDB->getPlotKeywords());
+            $data['keywords'] = str_replace("|", ",", $oIMDB->getPlotKeywords());
             
-            $ganre = explode(" / ",$oIMDB->getGenre());
+            $ganre = explode("|",$oIMDB->getGenre());
             foreach ($ganre as $v) {
                 if($this->movies_model->checkGenreName($v) == 0){
                     $ganreid  = $this->movies_model->insertGenre($v);
@@ -289,7 +291,7 @@ class movies extends CI_Controller {
                     "verify_peer_name"=>false,
                 ),
             );  
-
+            
             $response = file_get_contents($poster, false, stream_context_create($arrContextOptions));
             
             if (!is_dir("source/movies/poster/".$imdbId[4])) {
@@ -299,10 +301,44 @@ class movies extends CI_Controller {
             fwrite($fp, $response);
             fclose($fp);
             $data['poster'] = "/source/movies/poster/".$imdbId[4]."/poster.jpg";
+            
+            
+            if (!is_dir("source/movies/photos/".$imdbId[4])) {
+                mkdir("./source/movies/photos/".$imdbId[4], 0777, TRUE);
+            }
+            $photos = explode("|",$oIMDB->getPhotos());
+            foreach ($photos as $v) {
+                $arrContextOptions=array(
+                    "ssl"=>array(
+                        "verify_peer"=>false,
+                        "verify_peer_name"=>false,
+                    ),
+                );  
+
+                $response = file_get_contents("https://images-na.ssl-images-amazon.com/images/M/".$v."@._V1.jpg", false, stream_context_create($arrContextOptions));
+                $fp = fopen(FCPATH . "source/movies/photos/".$imdbId[4]."/".$v.".jpg", "w");
+                fwrite($fp, $response);
+                fclose($fp);
+                $this->movies_model->insertPhoto($movie_id,$v.".jpg",$imdbId[4]);
+//                if($this->movies_model->checkGenreName($v) == 0){
+//                    $ganreid  = $this->movies_model->insertGenre($v);
+//                    $ganreinsert[] = array("id"=>$ganreid,"name"=>$v);
+//                    $ganres[] = $ganreid;
+//                }else{
+//                    $ganreid  = $this->movies_model->getGenreByName($v)->ID;
+//                    $ganreinsert[] = array("id"=>$ganreid,"name"=>$v);
+//                    $ganres[] = $ganreid;
+//                }
+            }
+            
+            }
             }else {
+                $this->output->set_status_header(500);
+                $data['status'] = false;
                 $data['director'] = '';
                 $data['cast'] = '';
             }
+            
         echo json_encode($data);
         
     }

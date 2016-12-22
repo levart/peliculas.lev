@@ -149,7 +149,7 @@
                                           <div class="row">
                                               <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                                                   <div class="input-group input-icon">
-                                                      <input type="text" name="name" id="name" class="form-control">
+                                                      <input type="text" name="name" id="name" data-movie="<?=$lastid;?>" class="form-control">
                                                   </div>
                                               </div>
                                           </div>
@@ -191,11 +191,17 @@
                                               <div class="row">
                                               <div class="col-lg-8 col-md-8">
                                                   <div class="row">
-                                                      <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10">
+                                                      <div class="col-lg-3 col-md-3 col-sm-10 col-xs-10">
                                                        
                                                            <div class="input-group input-icon">
                                                                <input type="text" class="form-control" id="imdb" name="imdb" placeholder="IMDB">
                                                                <span class="help-block text-center">IMDB</span>
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                          <div class="input-group input-icon">
+                                                              <input type="text" class="form-control" id="imdbid" name="imdbid" placeholder="IMDB ID">
+                                                              <span class="help-block text-center">IMDB ID</span>
                                                           </div>
                                                       </div>
                                                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -481,14 +487,18 @@
 
 
 
-
-
-
-
-
-                                     
-
-
+                                    <hr/>
+                        <!-- End .panel -->
+                            <div class="panel panel-default toggle panelMove panelRefresh">
+                                <!-- Start .panel -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Wallpapers</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <form id="my-awesome-dropzone" action="/admin/ajax/imageupload/<?= $lastid ?>" class="dropzone"></form>
+                                </div>
+                            </div>
+                            <!-- End .panel -->
 
                                 </div>
                             </div>
@@ -502,9 +512,7 @@
             </div>
             <!-- End #content -->
 
-
             <!-- picture modal -->
-
             <div class="modal fade" id="myLargeModal" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
@@ -525,8 +533,6 @@
                     </div>
                 </div>
                 <!-- /.modal -->
-
-
 
                 <!-- online movie modal -->
 
@@ -626,8 +632,6 @@
                 </div>
                 <!-- /.modal -->
 
-
-
                 <!-- torrent modal -->
 
             <div class="modal fade" id="addtorrent" tabindex="-1" role="dialog" aria-hidden="true">
@@ -717,11 +721,7 @@
                     </div>
                 </div>
                 <!-- /. torrent modal -->
-
-
-
-
-
+                
        <!-- director modal -->
 
             <div class="modal fade" id="adddirector" tabindex="-1" role="dialog" aria-hidden="true">
@@ -851,10 +851,6 @@
                 </div>
                 <!-- /. director modal -->
 
-
-
-
-
        <!-- genre modal -->
 
             <div class="modal fade" id="addgenre" tabindex="-1" role="dialog" aria-hidden="true">
@@ -900,12 +896,6 @@
                     </div>
                 </div>
                 <!-- /. genre modal -->
-
-
-
-
-
-
 
                  <!-- actors modal -->
 
@@ -1036,12 +1026,6 @@
                 </div>
                 <!-- /. actors modal -->
 
-
-
-
-
-
-
             <?php $this->load->view('admin/inc/footer') ?>
             <!-- End #footer  -->
         </div>
@@ -1115,7 +1099,33 @@
     <script src="<?= base_url() ?>adm/plugins/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
     <script src="<?=base_url()?>adm/plugins/chosen/chosen.jquery.min.js"></script>  
     <script src="<?= base_url() ?>adm/plugins/tinymce/jquery.tinymce.min.js"></script>
-        <script>
+    <script src="https://cdn.jsdelivr.net/jquery.loadingoverlay/latest/loadingoverlay.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.loadingoverlay/latest/loadingoverlay_progress.min.js"></script>
+    
+    <script>
+
+            Dropzone.autoDiscover = false;
+            var myDropzone = new Dropzone("#my-awesome-dropzone", {
+                url: "/admin/ajax/imageupload/<?= $lastid ?>",
+                addRemoveLinks: true,
+                removedfile: function (file) {
+                    var name = file.name;
+                    $.ajax({
+                        type: 'POST',
+                        url: '/admin/ajax/imageremove/<?= $lastid ?>',
+                        data: "id=" + name,
+                        dataType: 'html'
+                    });
+                    var _ref;
+                    return (_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
+                },
+                acceptedFiles: 'image/*',
+                uploadMultiple: false,
+                autoProcessQueue: true,
+                parallelUploads: 1
+            });
+            
+
             $("#seo_title").inputMeter( {maxLength: 60, warnLength: 50} );
             $("#url_title").inputMeter( {maxLength: 100, warnLength: 80} );
             $("#descrip").inputMeter( {maxLength: 255, warnLength: 255} );
@@ -1144,24 +1154,27 @@
                   });
                   $("#name").keyup(function () {
                     var title = $(this).val();
-                    
+                    var movie_id = $(this).data('movie');
                     $.ajax({
                         type: "POST",
                         url: '<?=base_url()?>admin/movies/imdb',
-                        data: 'title='+title,
+                        data: 'title='+title+"&movie_id="+movie_id,
                         cache: false,
+                        beforeSend: function () { $.LoadingOverlay("show"); }, // <Show OverLay
                         success: function (json) {
                             var arr = JSON.parse(json);
 //                            var str = arr.castinsert;
 //                            var jsonString = JSON.stringify(str);
                             
                             //function success
+                            if(arr.status !== false){
                            $('#director').append($("<option selected></option>").attr("value", arr.director).text(arr.director));
                            $.each(arr.castinsert, function(k, v) {
                                 $('<option>').val(v.id).text(v.name).appendTo('#cast');
                             });
                            $("#cast").select2().val(arr.cast).trigger("change");
                            $('#imdb').val(arr.rating);
+                           $('#imdbid').val(arr.imdbid);
                            $('#release').val(arr.release);
                            $('#runtime').val(arr.runtime);
                            $('#imdbLink').val(arr.imdbLink);
@@ -1179,8 +1192,15 @@
                            $('#trailer').val(arr.trailer);
                            
                            //console.log(arr.ganre);
-                           
+                           $.LoadingOverlay("hide");
+                            }else{
+                                $.LoadingOverlay("hide");
+                            }
                         },
+                        error: function(data) {
+                          //this will be fired on error
+                          $.LoadingOverlay("hide");
+                        }
                     });
                     return false;
                 });

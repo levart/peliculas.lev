@@ -379,7 +379,7 @@
                     </div>
                     
                     
-                    <div style="    padding-top: 5px;" id="MainContent">
+                    <div  id="MainContent">
 
 
                         <div class="switcher-first-section">
@@ -715,9 +715,18 @@
 
                         </div>
 
-                        <br>
-
-                        <br>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="rec-block">
+                                    sdfdg
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="rec-block">
+                                    sdfdg
+                                </div>
+                            </div>
+                        </div>
 
                         <div style="display:none;" class="playScript"> 
 
