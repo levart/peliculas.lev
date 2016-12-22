@@ -432,7 +432,34 @@ public function dayvideoid($limit = '8',$n) {
         }
     }
     
-
+    public function insertImage($id,$name) {
+        $data = array(
+            'movie_id' => $id,
+            'link' => $name
+        );
+        return $this->db->insert('wallpapers',$data);
+    }
+    
+    public function removeImage($id,$name) {
+        $this->db->where('movie_id',$id);
+        $this->db->where('link',$name);
+        return $this->db->delete('wallpapers');
+    }
+    
+    public function insertPhoto($id,$name,$imdb) {
+        $data = array(
+            'movie_id' => $id,
+            'image' => $name,
+            'imdb' => $imdb,
+        );
+        return $this->db->insert('movies_images',$data);
+    }
+    
+    public function removePhoto($id,$name) {
+        $this->db->where('movie_id',$id);
+        $this->db->where('image',$name);
+        return $this->db->delete('movies_images');
+    }
 
 
 }
