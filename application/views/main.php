@@ -20,6 +20,30 @@
 
 <link rel="stylesheet" href="<?= base_url() ?>build/css/style.bundle.css" />
 
+<<<<<<< HEAD
+=======
+<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="<?=base_url()?>assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="<?=base_url()?>assets/css/owl.theme.css">
+        <link rel="stylesheet" href="<?=base_url()?>assets/css/owl.transitions.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/font-awesome.min.css" />
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/addons.css" />
+<link rel='stylesheet' href='<?= base_url() ?>assets/css/googleapis.css' type='text/css'>
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/jquery.jscrollpane.css" />
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/styleNew.css" />
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/stylee.css" />
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/movieNew.css" />
+<link rel="stylesheet" href="<?= base_url() ?>assets/jquery-ui-1.11.4.custom/jquery-ui.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/mystylee.css" />
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/xfactor.css" />
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/cinema.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/movies.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/video_containers.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/containers.css">
+<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/topmovies.css?v97" />
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/jshowoff.css" type="text/css" />
+>>>>>>> origin/master
     </head>
     <body ng-controller="MainCtrl">
         <div class="wrapper" name="wrapper" id="wrapper">
@@ -696,14 +720,62 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 home_left_contect">
                                 <div class="rec-block">
                                     sdfdg
                                 </div>
                             </div>
-                            <div class="col-lg-9">
+                            <div class="col-lg-9 home_right_contect">
                                 <div class="rec-block">
-                                    sdfdg
+                                    <div class="mv_movie_item_static  movie-element">
+                                        <a href="http://allanimes.net/movies/view/198" class="mv_movie_item_cover ajaxRequest" style="background-image:url('http://allanimes.net/assets/images/mov2.jpg')"> </a>
+                                        <a class="mv_movie_item_title bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198">name 5  </a> 
+                                        <a class="mv_movie_item_title_eng bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198"> name 5 </a>
+                                        <div class="mv_movies_listing_item_stats"> 
+                                            <span class="mv_movie_year left"> YEAR: <span>2000</span> </span> 
+                                            <span class="imdb-small right">IMDB: 0</span> 
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mv_movie_item_static  movie-element">
+                                        <a href="http://allanimes.net/movies/view/198" class="mv_movie_item_cover ajaxRequest" style="background-image:url('http://allanimes.net/assets/images/mov2.jpg')"> </a>
+                                        <a class="mv_movie_item_title bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198">name 5  </a> 
+                                        <a class="mv_movie_item_title_eng bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198"> name 5 </a>
+                                        <div class="mv_movies_listing_item_stats"> 
+                                            <span class="mv_movie_year left"> YEAR: <span>2000</span> </span> 
+                                            <span class="imdb-small right">IMDB: 0</span> 
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mv_movie_item_static  movie-element">
+                                        <a href="http://allanimes.net/movies/view/198" class="mv_movie_item_cover ajaxRequest" style="background-image:url('http://allanimes.net/assets/images/mov2.jpg')"> </a>
+                                        <a class="mv_movie_item_title bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198">name 5  </a> 
+                                        <a class="mv_movie_item_title_eng bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198"> name 5 </a>
+                                        <div class="mv_movies_listing_item_stats"> 
+                                            <span class="mv_movie_year left"> YEAR: <span>2000</span> </span> 
+                                            <span class="imdb-small right">IMDB: 0</span> 
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mv_movie_item_static  movie-element">
+                                        <a href="http://allanimes.net/movies/view/198" class="mv_movie_item_cover ajaxRequest" style="background-image:url('http://allanimes.net/assets/images/mov2.jpg')"> </a>
+                                        <a class="mv_movie_item_title bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198">name 5  </a> 
+                                        <a class="mv_movie_item_title_eng bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198"> name 5 </a>
+                                        <div class="mv_movies_listing_item_stats"> 
+                                            <span class="mv_movie_year left"> YEAR: <span>2000</span> </span> 
+                                            <span class="imdb-small right">IMDB: 0</span> 
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mv_movie_item_static  movie-element">
+                                        <a href="http://allanimes.net/movies/view/198" class="mv_movie_item_cover ajaxRequest" style="background-image:url('http://allanimes.net/assets/images/mov2.jpg')"> </a>
+                                        <a class="mv_movie_item_title bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198">name 5  </a> 
+                                        <a class="mv_movie_item_title_eng bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198"> name 5 </a>
+                                        <div class="mv_movies_listing_item_stats"> 
+                                            <span class="mv_movie_year left"> YEAR: <span>2000</span> </span> 
+                                            <span class="imdb-small right">IMDB: 0</span> 
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -764,5 +836,29 @@
 
 <script type="text/javascript" src="<?= base_url() ?>assets/js/search.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/js/login.js"></script>
+<<<<<<< HEAD
+=======
+<script>
+    $(document).ready(function() {
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: 'https://92.241.73.166:8081/LoyaltyCardService.svc/json/ChangeDeviceNumber',
+            data: JSON.stringify(
+                {
+                    "type": "Trade",
+                    "personalId": "01034001887",
+                    "deviceNumber": "fDr9qHqXHx8:APA91bGvN3Frc2Dxoo8OGlyw194jeOnNmke-t85PKZivJslqKGX3gkVO1Ge8EgIjy4iqfKG3npwkSsT393HFRZwMRoVCtG8mLPfhfcp8h3ODsxdB2CMgeIVKfI9CUrqlicR1xnCJTk40",
+                    "token": "fDr9qHqXHx8:APA91bGvN3Frc2Dxoo8OGlyw194jeOnNmke-t85PKZivJslqKGX3gkVO1Ge8EgIjy4iqfKG3npwkSsT393HFRZwMRoVCtG8mLPfhfcp8h3ODsxdB2CMgeIVKfI9CUrqlicR1xnCJTk40" 
+                }
+            ),
+            dataType: "json",
+            success: function (data) {
+                alert(data);
+            }
+        });
+    });
+</script>
+>>>>>>> origin/master
     </body>
 </html>
