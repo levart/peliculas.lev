@@ -18,28 +18,8 @@
         <meta property="og:image:height" content="102">
         <meta property="fb:app_id" content="385022118315699" />
 
+<link rel="stylesheet" href="<?= base_url() ?>build/css/style.bundle.css" />
 
-<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="<?=base_url()?>assets/css/owl.carousel.css">
-        <link rel="stylesheet" href="<?=base_url()?>assets/css/owl.theme.css">
-        <link rel="stylesheet" href="<?=base_url()?>assets/css/owl.transitions.css">
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/font-awesome.min.css" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/addons.css" />
-<link rel='stylesheet' href='<?= base_url() ?>assets/css/googleapis.css' type='text/css'>
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/jquery.jscrollpane.css" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/styleNew.css" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/stylee.css" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/movieNew.css" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/jquery-ui-1.11.4.custom/jquery-ui.css" type="text/css" media="screen, projection" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/mystylee.css" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/xfactor.css" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/cinema.css">
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/movies.css">
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/video_containers.css">
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/containers.css">
-<link rel="stylesheet" type="text/css" href="http://allpeliculas.com/templates/site/allmovies.ge/topmovies.css?v97" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/jshowoff.css" type="text/css" />
     </head>
     <body ng-controller="MainCtrl">
         <div class="wrapper" name="wrapper" id="wrapper">
@@ -783,6 +763,6 @@
 
 
 <script type="text/javascript" src="<?= base_url() ?>assets/js/search.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/login.js"></script
+<script type="text/javascript" src="<?= base_url() ?>assets/js/login.js"></script>
     </body>
 </html>
