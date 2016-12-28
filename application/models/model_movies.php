@@ -1383,11 +1383,11 @@ class model_movies extends CI_Model {
         //$this->db->order_by("date", "desc"); 
         
         $this->db->select('distinct(videoid)');
-        $this->db->where('date >= unix_timestamp(now() - interval 1 day)');
+        $this->db->where('date >= unix_timestamp(now() - interval 1000 day)');
         $data = $this->db->get('movie_views')->result();
         foreach ($data as $value) {
 
-            $this->db->where('date >= unix_timestamp(now() - interval 1 day)');
+            $this->db->where('date >= unix_timestamp(now() - interval 1000 day)');
             $this->db->where('videoid',$value->videoid);
             $ids = $this->db->get('movie_views');
             $sum[] = $ids->num_rows();

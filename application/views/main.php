@@ -18,32 +18,8 @@
         <meta property="og:image:height" content="102">
         <meta property="fb:app_id" content="385022118315699" />
 
-<link rel="stylesheet" href="<?= base_url() ?>build/css/style.bundle.css" />
+        <link rel="stylesheet" href="<?= base_url() ?>build/css/style.bundle.css" />
 
-<<<<<<< HEAD
-=======
-<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="<?=base_url()?>assets/css/owl.carousel.css">
-        <link rel="stylesheet" href="<?=base_url()?>assets/css/owl.theme.css">
-        <link rel="stylesheet" href="<?=base_url()?>assets/css/owl.transitions.css">
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/font-awesome.min.css" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/addons.css" />
-<link rel='stylesheet' href='<?= base_url() ?>assets/css/googleapis.css' type='text/css'>
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/jquery.jscrollpane.css" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/styleNew.css" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/stylee.css" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/movieNew.css" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/jquery-ui-1.11.4.custom/jquery-ui.css" type="text/css" media="screen, projection" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/mystylee.css" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/xfactor.css" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/cinema.css">
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/movies.css">
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/video_containers.css">
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/containers.css">
-<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/topmovies.css?v97" />
-<link rel="stylesheet" href="<?= base_url() ?>assets/css/jshowoff.css" type="text/css" />
->>>>>>> origin/master
     </head>
     <body ng-controller="MainCtrl">
         <div class="wrapper" name="wrapper" id="wrapper">
@@ -61,7 +37,7 @@
                         </div>
                     </div>
                     <!--/trailer-->
-                    
+
                     <div style="top: 500px; display: none;" class="formPopup report">
                         <div class="popUpTitle"><div class="title">problem report</div><div class="closePopUp" onclick="closePopUp()">X</div></div>
                         <div class="fildsText"><textarea placeholder=" problem description" id="report_problem_description" class="nomarg"></textarea></div>
@@ -69,7 +45,7 @@
                         <div onclick="sendReport(report_email.value, report_problem_description.value);" class="fildsSend">Enviar mensaje</div>
                     </div>
                     <!--contact-->
-                    
+
                     <div style="height: 308px; display: none;" class="formPopup contact">
                         <div class="popUpTitle">
                             <div class="title">Contactos</div>
@@ -364,7 +340,7 @@
                                 <span href="movies/detail/id/182" class="play ajaxRequest"></span> </div>
 
                             <!--/Slider item-->
-                            
+
                         </div>
                     </div>
                     <div class="n-search-cont">
@@ -381,10 +357,15 @@
                             <div class="search-result-inner-new" id="search-result-inner"></div>
                         </div>
                     </div>
-                    
-                    
-                    <div  id="MainContent">
 
+
+
+                    <div  id="MainContent">
+                        <div align="left" id="mdiv">
+                            <div style="height: 39px;display: block;" id="sort-tags">
+                                <div id="expand-arrow" class="showFilter"></div>
+                            </div>
+                        </div>
 
                         <div class="switcher-first-section">
                             <div class="switchers">
@@ -410,7 +391,7 @@
                             <div>
 
                                 <script>
-                            $("#date").slider();
+                                            $("#date").slider();
 
                                 </script> 
                                 <div class="top8" id="genreSelector">
@@ -706,83 +687,782 @@
                                 </div>
                             </div>
                         </div>
-                        <div align="left" id="mdiv">
-                            <div style="height: 39px;display: block;" id="sort-tags">
-                                <div id="expand-arrow" class="showFilter"></div>
-                            </div>
-                        </div>
 
                         <div align="center" id="movies">
-
-                            <?php $this->load->view('inc/topMoviesSlider');?>
-
-
+                            <?php $this->load->view('inc/topMoviesSlider'); ?>
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-3 home_left_contect">
-                                <div class="rec-block">
-                                    sdfdg
+                            <div class="left_content">
+                                <div class="recomend">
+                                    <div class="title">
+                                        <h3>peliculas recomendadas</h3>
+                                    </div>
+                                    <div class="rec-block">
+                                        <div class="rec-item row">
+                                            <div class="rec-img col-xs-5">
+                                                <img src="http://allpeliculas.com/getImages/image/84/113/100/top/files/movies_posters/3123424_571429789011_142978901815_tupeli.me.jpg" class="img-responsive">
+                                            </div>
+                                            <div class="rec-info col-xs-7">
+                                                <h3><a href="#"> </a></h3>
+                                                <h4><a href="#"> Warrior</a></h4>
+
+                                                <p>Género: </p>
+                                                <p>Box Office: $0</p>
+                                                <p> Budget: $0</p>
+                                                <div class="stars">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="rec-item row">
+                                            <div class="rec-img col-xs-5">
+                                                <img src="http://allpeliculas.com/getImages/image/84/113/100/top/files/movies_posters/3123424_571429789011_142978901815_tupeli.me.jpg" class="img-responsive">
+                                            </div>
+                                            <div class="rec-info col-xs-7">
+                                                <h3><a href="#"> </a></h3>
+                                                <h4><a href="#"> Warrior</a></h4>
+
+                                                <p>Género: </p>
+                                                <p>Box Office: $0</p>
+                                                <p> Budget: $0</p>
+                                                <div class="stars">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="rec-item row">
+                                            <div class="rec-img col-xs-5">
+                                                <img src="http://allpeliculas.com/getImages/image/84/113/100/top/files/movies_posters/3123424_571429789011_142978901815_tupeli.me.jpg" class="img-responsive">
+                                            </div>
+                                            <div class="rec-info col-xs-7">
+                                                <h3><a href="#"> </a></h3>
+                                                <h4><a href="#"> Warrior</a></h4>
+
+                                                <p>Género: </p>
+                                                <p>Box Office: $0</p>
+                                                <p> Budget: $0</p>
+                                                <div class="stars">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="rec-item row">
+                                            <div class="rec-img col-xs-5">
+                                                <img src="http://allpeliculas.com/getImages/image/84/113/100/top/files/movies_posters/3123424_571429789011_142978901815_tupeli.me.jpg" class="img-responsive">
+                                            </div>
+                                            <div class="rec-info col-xs-7">
+                                                <h3><a href="#"> </a></h3>
+                                                <h4><a href="#"> Warrior</a></h4>
+
+                                                <p>Género: </p>
+                                                <p>Box Office: $0</p>
+                                                <p> Budget: $0</p>
+                                                <div class="stars">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rec-item row">
+                                            <div class="rec-img col-xs-5">
+                                                <img src="http://allpeliculas.com/getImages/image/84/113/100/top/files/movies_posters/3123424_571429789011_142978901815_tupeli.me.jpg" class="img-responsive">
+                                            </div>
+                                            <div class="rec-info col-xs-7">
+                                                <h3><a href="#"> </a></h3>
+                                                <h4><a href="#"> Warrior</a></h4>
+
+                                                <p>Género: </p>
+                                                <p>Box Office: $0</p>
+                                                <p> Budget: $0</p>
+                                                <div class="stars">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="rec-item row">
+                                            <div class="rec-img col-xs-5">
+                                                <img src="http://allpeliculas.com/getImages/image/84/113/100/top/files/movies_posters/3123424_571429789011_142978901815_tupeli.me.jpg" class="img-responsive">
+                                            </div>
+                                            <div class="rec-info col-xs-7">
+                                                <h3><a href="#"> </a></h3>
+                                                <h4><a href="#"> Warrior</a></h4>
+
+                                                <p>Género: </p>
+                                                <p>Box Office: $0</p>
+                                                <p> Budget: $0</p>
+                                                <div class="stars">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="rec-item row">
+                                            <div class="rec-img col-xs-5">
+                                                <img src="http://allpeliculas.com/getImages/image/84/113/100/top/files/movies_posters/3123424_571429789011_142978901815_tupeli.me.jpg" class="img-responsive">
+                                            </div>
+                                            <div class="rec-info col-xs-7">
+                                                <h3><a href="#"> </a></h3>
+                                                <h4><a href="#"> Warrior</a></h4>
+
+                                                <p>Género: </p>
+                                                <p>Box Office: $0</p>
+                                                <p> Budget: $0</p>
+                                                <div class="stars">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="rec-item row">
+                                            <div class="rec-img col-xs-5">
+                                                <img src="http://allpeliculas.com/getImages/image/84/113/100/top/files/movies_posters/3123424_571429789011_142978901815_tupeli.me.jpg" class="img-responsive">
+                                            </div>
+                                            <div class="rec-info col-xs-7">
+                                                <h3><a href="#"> </a></h3>
+                                                <h4><a href="#"> Warrior</a></h4>
+
+                                                <p>Género: </p>
+                                                <p>Box Office: $0</p>
+                                                <p> Budget: $0</p>
+                                                <div class="stars">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="rec-item row">
+                                            <div class="rec-img col-xs-5">
+                                                <img src="http://allpeliculas.com/getImages/image/84/113/100/top/files/movies_posters/3123424_571429789011_142978901815_tupeli.me.jpg" class="img-responsive">
+                                            </div>
+                                            <div class="rec-info col-xs-7">
+                                                <h3><a href="#"> </a></h3>
+                                                <h4><a href="#"> Warrior</a></h4>
+
+                                                <p>Género: </p>
+                                                <p>Box Office: $0</p>
+                                                <p> Budget: $0</p>
+                                                <div class="stars">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="rec-item row">
+                                            <div class="rec-img col-xs-5">
+                                                <img src="http://allpeliculas.com/getImages/image/84/113/100/top/files/movies_posters/3123424_571429789011_142978901815_tupeli.me.jpg" class="img-responsive">
+                                            </div>
+                                            <div class="rec-info col-xs-7">
+                                                <h3><a href="#"> </a></h3>
+                                                <h4><a href="#"> Warrior</a></h4>
+
+                                                <p>Género: </p>
+                                                <p>Box Office: $0</p>
+                                                <p> Budget: $0</p>
+                                                <div class="stars">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-9 home_right_contect">
-                                <div class="rec-block">
-                                    <div class="mv_movie_item_static  movie-element">
-                                        <a href="http://allanimes.net/movies/view/198" class="mv_movie_item_cover ajaxRequest" style="background-image:url('http://allanimes.net/assets/images/mov2.jpg')"> </a>
-                                        <a class="mv_movie_item_title bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198">name 5  </a> 
-                                        <a class="mv_movie_item_title_eng bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198"> name 5 </a>
-                                        <div class="mv_movies_listing_item_stats"> 
-                                            <span class="mv_movie_year left"> YEAR: <span>2000</span> </span> 
-                                            <span class="imdb-small right">IMDB: 0</span> 
+                            <div class="right_content">
+                                <div class="mv_center">
+                                    <div class="mv_center_corner"></div>
+                                    <div class="movie-block">
+                                        <div class="movie-block-image-div moview-new-type" style="height:195px;width:130px;position:relative;overflow:inherit;">
+                                            <a class="movie-block-image-link" href="/#movies/view/2922/marea-negra" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
+                                                <im class="movie-block-image" style="padding:0;border:0;border-radius: 4px;width:128px;height:193px;background:url('http://allpeliculas.com/getImages/image/130/195/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg');background-size:128px 193px;"></im>
+                                            </a>
+                                            <div class="movie-overlay clearfix">
+                                                <em class="info-left">2016<span> Year</span></em>
+                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> 7.5</em>
+                                            </div>
+                                            <div class="info-icon" data-id="2922"><span>!</span>
+                                                <div class="preview-block ">
+                                                    <div class="inner clearfix">
+                                                        <div class="thumb">
+                                                            <img src="http://allpeliculas.com/getImages/image/157/236/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg" alt="Marea negra " width="157" height="236">
+                                                            <a href="http://allpeliculas.com/#movies/view/2922/marea-negra" class="player">player</a>
+                                                            <span class="trailerClick trailer-btn leftified"><span class="n-movie-trailer">youtu.be/golFYgkDNCw</span></span>
+                                                        </div><!-- .home-slide-item-preview-thumb -->
+                                                        <div class="title">
+                                                            <div class="imdb-votes">
+                                                                <em class="caption">Count: </em><em class="votes">3634546</em>
+                                                                <div class="movie-stars"><div align="center"><div style="margin:-1px 0px 0px 1px;"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"></div></div><div class="vote-div-count" align="center">0/10 (0)</div></div>
+                                                            </div>
+                                                            <div class="imdb">
+                                                                <span>7.5</span>
+                                                            </div><!-- .movie-imdb-rating --><h2>Deepwater Horizon </h2><h3>Marea negra </h3>
+                                                        </div><!-- .home-slide-item-preview-title -->
+                                                        <div class="details">
+                                                            <p>
+                                                                <span>Year: </span><a href="http://allpeliculas.com/#Movies/topmovies/topRated/2016/marea-negra">2016</a>
+                                                            </p>
+                                                            <p>
+                                                                <span>Género: </span><span>Drama, Thriller, Accion</span>
+                                                            </p>
+                                                            <p>
+                                                                <span>Language: </span><span>Latino</span>
+                                                            </p>
+                                                            <p>
+                                                                <span>Roles: </span><span><span class="movie-actor-th">Mark Wahlberg</span>, <span class="movie-actor-th">Kurt Russell</span>, <span class="movie-actor-th">Douglas M. Griffin</span>, <span class="movie-actor-th">James DuMont</span>, <span class="movie-actor-th">Joe Chrest</span>, <span class="movie-actor-th">Gina Rodriguez</span>, <span class="movie-actor-th">Brad Leland</span></span>
+                                                            </p>
+                                                        </div><!-- .details -->
+                                                        <div class="description">
+                                                            <p>
+                                                            </p><div class="info-mini-text">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto  ...</div><div class="info-full-text" style="display:none;">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto causó una catástrofe que mató a 11 personas e hirió a otras 16, provocando además una de las catástrofes medioambientales más graves causadas por el hombre.&nbsp; <img src="http://allpeliculas.com/allmovies_images/p2.gif" class="info-full-arrow"></div>
+                                                            <p></p>
+                                                        </div><!-- .home-slide-item-preview-description -->
+                                                        <div class="views">
+                                                            HD 720
+                                                        </div><!-- .home-slide-item-preview-views -->
+                                                    </div><!-- .home-slide-item-preview -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movie-block-info" style="padding-top:5px;">
+                                            <div class="movie-block-title" align="center">Marea negra</div>
+                                            <div class="movie-block-date" align="center">2016</div>
+                                            <div class="movie-block-genre" align="center">Drama</div>
+                                            <div class="movie-block-actors" align="center">Mark Wahlberg,Kurt Russell,Douglas M. Griffin,James DuMont</div>
                                         </div>
                                     </div>
-                                    
-                                    <div class="mv_movie_item_static  movie-element">
-                                        <a href="http://allanimes.net/movies/view/198" class="mv_movie_item_cover ajaxRequest" style="background-image:url('http://allanimes.net/assets/images/mov2.jpg')"> </a>
-                                        <a class="mv_movie_item_title bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198">name 5  </a> 
-                                        <a class="mv_movie_item_title_eng bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198"> name 5 </a>
-                                        <div class="mv_movies_listing_item_stats"> 
-                                            <span class="mv_movie_year left"> YEAR: <span>2000</span> </span> 
-                                            <span class="imdb-small right">IMDB: 0</span> 
+
+                                    <div class="movie-block">
+                                        <div class="movie-block-image-div moview-new-type" style="height:195px;width:130px;position:relative;overflow:inherit;">
+                                            <a class="movie-block-image-link" href="/#movies/view/2922/marea-negra" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
+                                                <im class="movie-block-image" style="padding:0;border:0;border-radius: 4px;width:128px;height:193px;background:url('http://allpeliculas.com/getImages/image/130/195/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg');background-size:128px 193px;"></im>
+                                            </a>
+                                            <div class="movie-overlay clearfix">
+                                                <em class="info-left">2016<span> Year</span></em>
+                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> 7.5</em>
+                                            </div>
+                                            <div class="info-icon" data-id="2922"><span>!</span>
+                                                <div class="preview-block ">
+                                                    <div class="inner clearfix">
+                                                        <div class="thumb">
+                                                            <img src="http://allpeliculas.com/getImages/image/157/236/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg" alt="Marea negra " width="157" height="236">
+                                                            <a href="http://allpeliculas.com/#movies/view/2922/marea-negra" class="player">player</a>
+                                                            <span class="trailerClick trailer-btn leftified"><span class="n-movie-trailer">youtu.be/golFYgkDNCw</span></span>
+                                                        </div><!-- .home-slide-item-preview-thumb -->
+                                                        <div class="title">
+                                                            <div class="imdb-votes">
+                                                                <em class="caption">Count: </em><em class="votes">3634546</em>
+                                                                <div class="movie-stars"><div align="center"><div style="margin:-1px 0px 0px 1px;"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"></div></div><div class="vote-div-count" align="center">0/10 (0)</div></div>
+                                                            </div>
+                                                            <div class="imdb">
+                                                                <span>7.5</span>
+                                                            </div><!-- .movie-imdb-rating --><h2>Deepwater Horizon </h2><h3>Marea negra </h3>
+                                                        </div><!-- .home-slide-item-preview-title -->
+                                                        <div class="details">
+                                                            <p>
+                                                                <span>Year: </span><a href="http://allpeliculas.com/#Movies/topmovies/topRated/2016/marea-negra">2016</a>
+                                                            </p>
+                                                            <p>
+                                                                <span>Género: </span><span>Drama, Thriller, Accion</span>
+                                                            </p>
+                                                            <p>
+                                                                <span>Language: </span><span>Latino</span>
+                                                            </p>
+                                                            <p>
+                                                                <span>Roles: </span><span><span class="movie-actor-th">Mark Wahlberg</span>, <span class="movie-actor-th">Kurt Russell</span>, <span class="movie-actor-th">Douglas M. Griffin</span>, <span class="movie-actor-th">James DuMont</span>, <span class="movie-actor-th">Joe Chrest</span>, <span class="movie-actor-th">Gina Rodriguez</span>, <span class="movie-actor-th">Brad Leland</span></span>
+                                                            </p>
+                                                        </div><!-- .details -->
+                                                        <div class="description">
+                                                            <p>
+                                                            </p><div class="info-mini-text">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto  ...</div><div class="info-full-text" style="display:none;">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto causó una catástrofe que mató a 11 personas e hirió a otras 16, provocando además una de las catástrofes medioambientales más graves causadas por el hombre.&nbsp; <img src="http://allpeliculas.com/allmovies_images/p2.gif" class="info-full-arrow"></div>
+                                                            <p></p>
+                                                        </div><!-- .home-slide-item-preview-description -->
+                                                        <div class="views">
+                                                            HD 720
+                                                        </div><!-- .home-slide-item-preview-views -->
+                                                    </div><!-- .home-slide-item-preview -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movie-block-info" style="padding-top:5px;">
+                                            <div class="movie-block-title" align="center">Marea negra</div>
+                                            <div class="movie-block-date" align="center">2016</div>
+                                            <div class="movie-block-genre" align="center">Drama</div>
+                                            <div class="movie-block-actors" align="center">Mark Wahlberg,Kurt Russell,Douglas M. Griffin,James DuMont</div>
                                         </div>
                                     </div>
-                                    
-                                    <div class="mv_movie_item_static  movie-element">
-                                        <a href="http://allanimes.net/movies/view/198" class="mv_movie_item_cover ajaxRequest" style="background-image:url('http://allanimes.net/assets/images/mov2.jpg')"> </a>
-                                        <a class="mv_movie_item_title bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198">name 5  </a> 
-                                        <a class="mv_movie_item_title_eng bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198"> name 5 </a>
-                                        <div class="mv_movies_listing_item_stats"> 
-                                            <span class="mv_movie_year left"> YEAR: <span>2000</span> </span> 
-                                            <span class="imdb-small right">IMDB: 0</span> 
+
+                                    <div class="movie-block">
+                                        <div class="movie-block-image-div moview-new-type" style="height:195px;width:130px;position:relative;overflow:inherit;">
+                                            <a class="movie-block-image-link" href="/#movies/view/2922/marea-negra" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
+                                                <im class="movie-block-image" style="padding:0;border:0;border-radius: 4px;width:128px;height:193px;background:url('http://allpeliculas.com/getImages/image/130/195/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg');background-size:128px 193px;"></im>
+                                            </a>
+                                            <div class="movie-overlay clearfix">
+                                                <em class="info-left">2016<span> Year</span></em>
+                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> 7.5</em>
+                                            </div>
+                                            <div class="info-icon" data-id="2922"><span>!</span>
+                                                <div class="preview-block ">
+                                                    <div class="inner clearfix">
+                                                        <div class="thumb">
+                                                            <img src="http://allpeliculas.com/getImages/image/157/236/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg" alt="Marea negra " width="157" height="236">
+                                                            <a href="http://allpeliculas.com/#movies/view/2922/marea-negra" class="player">player</a>
+                                                            <span class="trailerClick trailer-btn leftified"><span class="n-movie-trailer">youtu.be/golFYgkDNCw</span></span>
+                                                        </div><!-- .home-slide-item-preview-thumb -->
+                                                        <div class="title">
+                                                            <div class="imdb-votes">
+                                                                <em class="caption">Count: </em><em class="votes">3634546</em>
+                                                                <div class="movie-stars"><div align="center"><div style="margin:-1px 0px 0px 1px;"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"></div></div><div class="vote-div-count" align="center">0/10 (0)</div></div>
+                                                            </div>
+                                                            <div class="imdb">
+                                                                <span>7.5</span>
+                                                            </div><!-- .movie-imdb-rating --><h2>Deepwater Horizon </h2><h3>Marea negra </h3>
+                                                        </div><!-- .home-slide-item-preview-title -->
+                                                        <div class="details">
+                                                            <p>
+                                                                <span>Year: </span><a href="http://allpeliculas.com/#Movies/topmovies/topRated/2016/marea-negra">2016</a>
+                                                            </p>
+                                                            <p>
+                                                                <span>Género: </span><span>Drama, Thriller, Accion</span>
+                                                            </p>
+                                                            <p>
+                                                                <span>Language: </span><span>Latino</span>
+                                                            </p>
+                                                            <p>
+                                                                <span>Roles: </span><span><span class="movie-actor-th">Mark Wahlberg</span>, <span class="movie-actor-th">Kurt Russell</span>, <span class="movie-actor-th">Douglas M. Griffin</span>, <span class="movie-actor-th">James DuMont</span>, <span class="movie-actor-th">Joe Chrest</span>, <span class="movie-actor-th">Gina Rodriguez</span>, <span class="movie-actor-th">Brad Leland</span></span>
+                                                            </p>
+                                                        </div><!-- .details -->
+                                                        <div class="description">
+                                                            <p>
+                                                            </p><div class="info-mini-text">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto  ...</div><div class="info-full-text" style="display:none;">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto causó una catástrofe que mató a 11 personas e hirió a otras 16, provocando además una de las catástrofes medioambientales más graves causadas por el hombre.&nbsp; <img src="http://allpeliculas.com/allmovies_images/p2.gif" class="info-full-arrow"></div>
+                                                            <p></p>
+                                                        </div><!-- .home-slide-item-preview-description -->
+                                                        <div class="views">
+                                                            HD 720
+                                                        </div><!-- .home-slide-item-preview-views -->
+                                                    </div><!-- .home-slide-item-preview -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movie-block-info" style="padding-top:5px;">
+                                            <div class="movie-block-title" align="center">Marea negra</div>
+                                            <div class="movie-block-date" align="center">2016</div>
+                                            <div class="movie-block-genre" align="center">Drama</div>
+                                            <div class="movie-block-actors" align="center">Mark Wahlberg,Kurt Russell,Douglas M. Griffin,James DuMont</div>
                                         </div>
                                     </div>
-                                    
-                                    <div class="mv_movie_item_static  movie-element">
-                                        <a href="http://allanimes.net/movies/view/198" class="mv_movie_item_cover ajaxRequest" style="background-image:url('http://allanimes.net/assets/images/mov2.jpg')"> </a>
-                                        <a class="mv_movie_item_title bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198">name 5  </a> 
-                                        <a class="mv_movie_item_title_eng bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198"> name 5 </a>
-                                        <div class="mv_movies_listing_item_stats"> 
-                                            <span class="mv_movie_year left"> YEAR: <span>2000</span> </span> 
-                                            <span class="imdb-small right">IMDB: 0</span> 
+
+                                    <div class="movie-block">
+                                        <div class="movie-block-image-div moview-new-type" style="height:195px;width:130px;position:relative;overflow:inherit;">
+                                            <a class="movie-block-image-link" href="/#movies/view/2922/marea-negra" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
+                                                <im class="movie-block-image" style="padding:0;border:0;border-radius: 4px;width:128px;height:193px;background:url('http://allpeliculas.com/getImages/image/130/195/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg');background-size:128px 193px;"></im>
+                                            </a>
+                                            <div class="movie-overlay clearfix">
+                                                <em class="info-left">2016<span> Year</span></em>
+                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> 7.5</em>
+                                            </div>
+                                            <div class="info-icon" data-id="2922"><span>!</span>
+                                                <div class="preview-block ">
+                                                    <div class="inner clearfix">
+                                                        <div class="thumb">
+                                                            <img src="http://allpeliculas.com/getImages/image/157/236/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg" alt="Marea negra " width="157" height="236">
+                                                            <a href="http://allpeliculas.com/#movies/view/2922/marea-negra" class="player">player</a>
+                                                            <span class="trailerClick trailer-btn leftified"><span class="n-movie-trailer">youtu.be/golFYgkDNCw</span></span>
+                                                        </div><!-- .home-slide-item-preview-thumb -->
+                                                        <div class="title">
+                                                            <div class="imdb-votes">
+                                                                <em class="caption">Count: </em><em class="votes">3634546</em>
+                                                                <div class="movie-stars"><div align="center"><div style="margin:-1px 0px 0px 1px;"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"></div></div><div class="vote-div-count" align="center">0/10 (0)</div></div>
+                                                            </div>
+                                                            <div class="imdb">
+                                                                <span>7.5</span>
+                                                            </div><!-- .movie-imdb-rating --><h2>Deepwater Horizon </h2><h3>Marea negra </h3>
+                                                        </div><!-- .home-slide-item-preview-title -->
+                                                        <div class="details">
+                                                            <p>
+                                                                <span>Year: </span><a href="http://allpeliculas.com/#Movies/topmovies/topRated/2016/marea-negra">2016</a>
+                                                            </p>
+                                                            <p>
+                                                                <span>Género: </span><span>Drama, Thriller, Accion</span>
+                                                            </p>
+                                                            <p>
+                                                                <span>Language: </span><span>Latino</span>
+                                                            </p>
+                                                            <p>
+                                                                <span>Roles: </span><span><span class="movie-actor-th">Mark Wahlberg</span>, <span class="movie-actor-th">Kurt Russell</span>, <span class="movie-actor-th">Douglas M. Griffin</span>, <span class="movie-actor-th">James DuMont</span>, <span class="movie-actor-th">Joe Chrest</span>, <span class="movie-actor-th">Gina Rodriguez</span>, <span class="movie-actor-th">Brad Leland</span></span>
+                                                            </p>
+                                                        </div><!-- .details -->
+                                                        <div class="description">
+                                                            <p>
+                                                            </p><div class="info-mini-text">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto  ...</div><div class="info-full-text" style="display:none;">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto causó una catástrofe que mató a 11 personas e hirió a otras 16, provocando además una de las catástrofes medioambientales más graves causadas por el hombre.&nbsp; <img src="http://allpeliculas.com/allmovies_images/p2.gif" class="info-full-arrow"></div>
+                                                            <p></p>
+                                                        </div><!-- .home-slide-item-preview-description -->
+                                                        <div class="views">
+                                                            HD 720
+                                                        </div><!-- .home-slide-item-preview-views -->
+                                                    </div><!-- .home-slide-item-preview -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movie-block-info" style="padding-top:5px;">
+                                            <div class="movie-block-title" align="center">Marea negra</div>
+                                            <div class="movie-block-date" align="center">2016</div>
+                                            <div class="movie-block-genre" align="center">Drama</div>
+                                            <div class="movie-block-actors" align="center">Mark Wahlberg,Kurt Russell,Douglas M. Griffin,James DuMont</div>
                                         </div>
                                     </div>
-                                    
-                                    <div class="mv_movie_item_static  movie-element">
-                                        <a href="http://allanimes.net/movies/view/198" class="mv_movie_item_cover ajaxRequest" style="background-image:url('http://allanimes.net/assets/images/mov2.jpg')"> </a>
-                                        <a class="mv_movie_item_title bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198">name 5  </a> 
-                                        <a class="mv_movie_item_title_eng bpgArial ajaxRequest" href="http://allanimes.net/movies/view/198"> name 5 </a>
-                                        <div class="mv_movies_listing_item_stats"> 
-                                            <span class="mv_movie_year left"> YEAR: <span>2000</span> </span> 
-                                            <span class="imdb-small right">IMDB: 0</span> 
+
+                                    <div class="movie-block">
+                                        <div class="movie-block-image-div moview-new-type" style="height:195px;width:130px;position:relative;overflow:inherit;">
+                                            <a class="movie-block-image-link" href="/#movies/view/2922/marea-negra" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
+                                                <im class="movie-block-image" style="padding:0;border:0;border-radius: 4px;width:128px;height:193px;background:url('http://allpeliculas.com/getImages/image/130/195/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg');background-size:128px 193px;"></im>
+                                            </a>
+                                            <div class="movie-overlay clearfix">
+                                                <em class="info-left">2016<span> Year</span></em>
+                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> 7.5</em>
+                                            </div>
+                                            <div class="info-icon" data-id="2922"><span>!</span>
+                                                <div class="preview-block ">
+                                                    <div class="inner clearfix">
+                                                        <div class="thumb">
+                                                            <img src="http://allpeliculas.com/getImages/image/157/236/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg" alt="Marea negra " width="157" height="236">
+                                                            <a href="http://allpeliculas.com/#movies/view/2922/marea-negra" class="player">player</a>
+                                                            <span class="trailerClick trailer-btn leftified"><span class="n-movie-trailer">youtu.be/golFYgkDNCw</span></span>
+                                                        </div><!-- .home-slide-item-preview-thumb -->
+                                                        <div class="title">
+                                                            <div class="imdb-votes">
+                                                                <em class="caption">Count: </em><em class="votes">3634546</em>
+                                                                <div class="movie-stars"><div align="center"><div style="margin:-1px 0px 0px 1px;"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"></div></div><div class="vote-div-count" align="center">0/10 (0)</div></div>
+                                                            </div>
+                                                            <div class="imdb">
+                                                                <span>7.5</span>
+                                                            </div><!-- .movie-imdb-rating --><h2>Deepwater Horizon </h2><h3>Marea negra </h3>
+                                                        </div><!-- .home-slide-item-preview-title -->
+                                                        <div class="details">
+                                                            <p>
+                                                                <span>Year: </span><a href="http://allpeliculas.com/#Movies/topmovies/topRated/2016/marea-negra">2016</a>
+                                                            </p>
+                                                            <p>
+                                                                <span>Género: </span><span>Drama, Thriller, Accion</span>
+                                                            </p>
+                                                            <p>
+                                                                <span>Language: </span><span>Latino</span>
+                                                            </p>
+                                                            <p>
+                                                                <span>Roles: </span><span><span class="movie-actor-th">Mark Wahlberg</span>, <span class="movie-actor-th">Kurt Russell</span>, <span class="movie-actor-th">Douglas M. Griffin</span>, <span class="movie-actor-th">James DuMont</span>, <span class="movie-actor-th">Joe Chrest</span>, <span class="movie-actor-th">Gina Rodriguez</span>, <span class="movie-actor-th">Brad Leland</span></span>
+                                                            </p>
+                                                        </div><!-- .details -->
+                                                        <div class="description">
+                                                            <p>
+                                                            </p><div class="info-mini-text">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto  ...</div><div class="info-full-text" style="display:none;">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto causó una catástrofe que mató a 11 personas e hirió a otras 16, provocando además una de las catástrofes medioambientales más graves causadas por el hombre.&nbsp; <img src="http://allpeliculas.com/allmovies_images/p2.gif" class="info-full-arrow"></div>
+                                                            <p></p>
+                                                        </div><!-- .home-slide-item-preview-description -->
+                                                        <div class="views">
+                                                            HD 720
+                                                        </div><!-- .home-slide-item-preview-views -->
+                                                    </div><!-- .home-slide-item-preview -->
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class="movie-block-info" style="padding-top:5px;">
+                                            <div class="movie-block-title" align="center">Marea negra</div>
+                                            <div class="movie-block-date" align="center">2016</div>
+                                            <div class="movie-block-genre" align="center">Drama</div>
+                                            <div class="movie-block-actors" align="center">Mark Wahlberg,Kurt Russell,Douglas M. Griffin,James DuMont</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="movie-block">
+                                        <div class="movie-block-image-div moview-new-type" style="height:195px;width:130px;position:relative;overflow:inherit;">
+                                            <a class="movie-block-image-link" href="/#movies/view/2922/marea-negra" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
+                                                <im class="movie-block-image" style="padding:0;border:0;border-radius: 4px;width:128px;height:193px;background:url('http://allpeliculas.com/getImages/image/130/195/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg');background-size:128px 193px;"></im>
+                                            </a>
+                                            <div class="movie-overlay clearfix">
+                                                <em class="info-left">2016<span> Year</span></em>
+                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> 7.5</em>
+                                            </div>
+                                            <div class="info-icon" data-id="2922"><span>!</span>
+                                                <div class="preview-block ">
+                                                    <div class="inner clearfix">
+                                                        <div class="thumb">
+                                                            <img src="http://allpeliculas.com/getImages/image/157/236/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg" alt="Marea negra " width="157" height="236">
+                                                            <a href="http://allpeliculas.com/#movies/view/2922/marea-negra" class="player">player</a>
+                                                            <span class="trailerClick trailer-btn leftified"><span class="n-movie-trailer">youtu.be/golFYgkDNCw</span></span>
+                                                        </div><!-- .home-slide-item-preview-thumb -->
+                                                        <div class="title">
+                                                            <div class="imdb-votes">
+                                                                <em class="caption">Count: </em><em class="votes">3634546</em>
+                                                                <div class="movie-stars"><div align="center"><div style="margin:-1px 0px 0px 1px;"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"></div></div><div class="vote-div-count" align="center">0/10 (0)</div></div>
+                                                            </div>
+                                                            <div class="imdb">
+                                                                <span>7.5</span>
+                                                            </div><!-- .movie-imdb-rating --><h2>Deepwater Horizon </h2><h3>Marea negra </h3>
+                                                        </div><!-- .home-slide-item-preview-title -->
+                                                        <div class="details">
+                                                            <p>
+                                                                <span>Year: </span><a href="http://allpeliculas.com/#Movies/topmovies/topRated/2016/marea-negra">2016</a>
+                                                            </p>
+                                                            <p>
+                                                                <span>Género: </span><span>Drama, Thriller, Accion</span>
+                                                            </p>
+                                                            <p>
+                                                                <span>Language: </span><span>Latino</span>
+                                                            </p>
+                                                            <p>
+                                                                <span>Roles: </span><span><span class="movie-actor-th">Mark Wahlberg</span>, <span class="movie-actor-th">Kurt Russell</span>, <span class="movie-actor-th">Douglas M. Griffin</span>, <span class="movie-actor-th">James DuMont</span>, <span class="movie-actor-th">Joe Chrest</span>, <span class="movie-actor-th">Gina Rodriguez</span>, <span class="movie-actor-th">Brad Leland</span></span>
+                                                            </p>
+                                                        </div><!-- .details -->
+                                                        <div class="description">
+                                                            <p>
+                                                            </p><div class="info-mini-text">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto  ...</div><div class="info-full-text" style="display:none;">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto causó una catástrofe que mató a 11 personas e hirió a otras 16, provocando además una de las catástrofes medioambientales más graves causadas por el hombre.&nbsp; <img src="http://allpeliculas.com/allmovies_images/p2.gif" class="info-full-arrow"></div>
+                                                            <p></p>
+                                                        </div><!-- .home-slide-item-preview-description -->
+                                                        <div class="views">
+                                                            HD 720
+                                                        </div><!-- .home-slide-item-preview-views -->
+                                                    </div><!-- .home-slide-item-preview -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movie-block-info" style="padding-top:5px;">
+                                            <div class="movie-block-title" align="center">Marea negra</div>
+                                            <div class="movie-block-date" align="center">2016</div>
+                                            <div class="movie-block-genre" align="center">Drama</div>
+                                            <div class="movie-block-actors" align="center">Mark Wahlberg,Kurt Russell,Douglas M. Griffin,James DuMont</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="movie-block">
+                                        <div class="movie-block-image-div moview-new-type" style="height:195px;width:130px;position:relative;overflow:inherit;">
+                                            <a class="movie-block-image-link" href="/#movies/view/2922/marea-negra" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
+                                                <im class="movie-block-image" style="padding:0;border:0;border-radius: 4px;width:128px;height:193px;background:url('http://allpeliculas.com/getImages/image/130/195/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg');background-size:128px 193px;"></im>
+                                            </a>
+                                            <div class="movie-overlay clearfix">
+                                                <em class="info-left">2016<span> Year</span></em>
+                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> 7.5</em>
+                                            </div>
+                                            <div class="info-icon" data-id="2922"><span>!</span>
+                                                <div class="preview-block ">
+                                                    <div class="inner clearfix">
+                                                        <div class="thumb">
+                                                            <img src="http://allpeliculas.com/getImages/image/157/236/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg" alt="Marea negra " width="157" height="236">
+                                                            <a href="http://allpeliculas.com/#movies/view/2922/marea-negra" class="player">player</a>
+                                                            <span class="trailerClick trailer-btn leftified"><span class="n-movie-trailer">youtu.be/golFYgkDNCw</span></span>
+                                                        </div><!-- .home-slide-item-preview-thumb -->
+                                                        <div class="title">
+                                                            <div class="imdb-votes">
+                                                                <em class="caption">Count: </em><em class="votes">3634546</em>
+                                                                <div class="movie-stars"><div align="center"><div style="margin:-1px 0px 0px 1px;"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"></div></div><div class="vote-div-count" align="center">0/10 (0)</div></div>
+                                                            </div>
+                                                            <div class="imdb">
+                                                                <span>7.5</span>
+                                                            </div><!-- .movie-imdb-rating --><h2>Deepwater Horizon </h2><h3>Marea negra </h3>
+                                                        </div><!-- .home-slide-item-preview-title -->
+                                                        <div class="details">
+                                                            <p>
+                                                                <span>Year: </span><a href="http://allpeliculas.com/#Movies/topmovies/topRated/2016/marea-negra">2016</a>
+                                                            </p>
+                                                            <p>
+                                                                <span>Género: </span><span>Drama, Thriller, Accion</span>
+                                                            </p>
+                                                            <p>
+                                                                <span>Language: </span><span>Latino</span>
+                                                            </p>
+                                                            <p>
+                                                                <span>Roles: </span><span><span class="movie-actor-th">Mark Wahlberg</span>, <span class="movie-actor-th">Kurt Russell</span>, <span class="movie-actor-th">Douglas M. Griffin</span>, <span class="movie-actor-th">James DuMont</span>, <span class="movie-actor-th">Joe Chrest</span>, <span class="movie-actor-th">Gina Rodriguez</span>, <span class="movie-actor-th">Brad Leland</span></span>
+                                                            </p>
+                                                        </div><!-- .details -->
+                                                        <div class="description">
+                                                            <p>
+                                                            </p><div class="info-mini-text">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto  ...</div><div class="info-full-text" style="display:none;">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto causó una catástrofe que mató a 11 personas e hirió a otras 16, provocando además una de las catástrofes medioambientales más graves causadas por el hombre.&nbsp; <img src="http://allpeliculas.com/allmovies_images/p2.gif" class="info-full-arrow"></div>
+                                                            <p></p>
+                                                        </div><!-- .home-slide-item-preview-description -->
+                                                        <div class="views">
+                                                            HD 720
+                                                        </div><!-- .home-slide-item-preview-views -->
+                                                    </div><!-- .home-slide-item-preview -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movie-block-info" style="padding-top:5px;">
+                                            <div class="movie-block-title" align="center">Marea negra</div>
+                                            <div class="movie-block-date" align="center">2016</div>
+                                            <div class="movie-block-genre" align="center">Drama</div>
+                                            <div class="movie-block-actors" align="center">Mark Wahlberg,Kurt Russell,Douglas M. Griffin,James DuMont</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="serials">
+                                    <div class="ser_corner"></div>
+                                    <div class="pagin">
+                                        <a class="sld_ser back" data-off="0" data-type="top" data-func="back"></a>
+                                        <a class="sld_ser next" data-off="5" data-type="top" data-func="next"></a>
+                                    </div>
+
+                                    <ul class="tabs">
+                                        <li><a id="topS" class="active">TOP SERIALS</a><span></span></li>
+                                        <li><a id="newS" class="">JUST ADDED SERIALS</a><span></span></li>
+                                    </ul>
+
+                                    <div style="clear:both;"></div>
+                                    <!-- tab1 top serials -->
+                                    <div id="tab1" class="cont">
+                                        <div class="serial_inner ajaxload "> 
+                                            <div class="ajaxslider">
+
+
+                                                <div class="animated " id="slidercontent">
+
+
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- end top movies  slider tab 2-->
+
+
+                                </div>
+
+                                <div class="genero">
+                                    <h2>Genero</h2>
+                                    <div class="inner_genero row" >
+
+
+                                        <ul id="limheight">
+
+
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                            <li><a href="#">Biography</a></li>
+                                        </ul>
+
                                     </div>
                                 </div>
+
+
+                                <div class="gray_tabs">
+                                    <div class="gray_corner"></div>
+
+                                    <div class="pagin">
+                                        <a class="sld_gray back" data-off="0" data-type="top" data-func="back"></a>
+                                        <a class="sld_gray next" data-off="5" data-type="top" data-func="next"></a>
+                                    </div>
+
+                                    <ul class="tabs">
+                                        <li><a id="trailers" class="">Trailers</a><span></span></li>
+                                        <li><a id="sTracks" class="">Soundtracks</a><span></span></li>
+                                        <li><a id="posTers" class="">Posters</a><span></span></li>
+                                        <li><a id="wPapers" class="">Wallpapers</a><span></span></li>
+                                        <li><a id="foTos" class="active">Fotos</a><span></span></li>
+                                    </ul>
+
+                                    <div style="clear:both;"></div>
+
+
+                                    <div class="cont">
+                                        <div class="gray_inner">
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
 
                         <div style="display:none;" class="playScript"> 
 
-              </div>
+                        </div>
 
                     </div>
                 </div>
@@ -808,57 +1488,79 @@
                 </footer>
                 <!-- #footer --> </div>
         </div>
-        
+
         <script type="text/javascript" src="<?= base_url() ?>assets/js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.jshowoff.js"></script>
-<script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/jquery-migrate-1.2.1.min.js"></script>
-<script data-require="angular.js@1.3.x" src="https://code.angularjs.org/1.3.15/angular.js" data-semver="1.3.15"></script>
-    
-        <script src="<?=base_url()?>assets/js/owl.carousel.min.js"></script>
-        <script src="<?=base_url()?>app/app.js"></script>
-<script type="text/javascript" src="http://p.jwpcdn.com/6/10/jwplayer.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.touchSwipe.min.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.jcarousel.min.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/jcarousel.responsive.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/moderniz.js" ></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/newsystem.js" ></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/custom.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/main.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/addons.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/skripti/movies.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.form.min.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/swfobject.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/users.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.jshowoff.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/jquery-migrate-1.2.1.min.js"></script>
+        <script data-require="angular.js@1.3.x" src="https://code.angularjs.org/1.3.15/angular.js" data-semver="1.3.15"></script>
+
+        <script src="<?= base_url() ?>assets/js/owl.carousel.min.js"></script>
+        <script src="<?= base_url() ?>app/app.js"></script>
+        <script type="text/javascript" src="http://p.jwpcdn.com/6/10/jwplayer.js"></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/jcarousel.responsive.js"></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/moderniz.js" ></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/newsystem.js" ></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/custom.js"></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/main.js"></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/addons.js"></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/skripti/movies.js"></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.form.min.js"></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/swfobject.js"></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/users.js"></script>
 
 
 
-<script type="text/javascript" src="<?= base_url() ?>assets/js/search.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/login.js"></script>
-<<<<<<< HEAD
-=======
-<script>
-    $(document).ready(function() {
-        $.ajax({
-            type: "POST",
-            contentType: "application/json",
-            url: 'https://92.241.73.166:8081/LoyaltyCardService.svc/json/ChangeDeviceNumber',
-            data: JSON.stringify(
-                {
-                    "type": "Trade",
-                    "personalId": "01034001887",
-                    "deviceNumber": "fDr9qHqXHx8APA91bGvN3Frc2Dxoo8OGlyw194jeOnNmke-t85PKZivJslqKGX3gkVO1Ge8EgIjy4iqfKG3npwkSsT393HFRZwMRoVCtG8mLPfhfcp8h3ODsxdB2CMgeIVKfI9CUrqlicR1xnCJTk40",
-                    "token": "fDr9qHqXHx8APA91bGvN3Frc2Dxoo8OGlyw194jeOnNmke-t85PKZivJslqKGX3gkVO1Ge8EgIjy4iqfKG3npwkSsT393HFRZwMRoVCtG8mLPfhfcp8h3ODsxdB2CMgeIVKfI9CUrqlicR1xnCJTk40" 
-                }
-            ),
-            dataType: "json",
-            success: function (data) {
-                alert(data);
-            }
-        });
-    });
-</script>
->>>>>>> origin/master
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/search.js"></script>
+        <script type="text/javascript" src="<?= base_url() ?>assets/js/login.js"></script>
+
+        <script>
+                                            $(document).ready(function () {
+                                                $("#topS").on("click", function () {
+
+                                                    var th = $(this);
+                                                    var func = th.data('func');
+                                                    var off = th.data('off');
+                                                    var type = th.data('type');
+                                                    $(this).addClass("active");
+                                                    $("#newS").removeClass("active");
+                                                    $('#slidercontent').html('top');
+                                                    //        $.get("/movies/ajaxSlider/0/5/top", function(data){
+                                                    //          $(".sld_ser.next").data('type', "top");
+                                                    //          $(".sld_ser.back").data('type', "top");
+                                                    //          $(".sld_ser.next").data('off',5);
+                                                    //          $(".sld_ser.back").data('off',0);
+                                                    //          $('.ajaxload').html(data);
+                                                    //        });
+
+                                                });
+
+                                                $("#newS").on("click", function () {
+
+
+                                                    var th = $(this);
+                                                    var func = th.data('func');
+                                                    var off = th.data('off');
+                                                    var type = th.data('type');
+                                                    $(this).addClass("active");
+                                                    $("#topS").removeClass("active");
+                                                    $('#slidercontent').html('news');
+                                                    //          $.get("/movies/ajaxSlider/0/5/new", function(data){
+                                                    //            $(".sld_ser.next").data('type', "new");
+                                                    //            $(".sld_ser.back").data('type', "new");
+                                                    //            $(".sld_ser.next").data('off',5);
+                                                    //            $(".sld_ser.back").data('off',0);
+                                                    //
+                                                    //            $('.ajaxload').html(data);
+                                                    //          });
+
+                                                });
+                                            });
+        </script>
+
     </body>
 </html>

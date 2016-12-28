@@ -7,14 +7,13 @@ and open the template in the editor.
     Created on : Dec 23, 2016, 1:27:31 AM
     Author     : levan
 */
-
+@import url(assets/css/font-awesome.min.css);
 @import url(assets/bootstrap/css/bootstrap.min.css);
 @import url(assets/bootstrap/css/bootstrap-theme.min.css);
 @import url(assets/jquery-ui-1.11.4.custom/jquery-ui.css);
 @import url(assets/css/owl.carousel.css);
 @import url(assets/css/owl.theme.css);
 @import url(assets/css/owl.transitions.css);
-@import url(assets/css/font-awesome.min.css);
 @import url(assets/css/xfactor.css);
 @import url(assets/css/addons.css);
 
@@ -32,6 +31,10 @@ and open the template in the editor.
 *::-moz-placeholder {
     color: #6f6f6f;
     opacity: 1;
+}
+
+.clear {
+    clear: both;
 }
 
 .clearfix, div#program-list ul {
@@ -62,7 +65,6 @@ div#wrapper {
     margin: 0 auto -61px;
     min-height: 100%;
     overflow: hidden;
-    padding-bottom: 62px;
     position: relative;
 }
 
@@ -661,6 +663,574 @@ div#overlay {
     text-align: center;
     width: 112px;
 }
+
+#Headmenu > #headCont {
+    height: 68px;
+    margin: 0 auto;
+    padding: 0 22px;
+    position: relative;
+    width: 980px;
+}
+#Headmenu > #headCont > #logo {
+    background-image: url("../images/logo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 68px;
+    width: 171px;
+    z-index: 10;
+}
+#Headmenu.active > #headCont > #logo, #Headmenu.reactive > #headCont > #logo {
+    background-image: url("../images/logo-bl.png");
+}
+#Headmenu > #headCont > #manueBg {
+    height: 100%;
+    left: 50%;
+    margin-left: -300px;
+    position: absolute;
+    width: 660px;
+}
+#Headmenu > #headCont > #manueBg > ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+#Headmenu > #headCont > #manueBg > ul > li {
+    float: left;
+    height: 70px;
+    list-style-type: none;
+    margin-left: 9px;
+    position: relative;
+}
+#Headmenu > #headCont > #manueBg > ul > li a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+#Headmenu > #headCont > #manueBg > ul > li a:hover {
+    color: #0083ca;
+}
+#Headmenu > #headCont > #manueBg > ul > li a#ico-Sport:hover {
+    color: #ff0000;
+}
+#Headmenu > #headCont > #manueBg > ul > li a#ico-kolga:hover {
+    color: #fabe15;
+}
+#Headmenu > #headCont > #manueBg > ul > li a#ico-info:hover {
+    color: #341935;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li a, #Headmenu.reactive > #headCont > #manueBg > ul > li a {
+    color: #313131;
+}
+#Headmenu > #headCont > #manueBg > ul > li a span {
+    display: inline-block;
+    font-family: sanRegular;
+    font-size: 9px;
+    margin-top: 49px;
+    text-transform: uppercase;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navTv {
+    background-image: url("../images/tv.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 38px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navVideos {
+    background-image: url("../images/video.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navMovie {
+    background-image: url("../images/movie.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navEpisode {
+    background-image: url("../images/tv-serie.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navShows {
+    background-image: url("../images/tv-show.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navGames {
+    background-image: url("../images/games.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navQuotes {
+    background-image: url("../images/quote.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    display: block;
+    height: 45px;
+    width: 48px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navSport {
+    background-image: url("../images/sport.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    display: block;
+    height: 45px;
+    width: 48px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navInfo {
+    background-image: url("../images/infowhite.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    display: block;
+    height: 45px;
+    width: 35px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navXF {
+    background-image: url("../images/xfactor/xx.png");
+    background-position-x: 18px !important;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    display: block;
+    height: 45px;
+    width: 48px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navNews {
+    background-image: url("../images/news.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    display: block;
+    height: 45px;
+    width: 41px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navKolga {
+    background-image: url("../images/kolga-white.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    display: block;
+    height: 45px;
+    width: 41px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .nav-gb {
+    background-image: url("../images/4gb-white.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    display: block;
+    height: 45px;
+    width: 41px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li > .navTv, #Headmenu.reactive > #headCont > #manueBg > ul > li > .navTv {
+    background-image: url("../images/tv-bl.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 38px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li.active > a.navTv, #Headmenu.reactive > #headCont > #manueBg > ul > li.active > a.navTv {
+    background-image: url("../images/tv-hv.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 38px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li > .navVideos, #Headmenu.reactive > #headCont > #manueBg > ul > li > .navVideos {
+    background-image: url("../images/video-bl.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li.active > a.navVideos, #Headmenu.reactive > #headCont > #manueBg > ul > li.active > a.navVideos {
+    background-image: url("../images/video-hv.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li > .navMovie, #Headmenu.reactive > #headCont > #manueBg > ul > li > .navMovie {
+    background-image: url("../images/movie-bl.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li.active > a.navMovie, #Headmenu.reactive > #headCont > #manueBg > ul > li.active > a.navMovie {
+    background-image: url("../images/movie-hv.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li > .navEpisode, #Headmenu.reactive > #headCont > #manueBg > ul > li > .navEpisode {
+    background-image: url("../images/tv-serie-bl.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li.active > a.navEpisode, #Headmenu.reactive > #headCont > #manueBg > ul > li.active > a.navEpisode {
+    background-image: url("../images/tv-serie-hv.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li > .navShows, #Headmenu.reactive > #headCont > #manueBg > ul > li > .navShows {
+    background-image: url("../images/tv-show-bl.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li.active > a.navShows, #Headmenu.reactive > #headCont > #manueBg > ul > li.active > a.navShows {
+    background-image: url("../images/tv-show-hv.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li > .navGames, #Headmenu.reactive > #headCont > #manueBg > ul > li > .navGames {
+    background-image: url("../images/games-bl.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li.active > a.navGames, #Headmenu.reactive > #headCont > #manueBg > ul > li.active > a.navGames {
+    background-image: url("../images/games-hv.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li > .navQuotes, #Headmenu.reactive > #headCont > #manueBg > ul > li > .navQuotes {
+    background-image: url("../images/quote1.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 48px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li > .navSport, #Headmenu.reactive > #headCont > #manueBg > ul > li > .navSport {
+    background-image: url("../images/sport1.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 48px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li > .navInfo, #Headmenu.reactive > #headCont > #manueBg > ul > li > .navInfo {
+    background-image: url("../images/infogrey.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 35px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li > .nav-gb, #Headmenu.reactive > #headCont > #manueBg > ul > li > .nav-gb {
+    background-image: url("../images/4gb-grey.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li > .navXF, #Headmenu.reactive > #headCont > #manueBg > ul > li > .navXF {
+    background-image: url("../images/xfactor/x-factor.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 48px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li.active > .navQuotes, #Headmenu.reactive > #headCont > #manueBg > ul > li.active > .navQuotes {
+    background-image: url("../images/quote2.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 48px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li.active > .navSport, #Headmenu.reactive > #headCont > #manueBg > ul > li.active > .navSport {
+    background-image: url("../images/sport2.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 48px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li.active > .navXF, #Headmenu.reactive > #headCont > #manueBg > ul > li.active > .navXF {
+    background-image: url("../images/xfactor/xfactor.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 48px;
+}
+#Headmenu > #headCont > #manueBg > ul > li.active > .navXF {
+    background-image: url("../images/xfactor/xfactor.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #0083ca;
+    display: block;
+    height: 45px;
+    width: 48px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li > .navNews, #Headmenu.reactive > #headCont > #manueBg > ul > li > .navNews {
+    background-image: url("../images/news2.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 41px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li > .navKolga, #Headmenu.reactive > #headCont > #manueBg > ul > li > .navKolga {
+    background-image: url("../images/kolga-grey.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 41px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li.active > .navKolga, #Headmenu.reactive > #headCont > #manueBg > ul > li.active > .navKolga {
+    background-image: url("../images/kolga.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #fabe15;
+    display: block;
+    height: 45px;
+    width: 41px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li.active > .nav-gb, #Headmenu.reactive > #headCont > #manueBg > ul > li.active > .nav-gb {
+    background-image: url("../images/4gb-blue.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #0083ca;
+    display: block;
+    height: 45px;
+    width: 41px;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li.active > .navNews, #Headmenu.reactive > #headCont > #manueBg > ul > li.active > .navNews {
+    background-image: url("../images/news1.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 41px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navTv:hover {
+    background-image: url("../images/tv-hv.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 38px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navVideos:hover {
+    background-image: url("../images/video-hv.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navMovie:hover {
+    background-image: url("../images/movie-hv.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navEpisode:hover {
+    background-image: url("../images/tv-serie-hv.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navShows:hover {
+    background-image: url("../images/tv-show-hv.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navGames:hover {
+    background-image: url("../images/games-hv.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 50px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navQuotes:hover {
+    background-image: url("../images/quote2.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 48px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navSport:hover {
+    background-image: url("../images/sport2.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 48px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navInfo:hover {
+    background-image: url("../images/infoviolet.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 35px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navXF:hover {
+    background-image: url("../images/xfactor/xfactor.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 48px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navNews:hover {
+    background-image: url("../images/news1.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 41px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > .navKolga:hover {
+    background-image: url("../images/kolga.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    width: 41px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > a#ico-info.nav-gb:hover {
+    background-image: url("../images/4gb-blue.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #0083ca;
+    display: block;
+    height: 45px;
+    width: 41px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > ul {
+    background-color: #fff;
+    border-radius: 3px;
+    display: none;
+    left: -45px;
+    padding: 5px;
+    position: absolute;
+    top: 65px;
+    width: 400px;
+}
+#Headmenu > #headCont > #manueBg > ul > li > ul > li {
+    border-bottom: 1px solid #fff;
+    float: left;
+    list-style-type: none;
+    width: auto;
+}
+#Headmenu > #headCont > #manueBg > ul > li > ul > li:hover {
+    border-bottom: 1px solid #0083ca;
+}
+#Headmenu > #headCont > #manueBg > ul > li > ul > li > a {
+    color: #595959;
+    display: block;
+    font-family: sanRegular;
+    font-size: 10px;
+    line-height: 25px;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#Headmenu > #headCont > #manueBg > ul > li > ul > li > a:hover {
+    color: #0083ca;
+}
+#Headmenu > #headCont > #manueBg > ul > li > ul > .arrowUp {
+    height: 0;
+    width: 0;
+}
+#Headmenu > #headCont > #manueBg > ul > li > ul > .arrowUp > span {
+    border-bottom: 6px solid #fff;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    height: 0;
+    left: 63px;
+    position: absolute;
+    top: -6px;
+    width: 0;
+}
+#Headmenu.active > #headCont > #manueBg > ul > li > ul > .arrowUp > span, #Headmenu.reactive > #headCont > #manueBg > ul > li > ul > .arrowUp > span {
+    border-bottom: 6px solid #007bff;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    height: 0;
+    left: 63px;
+    position: absolute;
+    top: -6px;
+    width: 0;
+}
+#Headmenu > #headCont > #login {
+    background-color: #0083ca;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    float: right;
+    font-family: Arial,bpg_mrgvlovani_caps_2010_small;
+    font-size: 12px;
+    height: 34px;
+    line-height: 34px;
+    margin-top: 16px;
+    text-align: center;
+    width: 112px;
+}
+
 div#profile div#login {
     background-color: #01a33c;
     border-radius: 3px;
@@ -2159,8 +2729,8 @@ div.section-header-lists-item {
     background: #fff none repeat scroll 0 0;
     display: none;
     position: fixed;
-    top: 70px;
-    width: 1000px;
+    top: 71px;
+    width: 980px;
     z-index: 500;
 }
 div#sort-tags {
@@ -2192,19 +2762,18 @@ div#sort-tags div#expand-arrow {
     width: 0;
 }
 div#expand-arrow::after {
-    background: #fff none repeat scroll 0 0;
+    background: #01a33c none repeat scroll 0 0;
     border-radius: 4px;
+    color: #FFF;
     content: "«";
     font-size: 25px;
     height: 33px;
-    left: 3px;
     line-height: 29px;
-    position: absolute;
+    position: fixed;
     text-align: center;
-    top: -4px;
     transform: rotate(-90deg);
     width: 25px;
-    z-index: 8;
+    z-index: 800;
 }
 #search-results-header {
     position: relative;
@@ -2365,7 +2934,7 @@ div#authorizationContent div.success {
     margin: 0 auto;
     min-height: 800px;
     outline: 0 solid #033;
-    padding: 22px;
+    padding: 10px 22px;
     position: relative;
     width: 1000px;
 }
@@ -3180,4 +3749,882 @@ div.collections-thumb img {
     text-align: center !important;
     text-shadow: 0 1px 0 #373737 !important;
     width: 25px;
+}
+
+.left_content {
+    background: white none repeat scroll 0 0;
+    float: left;
+    margin-left: 8px;
+    width: 240px;
+}
+.right_content {
+    float: right;
+    margin: 0 8px;
+    width: 720px;
+}
+
+.recomend .title {
+    background: white none repeat scroll 0 0;
+    border-left: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    
+    margin-bottom: 0 !important;
+    padding: 6px !important;
+    position: relative;
+    text-transform: capitalize;
+    width: 80%;
+    z-index: 2;
+    height: 29px;
+}
+.recomend .title:after {
+    background: white none repeat scroll 0 0;
+    border-top: 1px solid #d3d3d3;
+    content: "";
+    display: inline-block;
+    height: 31px;
+    left: 91%;
+    position: absolute;
+    top: 8px;
+    transform: rotate(47deg);
+    width: 37px;
+    z-index: 1;
+}
+
+.recomend .title h3 {
+    font-size: 14px !important;
+    color: #d3d3d3;
+    font-weight: bold;
+    position: absolute;
+    z-index: 100;
+    top:-10px;
+}
+
+.rec-block {
+    border: 1px solid #d3d3d3;
+    margin-top: -2px;
+    overflow: hidden;
+    padding: 10px 0 10px;
+}
+.rec-info h3 {
+    margin-bottom: 6px !important;
+    margin-top: 0 !important;
+}
+.rec-item {
+    border-bottom: 1px solid #d3d3d3;
+    margin: 0 8px;
+    padding: 8px;
+}
+.rec-item:last-child {
+    border-bottom: 0 none;
+}
+.rec-img {
+    padding-left: 0 !important;
+    padding-right: 8px !important;
+}
+.rec-img img {
+    background: white none repeat scroll 0 0;
+    border: 1px solid gray;
+    padding: 2px;
+}
+.rec-info {
+    padding-left: 8px !important;
+    padding-right: 0 !important;
+}
+.rec-info h3 {
+    font-size: 12px !important;
+    font-weight: bold;
+}
+.rec-info h3 a {
+    color: black;
+}
+.rec-info h4 {
+    font-size: 11px !important;
+    margin-top: 4px !important;
+}
+.rec-info h4 a {
+    color: #01a33c;
+}
+.rec-info p {
+    margin-bottom: 4px !important;
+}
+
+.movie-block {
+    float: left;
+    height: 280px;
+    margin: 0 8px;
+    overflow: hidden;
+    width: 127px;
+}
+
+.movie-block-image-div {
+    margin-top: 3px;
+    overflow: hidden;
+    width: 123px;
+}
+.movie-block-image {
+    border: 1px solid gray;
+    padding: 1px;
+    width: 119px;
+}
+.movie-block-title {
+    color: #01a33c;
+    font: bold 11px Tahoma,Verdana,sans-serif;
+}
+.movie-block-image-link {
+    display: block;
+    width: 123px;
+}
+.movie-block-info {
+    font-size: 11px;
+    height: 151px;
+    overflow: hidden;
+    padding-top: 18px;
+    text-align: center;
+    width: 123px;
+}
+
+.movie-element .trailer-btn, .moview-new-type .trailer-btn {
+    background: rgba(0, 0, 0, 0) url("images/sprite.png") repeat scroll -1795px -253px;
+    bottom: 52px;
+    cursor: pointer;
+    display: block;
+    height: 29px;
+    left: 11px;
+    position: absolute;
+    width: 107px;
+    z-index: 999;
+}
+.movie-element .trailer-btn:hover, .moview-new-type .trailer-btn:hover {
+    background-position: -1795px -217px;
+}
+.movie-element-main-image {
+    height: 195px;
+    overflow: hidden;
+    width: 130px;
+}
+.movie-element-size-1 img, .movie-block-image-div img, .moview-new-type .preview-block img {
+    display: block;
+    height: 195px;
+    width: 130px;
+}
+.movie-element-size-1 im, .movie-block-image-div im, .moview-new-type .preview-block im {
+    background: rgba(0, 0, 0, 0) url("http://static.adjaranet.com/images/default/134x201default.jpg") no-repeat scroll 0 0;
+    display: block;
+    height: 195px;
+    transform: scale(1, 1);
+    transition: all 0.5s ease 0s;
+    width: 130px;
+}
+.movie-element-size-1 im::before, .movie-block-image-div im::before, .moview-new-type .preview-block im::before {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.movie-element-size-1 im:hover::before, .movie-block-image-div im:hover::before, .moview-new-type .preview-block im:hover::before {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+}
+.movie-element-size-1 im:hover, .movie-block-image-div im:hover, .moview-new-type .preview-block im:hover {
+    transform: scale(1.2, 1.2);
+}
+.movie-stars {
+    padding: 3px 1px !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 50px !important;
+    width: 158px !important;
+}
+.movie-stars img {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 center !important;
+    border-radius: 0 !important;
+    display: inline !important;
+    height: 16px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 16px !important;
+}
+.movie-stars > div {
+    float: left !important;
+}
+.movie-stars > div:first-child {
+    margin-right: 5px;
+}
+.movie-element:hover .info-icon, .movie-element:hover .movie-overlay, .moview-new-type:hover .movie-overlay {
+    display: block;
+}
+
+.moview-new-type .movie-overlay {
+    top: 170px;
+}
+
+.movie-element .movie-overlay em, .moview-new-type .movie-overlay em {
+    color: #fff;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 23px;
+}
+.movie-element .movie-overlay .info-left, .moview-new-type .movie-overlay .info-left {
+    float: left;
+}
+.movie-element .movie-overlay .info-right, .moview-new-type .movie-overlay .info-right {
+    float: right;
+}
+.movie-element .movie-overlay span, .moview-new-type .movie-overlay span {
+    color: #b1b1b1;
+    font-family: "BPGMrgvlovani",sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+.info-icon > span {
+    background: transparent url("images/sprite.png") no-repeat scroll -639px -551px;
+    cursor: pointer;
+    height: 38px;
+    left: 5px;
+    position: absolute;
+    text-indent: -9999px;
+    text-transform: uppercase;
+    top: 5px;
+    width: 38px;
+    z-index: 4;
+}
+.movie-element .info-icon > span {
+    background: transparent url("images/sprite.png") no-repeat scroll -639px -551px;
+    cursor: pointer;
+    height: 38px;
+    left: 5px;
+    position: absolute;
+    text-indent: -9999px;
+    text-transform: uppercase;
+    top: 15px;
+    width: 38px;
+    z-index: 4;
+}
+.movie-element .preview-block, .moview-new-type .preview-block {
+    background: #fff url("http://static.adjaranet.com/images/item-preview-bg.png") repeat-x scroll left top;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    display: none;
+    left: -10px;
+    min-height: 290px;
+    position: absolute;
+    top: 0;
+    width: 520px;
+    z-index: 5;
+}
+.moview-new-type .preview-block {
+    left: -11px;
+    top: -11px;
+}
+.movie-element-size-1 .preview-block, .moview-new-type .preview-block {
+    min-height: 245px;
+}
+.movie-element .preview-block .thumb, .moview-new-type .preview-block .thumb {
+    float: left;
+    height: 236px;
+    margin: 9px 0 9px 9px;
+    position: relative;
+    width: 157px;
+}
+.movie-element-size-1 .preview-block .thumb, .moview-new-type .preview-block .thumb {
+    width: 130px;
+}
+.movie-element img, .movie-block-image-div img, .moview-new-type .preview-block img {
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 10px;
+    width: 157px;
+}
+.movie-element .preview-block .thumb .player, .moview-new-type .preview-block .thumb .player {
+    background: rgba(0, 0, 0, 0) url("http://static.adjaranet.com/images/info-block-player.png") no-repeat scroll left top;
+    border-radius: 4px;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-indent: -9999px;
+    text-transform: uppercase;
+    top: 0;
+    width: 100%;
+}
+.movie-element .preview-block .thumb .player:hover, .moview-new-type .preview-block .thumb .player:hover {
+    background-position: -168px -15px;
+}
+.movie-element a {
+    display: block;
+    text-decoration: none;
+}
+.movie-element-size-1 .preview-block .thumb .player, .moview-new-type .preview-block .thumb .player {
+    background-position: -11px -15px;
+    height: 195px;
+    width: 130px;
+}
+.movie-element .preview-block .title, .moview-new-type .preview-block .title {
+    border-bottom: 1px dashed #eaeaea;
+    float: left;
+    margin: 10px;
+    padding-bottom: 5px;
+    width: 334px;
+}
+.moview-new-type .preview-block .title, .moview-new-type .preview-block .details, .moview-new-type .preview-block .description {
+    width: 358px;
+}
+.movie-element-size-1 .preview-block .title, .movie-element-size-1 .preview-block .details, .movie-element-size-1 .preview-block .description {
+    width: 358px;
+}
+.imdb-votes {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    color: #000;
+    float: right;
+    height: 27px;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+}
+.imdb-votes em {
+    display: block;
+    font-family: "BPGMrgvlovani",sans-serif;
+    font-size: 10px;
+    font-style: normal;
+}
+.imdb-votes em.caption {
+    color: #666;
+    padding-top: 1px;
+}
+.imdb-votes em.votes {
+    margin-top: -3px;
+}
+.movie-element .preview-block .imdb, .moview-new-type .preview-block .imdb {
+    background: rgba(0, 0, 0, 0) url("images/sprite.png") no-repeat scroll 0 -243px;
+    float: right;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 6px;
+    text-align: right;
+    width: 61px;
+}
+.movie-element .preview-block .imdb span, .moview-new-type .preview-block .imdb span {
+    color: #291818;
+    display: block;
+    float: right;
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    width: 30px;
+}
+.movie-element .preview-block .title h2, .moview-new-type .preview-block .title h2 {
+    color: #2d2525;
+    font-family: "Segoe UI",sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+.movie-element .preview-block .title h3, .moview-new-type .preview-block .title h3 {
+    color: #797979;
+    font-family: Sylfaen,serif;
+    font-size: 13px;
+    font-weight: normal;
+}
+.movie-element .preview-block .details, .moview-new-type .preview-block .details {
+    float: left;
+    font-family: Sylfaen,serif;
+    font-size: 13px;
+    padding: 0 10px;
+    width: 330px;
+}
+.movie-element-size-1 .preview-block .title, .movie-element-size-1 .preview-block .details, .movie-element-size-1 .preview-block .description {
+    width: 358px;
+}
+.movie-element .preview-block .details p, .moview-new-type .preview-block .details p {
+    color: #5f84a2;
+    margin-bottom: 5px;
+}
+.movie-element .preview-block .details p span, .moview-new-type .preview-block .details span {
+    color: #3e3e3e;
+}
+.movie-element .preview-block .details p a, .moview-new-type .preview-block .details p a {
+    color: #5f84a2;
+    display: inline;
+    text-decoration: none;
+}
+.movie-block-image-link {
+    display: block;
+    width: 123px;
+}
+
+.movie-element .movie-overlay, .moview-new-type .movie-overlay {
+    background: rgba(0, 0, 0, 0) url("http://static.adjaranet.com/images/movie-item-overlay-bg.png") repeat scroll 0 0;
+    border-radius: 3px;
+    color: #fff;
+    display: none;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 23px;
+    left: 4px;
+    line-height: 23px;
+    padding: 0 8px;
+    position: absolute;
+    right: 4px;
+    top: 216px;
+}
+.movie-element-size-1 .movie-overlay, .moview-new-type .movie-overlay {
+    left: 2px;
+    padding: 0 4px;
+    right: 2px;
+    top: 178px;
+}
+.moview-new-type .movie-overlay {
+    top: 170px;
+}
+
+.mv_center {
+    border: 1px solid #ccc;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.mv_center_corner {
+    background: white none repeat scroll 0 0;
+    border-top: 1px solid #ccc;
+    bottom: -1px;
+    height: 40px;
+    position: absolute;
+    right: -1px;
+    width: 200px;
+}
+.mv_center_corner::before {
+    background: white none repeat scroll 0 0;
+    border-top: 1px solid #ccc;
+    content: "";
+    display: inline-block;
+    font-size: 24px;
+    height: 36px;
+    left: -31px;
+    position: absolute;
+    top: 13px;
+    transform: rotate(-47deg);
+    width: 52px;
+}
+
+
+.serials {
+    margin-top: 30px;
+    position: relative;
+}
+
+.ser_corner {
+    background: white none repeat scroll 0 0;
+    border-top:1px solid rgba(245, 94, 94, 1);
+    bottom: 0;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    width: 200px;
+}
+.ser_corner::before {
+    background: white none repeat scroll 0 0;
+    border-top: 1px solid rgba(245, 94, 94, 1);
+    content: "";
+    display: inline-block;
+    font-size: 24px;
+    height: 36px;
+    left: -16%;
+    position: absolute;
+    top: 12px;
+    transform: rotate(-45deg);
+    width: 53px;
+    z-index: 1;
+}
+
+.serials .pagin {
+    bottom: 0;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    width: 40px;
+}
+
+.serials #sliderTop {
+    height: 300px;
+    width: 692px;
+}
+.serials .pagin a {
+    background: rgba(0, 0, 0, 0) url("../images/default.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    width: 15px;
+}
+.serials .pagin a.next {
+    background-position: right 0 !important;
+}
+
+.serials ul.tabs {
+    margin-bottom: -2px;
+}
+.serials ul.tabs li {
+    position: relative;
+}
+.serials ul.tabs li:first-child a {
+    background: rgba(245, 94, 94, 1) none repeat scroll 0 0;
+}
+.serials ul.tabs li span {
+    background: rgba(245, 94, 94, 1) none repeat scroll 0 0;
+    display: inline-block;
+    height: 30px;
+    left: 0;
+    line-height: 30px;
+    margin-left: 18px;
+    padding-top: 6px;
+    position: absolute;
+    top: 0;
+    transform: skew(45deg);
+    width: 95%;
+    z-index: 0;
+}
+.serials ul.tabs li a.active::after {
+    background: white none repeat scroll 0 0;
+    border-top: 1px solid rgba(245, 94, 94, 1);
+    content: "";
+    display: inline-block;
+    font-size: 24px;
+    height: 22px;
+    left: 164px;
+    position: absolute;
+    top: 10px;
+    transform: rotate(45deg);
+    width: 42px;
+    z-index: -5;
+}
+.serials ul.tabs li a.active li span {
+    display: none;
+}
+
+.serials ul.tabs li {
+    float: left;
+    list-style-type: none;
+    width: 180px;
+}
+.serials ul.tabs li a {
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 20px;
+    width: 100%;
+    z-index: 1;
+}
+.serials ul.tabs li a.active {
+    background: white none repeat scroll 0 0 !important;
+    border-left: 1px solid rgba(245, 94, 94, 1);
+    border-top: 1px solid rgba(245, 94, 94, 1);
+    color: rgba(245, 94, 94, 1);
+}
+
+.serial_inner {
+    border: 1px solid rgba(245, 94, 94, 1);
+    margin-top: -9px;
+    padding: 10px 12px 50px;
+}
+
+.ajaxslider {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 692px;
+}
+.ajaxslider .animated {
+    height: 300px;
+    position: absolute;
+    transition: width 2s ease 0s;
+    width: 692px;
+}
+
+
+.genero {
+    margin-bottom: 20px;
+}
+.genero h2 {
+    background: white none repeat scroll 0 0;
+    border-left: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    color: #d3d3d3;
+    font-size: 16px !important;
+    font-weight: bolder;
+    margin-bottom: 0 !important;
+    padding: 6px !important;
+    position: relative;
+    text-transform: capitalize;
+    width: 20%;
+    z-index: 2;
+}
+.genero h2::after {
+    background: white none repeat scroll 0 0;
+    border-top: 1px solid #d3d3d3;
+    content: "";
+    display: inline-block;
+    font-size: 24px;
+    height: 31px;
+    left: 89%;
+    position: absolute;
+    top: 8px;
+    transform: rotate(45deg);
+    width: 40px;
+    z-index: 1;
+}
+.inner_genero {
+    border: 1px solid #d3d3d3;
+    margin-top: -2px;
+    overflow: hidden;
+    padding: 30px 20px 10px;
+}
+.genero div.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.inner_genero ul li {
+    list-style-type: none;
+}
+.inner_genero ul li a {
+    color: #2f5e4a !important;
+    font-weight: bold !important;
+}
+.inner_genero ul li a:hover {
+    color: #c00 !important;
+}
+.inner_genero ul li a.active {
+    color: #c00 !important;
+}
+
+#limheight {
+    height: 180px; /*your fixed height*/
+    -webkit-column-count: 5;
+       -moz-column-count: 5;
+            column-count: 5; /*3 in those rules is just placeholder -- can be anything*/
+}
+
+
+
+
+.gray_tabs {
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.gray_inner {
+    border: 2px solid #ccc;
+    margin-top: -4px;
+    padding: 15px 12px 50px;
+}
+.gray_tabs ul.tabs li {
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    width: 140px;
+}
+.gray_tabs ul.tabs li a {
+    color: white;
+    display: inline-block;
+    padding: 3px 0;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    z-index: 1;
+}
+.gray_tabs ul.tabs li a.active {
+    background: white none repeat scroll 0 0 !important;
+    border-left: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    color: #ccc;
+}
+.gray_tabs .carousel-control, .gray_tabs .carousel-control:focus, .gray_tabs .carousel-control:hover {
+    color: #ccc !important;
+}
+.gray_corner {
+    background: white none repeat scroll 0 0;
+    border-top: 2px solid #ccc;
+    bottom: 0;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    width: 200px;
+}
+.gray_corner::before {
+    background: white none repeat scroll 0 0;
+    border-top: 2px solid #ccc;
+    content: "";
+    display: inline-block;
+    font-size: 24px;
+    height: 36px;
+    left: -16%;
+    position: absolute;
+    top: 12px;
+    transform: rotate(-45deg);
+    width: 53px;
+    z-index: 1;
+}
+.gray_tabs ul.tabs {
+    margin-bottom: -2px;
+}
+.gray_tabs ul.tabs li {
+    position: relative;
+}
+.gray_tabs ul.tabs li:first-child a {
+    background: #ccc none repeat scroll 0 0;
+}
+.gray_tabs ul.tabs li span {
+    background: #ccc none repeat scroll 0 0;
+    display: inline-block;
+    height: 22px;
+    left: 0;
+    line-height: 30px;
+    margin-left: 18px;
+    margin-top: 9px;
+    padding-top: 6px;
+    position: absolute;
+    top: -8px;
+    transform: skew(45deg);
+    width: 96%;
+    z-index: 0;
+}
+.gray_tabs ul.tabs li a.active::after {
+    background: white none repeat scroll 0 0;
+    border-top: 2px solid #ccc;
+    content: "";
+    display: inline-block;
+    font-size: 24px;
+    height: 26px;
+    left: 91%;
+    position: absolute;
+    top: 5px;
+    transform: rotate(45deg);
+    width: 31px;
+    z-index: -5;
+}
+.gray_tabs ul.tabs li a.active li span {
+    display: none;
+}
+
+#push {
+    height: 50px;
+}
+
+div#footer, footer {
+    background: #fff none repeat scroll 0 0;
+    line-height: 60px;
+    position: relative;
+    z-index: 5;
+}
+div#footer-inner {
+    margin: 0 auto;
+    position: relative;
+    width: 980px;
+}
+
+div#footer-note {
+    color: #575757;
+    float: right;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 11px;
+    width: 260px;
+}
+div#footer-note > .fb-like {
+    float: left;
+    margin-top: 0;
+    padding-right: 11px;
+}
+div#footer-note > .fb-like > span {
+    overflow: hidden;
+    vertical-align: middle !important;
+}
+div#footer-note a {
+    color: #777;
+    text-decoration: underline;
+}
+div#footer-note a:hover {
+    text-decoration: none;
+}
+.footer-copyright {
+    padding-right: 20px;
+}
+div#footer-navigation {
+    float: left;
+    font-family: "Francois One",sans-serif;
+    font-weight: bold;
+    padding-top: 18px;
+}
+div#footer-navigation ul li {
+    display: block;
+    float: left;
+    margin-right: 3px;
+}
+div#footer-navigation ul li a, ul.camera-switchers li a, div#footer-navigation ul li span {
+    border-radius: 4px;
+    color: #575757;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+div#footer-navigation ul li.active a, div#footer-navigation ul li a:hover, ul.camera-switchers li.active a, ul.camera-switchers li a:hover, div#footer-navigation ul li.active span, div#footer-navigation ul li span:hover {
+    background: #1d1d1d none repeat scroll 0 0;
+    color: #fff;
+}
+div#copyright {
+    color: #ababab;
+    padding: 20px 20px 10px;
+    text-align: right;
+}
+div#footer-links {
+    float: right;
+    padding-bottom: 20px;
+}
+div#footer-links ul li {
+    float: left;
+    list-style: outside none none;
+}
+div#footer-links ul li a {
+    color: #ababab;
+    display: block;
+    line-height: 18px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+div#footer-links ul li a span.icon-facebook {
+    background-position: -4px -113px;
+    float: left;
+    height: 18px;
+    margin-right: 5px;
+    width: 18px;
+}
+div#footer-links ul li a:hover {
+    color: #383838;
+}
+div#footer-links ul li a:hover span.icon-facebook {
+    background-position: -24px -113px;
+}
+div#footer-links ul li a span.icon-twitter {
+    background-position: -48px -113px;
+    float: left;
+    height: 18px;
+    margin-right: 5px;
+    width: 18px;
+}
+div#footer-links ul li a:hover span.icon-twitter {
+    background-position: -70px -113px;
 }

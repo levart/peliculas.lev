@@ -9,7 +9,7 @@ var error = 0;
 
   
 	$(".avatarDelete").live( "click", function() {
-		if($("#avatar").attr('src')!=staticUrl+'/images/man.png'){
+		if($("#avatar").attr('src')!==staticUrl+'/images/man.png'){
 		$.get( "user/deleteavatar",function(){
 			$("#avatar").attr('src',staticUrl+'/images/man.png?timestamp='+ new Date().getTime());
 			$("#user_avatar").attr('src',staticUrl+'/images/man.png?timestamp='+ new Date().getTime());
