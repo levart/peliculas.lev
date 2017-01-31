@@ -360,7 +360,7 @@
 
 
 
-                    <div  id="MainContent">
+                    <div  id="MainContent" class="white">
                         <div align="left" id="mdiv">
                             <div style="height: 39px;display: block;" id="sort-tags">
                                 <div id="expand-arrow" class="showFilter"></div>
@@ -913,16 +913,16 @@
                                 </div>
                             </div>
                             <div class="right_content">
-                                <div class="mv_center">
+                                <div class="mv_center" ng-controller="newMovies">
                                     <div class="mv_center_corner"></div>
-                                    <div class="movie-block">
+                                    <div class="movie-block"  ng-repeat="movie in movies">
                                         <div class="movie-block-image-div moview-new-type" style="height:195px;width:130px;position:relative;overflow:inherit;">
-                                            <a class="movie-block-image-link" href="/#movies/view/2922/marea-negra" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
-                                                <im class="movie-block-image" style="padding:0;border:0;border-radius: 4px;width:128px;height:193px;background:url('http://allpeliculas.com/getImages/image/130/195/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg');background-size:128px 193px;"></im>
+                                            <a class="movie-block-image-link" href="/movies/view/{{movie.id}}" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
+                                                <img ng-src="{{movie.image}}"/>
                                             </a>
                                             <div class="movie-overlay clearfix">
-                                                <em class="info-left">2016<span> Year</span></em>
-                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> 7.5</em>
+                                                <em class="info-left">{{movie.year}}<span> Year</span></em>
+                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> {{movie.imdb}}</em>
                                             </div>
                                             <div class="info-icon" data-id="2922"><span>!</span>
                                                 <div class="preview-block ">
@@ -938,8 +938,8 @@
                                                                 <div class="movie-stars"><div align="center"><div style="margin:-1px 0px 0px 1px;"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"></div></div><div class="vote-div-count" align="center">0/10 (0)</div></div>
                                                             </div>
                                                             <div class="imdb">
-                                                                <span>7.5</span>
-                                                            </div><!-- .movie-imdb-rating --><h2>Deepwater Horizon </h2><h3>Marea negra </h3>
+                                                                <span>{{movie.imdb}}</span>
+                                                            </div><!-- .movie-imdb-rating --><h2>{{movie.title}} </h2><h3>{{movie.slogan}} </h3>
                                                         </div><!-- .home-slide-item-preview-title -->
                                                         <div class="details">
                                                             <p>
@@ -968,370 +968,10 @@
                                             </div>
                                         </div>
                                         <div class="movie-block-info" style="padding-top:5px;">
-                                            <div class="movie-block-title" align="center">Marea negra</div>
-                                            <div class="movie-block-date" align="center">2016</div>
-                                            <div class="movie-block-genre" align="center">Drama</div>
-                                            <div class="movie-block-actors" align="center">Mark Wahlberg,Kurt Russell,Douglas M. Griffin,James DuMont</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="movie-block">
-                                        <div class="movie-block-image-div moview-new-type" style="height:195px;width:130px;position:relative;overflow:inherit;">
-                                            <a class="movie-block-image-link" href="/#movies/view/2922/marea-negra" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
-                                                <im class="movie-block-image" style="padding:0;border:0;border-radius: 4px;width:128px;height:193px;background:url('http://allpeliculas.com/getImages/image/130/195/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg');background-size:128px 193px;"></im>
-                                            </a>
-                                            <div class="movie-overlay clearfix">
-                                                <em class="info-left">2016<span> Year</span></em>
-                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> 7.5</em>
-                                            </div>
-                                            <div class="info-icon" data-id="2922"><span>!</span>
-                                                <div class="preview-block ">
-                                                    <div class="inner clearfix">
-                                                        <div class="thumb">
-                                                            <img src="http://allpeliculas.com/getImages/image/157/236/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg" alt="Marea negra " width="157" height="236">
-                                                            <a href="http://allpeliculas.com/#movies/view/2922/marea-negra" class="player">player</a>
-                                                            <span class="trailerClick trailer-btn leftified"><span class="n-movie-trailer">youtu.be/golFYgkDNCw</span></span>
-                                                        </div><!-- .home-slide-item-preview-thumb -->
-                                                        <div class="title">
-                                                            <div class="imdb-votes">
-                                                                <em class="caption">Count: </em><em class="votes">3634546</em>
-                                                                <div class="movie-stars"><div align="center"><div style="margin:-1px 0px 0px 1px;"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"></div></div><div class="vote-div-count" align="center">0/10 (0)</div></div>
-                                                            </div>
-                                                            <div class="imdb">
-                                                                <span>7.5</span>
-                                                            </div><!-- .movie-imdb-rating --><h2>Deepwater Horizon </h2><h3>Marea negra </h3>
-                                                        </div><!-- .home-slide-item-preview-title -->
-                                                        <div class="details">
-                                                            <p>
-                                                                <span>Year: </span><a href="http://allpeliculas.com/#Movies/topmovies/topRated/2016/marea-negra">2016</a>
-                                                            </p>
-                                                            <p>
-                                                                <span>Género: </span><span>Drama, Thriller, Accion</span>
-                                                            </p>
-                                                            <p>
-                                                                <span>Language: </span><span>Latino</span>
-                                                            </p>
-                                                            <p>
-                                                                <span>Roles: </span><span><span class="movie-actor-th">Mark Wahlberg</span>, <span class="movie-actor-th">Kurt Russell</span>, <span class="movie-actor-th">Douglas M. Griffin</span>, <span class="movie-actor-th">James DuMont</span>, <span class="movie-actor-th">Joe Chrest</span>, <span class="movie-actor-th">Gina Rodriguez</span>, <span class="movie-actor-th">Brad Leland</span></span>
-                                                            </p>
-                                                        </div><!-- .details -->
-                                                        <div class="description">
-                                                            <p>
-                                                            </p><div class="info-mini-text">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto  ...</div><div class="info-full-text" style="display:none;">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto causó una catástrofe que mató a 11 personas e hirió a otras 16, provocando además una de las catástrofes medioambientales más graves causadas por el hombre.&nbsp; <img src="http://allpeliculas.com/allmovies_images/p2.gif" class="info-full-arrow"></div>
-                                                            <p></p>
-                                                        </div><!-- .home-slide-item-preview-description -->
-                                                        <div class="views">
-                                                            HD 720
-                                                        </div><!-- .home-slide-item-preview-views -->
-                                                    </div><!-- .home-slide-item-preview -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="movie-block-info" style="padding-top:5px;">
-                                            <div class="movie-block-title" align="center">Marea negra</div>
-                                            <div class="movie-block-date" align="center">2016</div>
-                                            <div class="movie-block-genre" align="center">Drama</div>
-                                            <div class="movie-block-actors" align="center">Mark Wahlberg,Kurt Russell,Douglas M. Griffin,James DuMont</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="movie-block">
-                                        <div class="movie-block-image-div moview-new-type" style="height:195px;width:130px;position:relative;overflow:inherit;">
-                                            <a class="movie-block-image-link" href="/#movies/view/2922/marea-negra" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
-                                                <im class="movie-block-image" style="padding:0;border:0;border-radius: 4px;width:128px;height:193px;background:url('http://allpeliculas.com/getImages/image/130/195/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg');background-size:128px 193px;"></im>
-                                            </a>
-                                            <div class="movie-overlay clearfix">
-                                                <em class="info-left">2016<span> Year</span></em>
-                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> 7.5</em>
-                                            </div>
-                                            <div class="info-icon" data-id="2922"><span>!</span>
-                                                <div class="preview-block ">
-                                                    <div class="inner clearfix">
-                                                        <div class="thumb">
-                                                            <img src="http://allpeliculas.com/getImages/image/157/236/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg" alt="Marea negra " width="157" height="236">
-                                                            <a href="http://allpeliculas.com/#movies/view/2922/marea-negra" class="player">player</a>
-                                                            <span class="trailerClick trailer-btn leftified"><span class="n-movie-trailer">youtu.be/golFYgkDNCw</span></span>
-                                                        </div><!-- .home-slide-item-preview-thumb -->
-                                                        <div class="title">
-                                                            <div class="imdb-votes">
-                                                                <em class="caption">Count: </em><em class="votes">3634546</em>
-                                                                <div class="movie-stars"><div align="center"><div style="margin:-1px 0px 0px 1px;"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"></div></div><div class="vote-div-count" align="center">0/10 (0)</div></div>
-                                                            </div>
-                                                            <div class="imdb">
-                                                                <span>7.5</span>
-                                                            </div><!-- .movie-imdb-rating --><h2>Deepwater Horizon </h2><h3>Marea negra </h3>
-                                                        </div><!-- .home-slide-item-preview-title -->
-                                                        <div class="details">
-                                                            <p>
-                                                                <span>Year: </span><a href="http://allpeliculas.com/#Movies/topmovies/topRated/2016/marea-negra">2016</a>
-                                                            </p>
-                                                            <p>
-                                                                <span>Género: </span><span>Drama, Thriller, Accion</span>
-                                                            </p>
-                                                            <p>
-                                                                <span>Language: </span><span>Latino</span>
-                                                            </p>
-                                                            <p>
-                                                                <span>Roles: </span><span><span class="movie-actor-th">Mark Wahlberg</span>, <span class="movie-actor-th">Kurt Russell</span>, <span class="movie-actor-th">Douglas M. Griffin</span>, <span class="movie-actor-th">James DuMont</span>, <span class="movie-actor-th">Joe Chrest</span>, <span class="movie-actor-th">Gina Rodriguez</span>, <span class="movie-actor-th">Brad Leland</span></span>
-                                                            </p>
-                                                        </div><!-- .details -->
-                                                        <div class="description">
-                                                            <p>
-                                                            </p><div class="info-mini-text">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto  ...</div><div class="info-full-text" style="display:none;">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto causó una catástrofe que mató a 11 personas e hirió a otras 16, provocando además una de las catástrofes medioambientales más graves causadas por el hombre.&nbsp; <img src="http://allpeliculas.com/allmovies_images/p2.gif" class="info-full-arrow"></div>
-                                                            <p></p>
-                                                        </div><!-- .home-slide-item-preview-description -->
-                                                        <div class="views">
-                                                            HD 720
-                                                        </div><!-- .home-slide-item-preview-views -->
-                                                    </div><!-- .home-slide-item-preview -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="movie-block-info" style="padding-top:5px;">
-                                            <div class="movie-block-title" align="center">Marea negra</div>
-                                            <div class="movie-block-date" align="center">2016</div>
-                                            <div class="movie-block-genre" align="center">Drama</div>
-                                            <div class="movie-block-actors" align="center">Mark Wahlberg,Kurt Russell,Douglas M. Griffin,James DuMont</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="movie-block">
-                                        <div class="movie-block-image-div moview-new-type" style="height:195px;width:130px;position:relative;overflow:inherit;">
-                                            <a class="movie-block-image-link" href="/#movies/view/2922/marea-negra" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
-                                                <im class="movie-block-image" style="padding:0;border:0;border-radius: 4px;width:128px;height:193px;background:url('http://allpeliculas.com/getImages/image/130/195/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg');background-size:128px 193px;"></im>
-                                            </a>
-                                            <div class="movie-overlay clearfix">
-                                                <em class="info-left">2016<span> Year</span></em>
-                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> 7.5</em>
-                                            </div>
-                                            <div class="info-icon" data-id="2922"><span>!</span>
-                                                <div class="preview-block ">
-                                                    <div class="inner clearfix">
-                                                        <div class="thumb">
-                                                            <img src="http://allpeliculas.com/getImages/image/157/236/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg" alt="Marea negra " width="157" height="236">
-                                                            <a href="http://allpeliculas.com/#movies/view/2922/marea-negra" class="player">player</a>
-                                                            <span class="trailerClick trailer-btn leftified"><span class="n-movie-trailer">youtu.be/golFYgkDNCw</span></span>
-                                                        </div><!-- .home-slide-item-preview-thumb -->
-                                                        <div class="title">
-                                                            <div class="imdb-votes">
-                                                                <em class="caption">Count: </em><em class="votes">3634546</em>
-                                                                <div class="movie-stars"><div align="center"><div style="margin:-1px 0px 0px 1px;"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"></div></div><div class="vote-div-count" align="center">0/10 (0)</div></div>
-                                                            </div>
-                                                            <div class="imdb">
-                                                                <span>7.5</span>
-                                                            </div><!-- .movie-imdb-rating --><h2>Deepwater Horizon </h2><h3>Marea negra </h3>
-                                                        </div><!-- .home-slide-item-preview-title -->
-                                                        <div class="details">
-                                                            <p>
-                                                                <span>Year: </span><a href="http://allpeliculas.com/#Movies/topmovies/topRated/2016/marea-negra">2016</a>
-                                                            </p>
-                                                            <p>
-                                                                <span>Género: </span><span>Drama, Thriller, Accion</span>
-                                                            </p>
-                                                            <p>
-                                                                <span>Language: </span><span>Latino</span>
-                                                            </p>
-                                                            <p>
-                                                                <span>Roles: </span><span><span class="movie-actor-th">Mark Wahlberg</span>, <span class="movie-actor-th">Kurt Russell</span>, <span class="movie-actor-th">Douglas M. Griffin</span>, <span class="movie-actor-th">James DuMont</span>, <span class="movie-actor-th">Joe Chrest</span>, <span class="movie-actor-th">Gina Rodriguez</span>, <span class="movie-actor-th">Brad Leland</span></span>
-                                                            </p>
-                                                        </div><!-- .details -->
-                                                        <div class="description">
-                                                            <p>
-                                                            </p><div class="info-mini-text">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto  ...</div><div class="info-full-text" style="display:none;">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto causó una catástrofe que mató a 11 personas e hirió a otras 16, provocando además una de las catástrofes medioambientales más graves causadas por el hombre.&nbsp; <img src="http://allpeliculas.com/allmovies_images/p2.gif" class="info-full-arrow"></div>
-                                                            <p></p>
-                                                        </div><!-- .home-slide-item-preview-description -->
-                                                        <div class="views">
-                                                            HD 720
-                                                        </div><!-- .home-slide-item-preview-views -->
-                                                    </div><!-- .home-slide-item-preview -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="movie-block-info" style="padding-top:5px;">
-                                            <div class="movie-block-title" align="center">Marea negra</div>
-                                            <div class="movie-block-date" align="center">2016</div>
-                                            <div class="movie-block-genre" align="center">Drama</div>
-                                            <div class="movie-block-actors" align="center">Mark Wahlberg,Kurt Russell,Douglas M. Griffin,James DuMont</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="movie-block">
-                                        <div class="movie-block-image-div moview-new-type" style="height:195px;width:130px;position:relative;overflow:inherit;">
-                                            <a class="movie-block-image-link" href="/#movies/view/2922/marea-negra" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
-                                                <im class="movie-block-image" style="padding:0;border:0;border-radius: 4px;width:128px;height:193px;background:url('http://allpeliculas.com/getImages/image/130/195/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg');background-size:128px 193px;"></im>
-                                            </a>
-                                            <div class="movie-overlay clearfix">
-                                                <em class="info-left">2016<span> Year</span></em>
-                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> 7.5</em>
-                                            </div>
-                                            <div class="info-icon" data-id="2922"><span>!</span>
-                                                <div class="preview-block ">
-                                                    <div class="inner clearfix">
-                                                        <div class="thumb">
-                                                            <img src="http://allpeliculas.com/getImages/image/157/236/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg" alt="Marea negra " width="157" height="236">
-                                                            <a href="http://allpeliculas.com/#movies/view/2922/marea-negra" class="player">player</a>
-                                                            <span class="trailerClick trailer-btn leftified"><span class="n-movie-trailer">youtu.be/golFYgkDNCw</span></span>
-                                                        </div><!-- .home-slide-item-preview-thumb -->
-                                                        <div class="title">
-                                                            <div class="imdb-votes">
-                                                                <em class="caption">Count: </em><em class="votes">3634546</em>
-                                                                <div class="movie-stars"><div align="center"><div style="margin:-1px 0px 0px 1px;"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"></div></div><div class="vote-div-count" align="center">0/10 (0)</div></div>
-                                                            </div>
-                                                            <div class="imdb">
-                                                                <span>7.5</span>
-                                                            </div><!-- .movie-imdb-rating --><h2>Deepwater Horizon </h2><h3>Marea negra </h3>
-                                                        </div><!-- .home-slide-item-preview-title -->
-                                                        <div class="details">
-                                                            <p>
-                                                                <span>Year: </span><a href="http://allpeliculas.com/#Movies/topmovies/topRated/2016/marea-negra">2016</a>
-                                                            </p>
-                                                            <p>
-                                                                <span>Género: </span><span>Drama, Thriller, Accion</span>
-                                                            </p>
-                                                            <p>
-                                                                <span>Language: </span><span>Latino</span>
-                                                            </p>
-                                                            <p>
-                                                                <span>Roles: </span><span><span class="movie-actor-th">Mark Wahlberg</span>, <span class="movie-actor-th">Kurt Russell</span>, <span class="movie-actor-th">Douglas M. Griffin</span>, <span class="movie-actor-th">James DuMont</span>, <span class="movie-actor-th">Joe Chrest</span>, <span class="movie-actor-th">Gina Rodriguez</span>, <span class="movie-actor-th">Brad Leland</span></span>
-                                                            </p>
-                                                        </div><!-- .details -->
-                                                        <div class="description">
-                                                            <p>
-                                                            </p><div class="info-mini-text">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto  ...</div><div class="info-full-text" style="display:none;">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto causó una catástrofe que mató a 11 personas e hirió a otras 16, provocando además una de las catástrofes medioambientales más graves causadas por el hombre.&nbsp; <img src="http://allpeliculas.com/allmovies_images/p2.gif" class="info-full-arrow"></div>
-                                                            <p></p>
-                                                        </div><!-- .home-slide-item-preview-description -->
-                                                        <div class="views">
-                                                            HD 720
-                                                        </div><!-- .home-slide-item-preview-views -->
-                                                    </div><!-- .home-slide-item-preview -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="movie-block-info" style="padding-top:5px;">
-                                            <div class="movie-block-title" align="center">Marea negra</div>
-                                            <div class="movie-block-date" align="center">2016</div>
-                                            <div class="movie-block-genre" align="center">Drama</div>
-                                            <div class="movie-block-actors" align="center">Mark Wahlberg,Kurt Russell,Douglas M. Griffin,James DuMont</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="movie-block">
-                                        <div class="movie-block-image-div moview-new-type" style="height:195px;width:130px;position:relative;overflow:inherit;">
-                                            <a class="movie-block-image-link" href="/#movies/view/2922/marea-negra" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
-                                                <im class="movie-block-image" style="padding:0;border:0;border-radius: 4px;width:128px;height:193px;background:url('http://allpeliculas.com/getImages/image/130/195/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg');background-size:128px 193px;"></im>
-                                            </a>
-                                            <div class="movie-overlay clearfix">
-                                                <em class="info-left">2016<span> Year</span></em>
-                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> 7.5</em>
-                                            </div>
-                                            <div class="info-icon" data-id="2922"><span>!</span>
-                                                <div class="preview-block ">
-                                                    <div class="inner clearfix">
-                                                        <div class="thumb">
-                                                            <img src="http://allpeliculas.com/getImages/image/157/236/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg" alt="Marea negra " width="157" height="236">
-                                                            <a href="http://allpeliculas.com/#movies/view/2922/marea-negra" class="player">player</a>
-                                                            <span class="trailerClick trailer-btn leftified"><span class="n-movie-trailer">youtu.be/golFYgkDNCw</span></span>
-                                                        </div><!-- .home-slide-item-preview-thumb -->
-                                                        <div class="title">
-                                                            <div class="imdb-votes">
-                                                                <em class="caption">Count: </em><em class="votes">3634546</em>
-                                                                <div class="movie-stars"><div align="center"><div style="margin:-1px 0px 0px 1px;"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"></div></div><div class="vote-div-count" align="center">0/10 (0)</div></div>
-                                                            </div>
-                                                            <div class="imdb">
-                                                                <span>7.5</span>
-                                                            </div><!-- .movie-imdb-rating --><h2>Deepwater Horizon </h2><h3>Marea negra </h3>
-                                                        </div><!-- .home-slide-item-preview-title -->
-                                                        <div class="details">
-                                                            <p>
-                                                                <span>Year: </span><a href="http://allpeliculas.com/#Movies/topmovies/topRated/2016/marea-negra">2016</a>
-                                                            </p>
-                                                            <p>
-                                                                <span>Género: </span><span>Drama, Thriller, Accion</span>
-                                                            </p>
-                                                            <p>
-                                                                <span>Language: </span><span>Latino</span>
-                                                            </p>
-                                                            <p>
-                                                                <span>Roles: </span><span><span class="movie-actor-th">Mark Wahlberg</span>, <span class="movie-actor-th">Kurt Russell</span>, <span class="movie-actor-th">Douglas M. Griffin</span>, <span class="movie-actor-th">James DuMont</span>, <span class="movie-actor-th">Joe Chrest</span>, <span class="movie-actor-th">Gina Rodriguez</span>, <span class="movie-actor-th">Brad Leland</span></span>
-                                                            </p>
-                                                        </div><!-- .details -->
-                                                        <div class="description">
-                                                            <p>
-                                                            </p><div class="info-mini-text">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto  ...</div><div class="info-full-text" style="display:none;">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto causó una catástrofe que mató a 11 personas e hirió a otras 16, provocando además una de las catástrofes medioambientales más graves causadas por el hombre.&nbsp; <img src="http://allpeliculas.com/allmovies_images/p2.gif" class="info-full-arrow"></div>
-                                                            <p></p>
-                                                        </div><!-- .home-slide-item-preview-description -->
-                                                        <div class="views">
-                                                            HD 720
-                                                        </div><!-- .home-slide-item-preview-views -->
-                                                    </div><!-- .home-slide-item-preview -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="movie-block-info" style="padding-top:5px;">
-                                            <div class="movie-block-title" align="center">Marea negra</div>
-                                            <div class="movie-block-date" align="center">2016</div>
-                                            <div class="movie-block-genre" align="center">Drama</div>
-                                            <div class="movie-block-actors" align="center">Mark Wahlberg,Kurt Russell,Douglas M. Griffin,James DuMont</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="movie-block">
-                                        <div class="movie-block-image-div moview-new-type" style="height:195px;width:130px;position:relative;overflow:inherit;">
-                                            <a class="movie-block-image-link" href="/#movies/view/2922/marea-negra" title="Marea negra" style="width:130px;height:195px;overflow:hidden;">
-                                                <im class="movie-block-image" style="padding:0;border:0;border-radius: 4px;width:128px;height:193px;background:url('http://allpeliculas.com/getImages/image/130/195/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg');background-size:128px 193px;"></im>
-                                            </a>
-                                            <div class="movie-overlay clearfix">
-                                                <em class="info-left">2016<span> Year</span></em>
-                                                <em class="info-right"><span style="font-family:Arial, sans-serif">IMDB:</span> 7.5</em>
-                                            </div>
-                                            <div class="info-icon" data-id="2922"><span>!</span>
-                                                <div class="preview-block ">
-                                                    <div class="inner clearfix">
-                                                        <div class="thumb">
-                                                            <img src="http://allpeliculas.com/getImages/image/157/236/100/top/files/movies_posters/Marea negra (2016)_148232670677_tupeli.me.jpg" alt="Marea negra " width="157" height="236">
-                                                            <a href="http://allpeliculas.com/#movies/view/2922/marea-negra" class="player">player</a>
-                                                            <span class="trailerClick trailer-btn leftified"><span class="n-movie-trailer">youtu.be/golFYgkDNCw</span></span>
-                                                        </div><!-- .home-slide-item-preview-thumb -->
-                                                        <div class="title">
-                                                            <div class="imdb-votes">
-                                                                <em class="caption">Count: </em><em class="votes">3634546</em>
-                                                                <div class="movie-stars"><div align="center"><div style="margin:-1px 0px 0px 1px;"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"><img src="http://allpeliculas.com/allmovies_images/star0.gif" class="staticstar"></div></div><div class="vote-div-count" align="center">0/10 (0)</div></div>
-                                                            </div>
-                                                            <div class="imdb">
-                                                                <span>7.5</span>
-                                                            </div><!-- .movie-imdb-rating --><h2>Deepwater Horizon </h2><h3>Marea negra </h3>
-                                                        </div><!-- .home-slide-item-preview-title -->
-                                                        <div class="details">
-                                                            <p>
-                                                                <span>Year: </span><a href="http://allpeliculas.com/#Movies/topmovies/topRated/2016/marea-negra">2016</a>
-                                                            </p>
-                                                            <p>
-                                                                <span>Género: </span><span>Drama, Thriller, Accion</span>
-                                                            </p>
-                                                            <p>
-                                                                <span>Language: </span><span>Latino</span>
-                                                            </p>
-                                                            <p>
-                                                                <span>Roles: </span><span><span class="movie-actor-th">Mark Wahlberg</span>, <span class="movie-actor-th">Kurt Russell</span>, <span class="movie-actor-th">Douglas M. Griffin</span>, <span class="movie-actor-th">James DuMont</span>, <span class="movie-actor-th">Joe Chrest</span>, <span class="movie-actor-th">Gina Rodriguez</span>, <span class="movie-actor-th">Brad Leland</span></span>
-                                                            </p>
-                                                        </div><!-- .details -->
-                                                        <div class="description">
-                                                            <p>
-                                                            </p><div class="info-mini-text">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto  ...</div><div class="info-full-text" style="display:none;">Basado en los eventos sucedidos en el Golfo de México en abril del 2010, cuando un accidente en un oleoducto causó una catástrofe que mató a 11 personas e hirió a otras 16, provocando además una de las catástrofes medioambientales más graves causadas por el hombre.&nbsp; <img src="http://allpeliculas.com/allmovies_images/p2.gif" class="info-full-arrow"></div>
-                                                            <p></p>
-                                                        </div><!-- .home-slide-item-preview-description -->
-                                                        <div class="views">
-                                                            HD 720
-                                                        </div><!-- .home-slide-item-preview-views -->
-                                                    </div><!-- .home-slide-item-preview -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="movie-block-info" style="padding-top:5px;">
-                                            <div class="movie-block-title" align="center">Marea negra</div>
-                                            <div class="movie-block-date" align="center">2016</div>
-                                            <div class="movie-block-genre" align="center">Drama</div>
-                                            <div class="movie-block-actors" align="center">Mark Wahlberg,Kurt Russell,Douglas M. Griffin,James DuMont</div>
+                                            <div class="movie-block-title" align="center">{{movie.title}}</div>
+                                            <div class="movie-block-date" align="center">{{movie.year}}</div>
+<!--                                            <div class="movie-block-genre" align="center">Drama</div>-->
+                                            <div class="movie-block-actors" align="center">{{movie.slogan}}</div>
                                         </div>
                                     </div>
 
@@ -1380,49 +1020,10 @@
 
                                         <ul id="limheight">
 
-
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
-                                            <li><a href="#">Biography</a></li>
+                                            <?php foreach ($categories as $cat) {?>
+                                                <li><a href="#"><?=$cat->title?></a></li>
+                                            <?php }?>
+                                            
                                         </ul>
 
                                     </div>
@@ -1520,6 +1121,12 @@
 
         <script>
                                             $(document).ready(function () {
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
                                                 $("#topS").on("click", function () {
 
                                                     var th = $(this);
@@ -1561,6 +1168,24 @@
                                                 });
                                             });
         </script>
-
+        <script>
+//    $(document).ready(function() {
+//        $.ajax({
+//            type: "POST",
+//            contentType: "application/json",
+//            url: 'https://92.241.73.166:8081/LoyaltyCardService.svc/json/ResetCard',
+//            data: JSON.stringify(
+//                {
+//                    "type": "Trade",
+//                    "personalId": "01024028266"
+//                }
+//            ),
+//            dataType: "json",
+//            success: function (data) {
+//                alert(data);
+//            }
+//        });
+//    });
+</script>
     </body>
 </html>

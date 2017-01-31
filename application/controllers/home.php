@@ -46,6 +46,7 @@ class Home extends CI_Controller {
         $data['topSerial'] =  $this->movies_model->getNewSerialData(0,5,'top'); 
         $data['topmovies'] =  $this->movies_model->getNewSerialData(0,5,'new'); 
 		$data['account'] = $this->users_model->getProfile();
+		$data['categories'] = $this->movies_model->getCategory();
         // $data['daymovies'] = $this->movies_model->dayvideoid(false,11,9000);
        	$data['daymovies'] = $this->movies_model->dayvideos(11,1);
 

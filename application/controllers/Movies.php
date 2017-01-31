@@ -35,19 +35,16 @@ class movies extends CI_Controller {
 	}   
 
 	public function view($id){
-		$this->id=$id;
+		$this->id = $id;
 	
 		$this->movies_model->addview($this->id);
 		$data['single'] = $this->movies_model->getMovie($this->id);
 		$data['filmlists'] = $this->users_model->getUserFilmLists($this->session->userdata('id'));
  		
 		$data['account'] = $this->users_model->getProfile();
-		$this->load->view('inc/head');
-		$this->load->view('inc/header', $data);
-
+                
+                $data['actors'] = explode(',', $data['single']->actor_id);
 		$this->load->view('single_movie', $data);
-		$this->load->view('inc/footer');
-		$this->load->view('inc/foot');
 	}
 
 	public function ajaxSlider($start=0,$limit=5,$type ='new'){
@@ -124,6 +121,7 @@ class movies extends CI_Controller {
         }
         
         
+        
         public function topslider() {
             header('Content-Type: application/json');
             $topmovies = $this->movies_model->dayvideos(16,300000);
@@ -136,7 +134,7 @@ class movies extends CI_Controller {
                 $prods['slogan'] = $prod->slogan;
                 $prods['imdb'] = $prod->imdb;
                 $prods['year'] = $prod->year;
-                $prods['img'] = $prod->img;
+                $prods['image'] = $prod->img;
                 $prods['views'] = $prod->msum;
                 
                 $js[] = $prods;
@@ -146,4 +144,23 @@ class movies extends CI_Controller {
             echo json_encode($dat);
         }
         
+        public function newmovies() {
+            header('Content-Type: application/json');
+            $topmovies = $this->movies_model->newMovies();
+            $js = array();
+            $i=1;
+            foreach($topmovies as $prod) {
+                $prods['id'] = $prod->ID;
+                $prods['title'] = $prod->name;
+                $prods['slogan'] = $prod->slogan;
+                $prods['imdb'] = $prod->imdb;
+                $prods['year'] = $prod->year;
+                $prods['image'] = $prod->img;
+                
+                $js[] = $prods;
+                $i++;
+            }
+            $dat['items'] = $js;
+            echo json_encode($dat);
+        }
 }

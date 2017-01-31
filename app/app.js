@@ -53,3 +53,12 @@ app.controller('MainCtrl', function($scope,$http) {
        }
    };
 });
+
+app.controller('newMovies', function($scope,$http) {
+    $http.get('/movies/newmovies').success(function(data) { 
+        $scope.movies = data.items;
+    });
+  
+  
+  $scope.count = 0;
+});

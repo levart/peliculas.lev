@@ -2,16 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-<<<<<<< HEAD
-            <file>file:/D:/Ampps/www/peliculas.lev/assets/css/addons.css</file>
-            <file>file:/D:/Ampps/www/peliculas.lev/assets/sass/main.scss</file>
-=======
-            <file>file:/D:/Ampps/www/peliculas.lev/assets/css/topmovies.css</file>
-            <file>file:/D:/Ampps/www/peliculas.lev/templates/topslider.html</file>
->>>>>>> origin/master
-            <file>file:/D:/Ampps/www/peliculas.lev/assets/css/styleNew.css</file>
-            <file>file:/D:/Ampps/www/peliculas.lev/application/views/main.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

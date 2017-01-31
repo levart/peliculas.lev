@@ -106,7 +106,7 @@ class movies_model extends CI_Model {
 
     
     
-    public function addMovieActors($id) {
+    public function getMovieActors($id) {
 
         $this->id = $id;
         
@@ -174,9 +174,7 @@ class movies_model extends CI_Model {
     }
     
     public function getMovie($id) {
-        
-        $this->db->where('id',  $id);
-        
+        $this->db->where('ID',  $id);
         return $this->db->get('movies')->row();
     }
     
@@ -365,10 +363,11 @@ class movies_model extends CI_Model {
 
 
 public function dayvideoid($limit = '8',$n) {
-        $this->db->limit($limit);
+        
         $this->db->order_by("date", "desc"); 
         $this->db->select('distinct(movie_id)');
         $this->db->where('date > unix_timestamp(now() - interval '.$n.' day)');
+        $this->db->limit($limit);
         $data = $this->db->get('views')->result();
         foreach ($data as $value) {
 
@@ -390,28 +389,41 @@ public function dayvideoid($limit = '8',$n) {
 
 
 
-    public function dayvideos($limit = 11 , $n) {
-
+    public function dayvideos($limit = 11,$n) {
         $data = $this->dayvideoid($limit , $n);
-        
-        
         if($data){
-       $a = array();
-      
+        $a = array();
         foreach ($data as $value) {
-            
             // $a[] = $value['sum'];
             $this->db->select('t1.ID, t1.name, t1.slogan, t1.img, t1.year ,t1.imdb, t1.durat, t1.genre_id, t1.director_id , t1.descrip, t1.genre_id, t1.actor_id , count(t2.id) AS msum');
             $this->db->from('movies as t1');
             $this->db->from('views as t2');
             $this->db->where('t2.movie_id = t1.ID');
             $this->db->where('t2.date >= unix_timestamp(now() - interval '.$n.' day)');
-             $this->db->where('t1.ID',$value);
-          $a[] =  $this->db->get()->row();
+            $this->db->where('t1.ID',$value);
+            $a[] =  $this->db->get()->row();
         }
     return $a;
         }
         return false;
+    }
+    
+    public function getCategory() {
+        $this->db->from('category ');
+        $this->db->order_by('title','asc');
+        $a =  $this->db->get()->result();
+        return $a;
+
+    }
+    
+    public function newMovies() {
+
+        $this->db->select('t1.ID, t1.name, t1.slogan, t1.img, t1.year ,t1.imdb, t1.durat, t1.genre_id, t1.director_id , t1.descrip, t1.genre_id, t1.actor_id ');
+        $this->db->from('movies as t1');
+        $this->db->order_by('t1.id','desc');
+        $a =  $this->db->get()->result();
+        return $a;
+
     }
 
     public function addview($id) {
